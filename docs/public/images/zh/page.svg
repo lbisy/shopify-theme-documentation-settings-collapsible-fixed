@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+<rect width="100%" height="100%" fill="#f3f4f6"/>
+<rect x="80" y="80" width="1440" height="740" rx="24" fill="#ffffff" stroke="#d1d5db" stroke-width="4" stroke-dasharray="18 12"/>
+<text x="800" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" fill="#6b7280">t:general.page</text>
+<text x="800" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#9ca3af">Replace this image with your screenshot</text>
+</svg>
