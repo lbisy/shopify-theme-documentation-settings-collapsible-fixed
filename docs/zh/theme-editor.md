@@ -10,4 +10,4 @@
 - 预览桌面端和移动端布局。
 - 保存修改，但暂不发布主题。
 
-![主题编辑器界面](../public/images/zh/theme-editor.jpg)
+![主题编辑器界面](/images/zh/settings/theme-editor.jpg)
