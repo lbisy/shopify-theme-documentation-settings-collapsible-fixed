@@ -1,0 +1,1 @@
+# shopify-theme-documentation-settings-collapsible-fixed
