@@ -123,9 +123,9 @@ export default defineConfig({
               { text: "主题编辑器", link: "/zh/theme-editor" },
               {
                 text: '全局主题设置',
+                link: '/zh/theme-settings',
                 collapsed: true,
                 items: [
-                  { text: '设置概览', link: '/zh/theme-settings' },
                   { text: 'Logo', link: '/zh/settings/logo' },
                   { text: 'Typography', link: '/zh/settings/typography' },
                   { text: 'Layout', link: '/zh/settings/layout' },
