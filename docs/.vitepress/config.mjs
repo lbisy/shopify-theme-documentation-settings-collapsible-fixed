@@ -144,7 +144,7 @@ export default defineConfig({
               },
               { text: "页眉与页脚", link: "/zh/header-footer" },
               { text: "商品页面", link: "/zh/product-pages" },
-              { text: "集合页面", link: "/zh/collection-pages" },
+              { text: "商品系列页面", link: "/zh/collection-pages" },
               { text: "购物车与搜索", link: "/zh/cart-search" },
               { text: "博客与文章", link: "/zh/blog-pages" },
               { text: "关于我们与联系我们", link: "/zh/about-contact" },
