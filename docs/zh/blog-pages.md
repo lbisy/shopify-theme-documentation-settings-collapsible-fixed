@@ -22,7 +22,7 @@
 3. 在左侧模板列表中点击 **Blog** 分区。
 4. 在右侧完成设置后点击 **保存**。
 
-截图中的博客模板还包含 **Blog Stories** 和 **Newsletter Banner** 等可选分区。它们与 Blog 文章列表相互独立，可以在左侧拖动排序、隐藏或移除。
+博客模板还可以包含 **Blog Stories** 和 **Newsletter Banner** 等可选分区。它们与 Blog 文章列表相互独立，可以在左侧拖动排序、隐藏或移除。
 
 ## Header Color Scheme
 
@@ -34,31 +34,31 @@
 
 ## Heading
 
-- **Heading size**：设置博客主标题字号。截图中选择的是 **3XL**。
+- **Heading size**：设置博客主标题字号，例如 **3XL**。
 - **Header**：填写博客主标题，例如 `Blog`。该字段支持加粗、斜体和链接等基础格式。
 - **Description**：填写标题下方的博客简介，支持基础富文本和列表格式。
 
-标题应能清楚概括博客内容；说明建议控制在一至两句。截图中的示例为：
+标题应能清楚概括博客内容；说明建议控制在一至两句，例如：
 
 > Tailored experiences powered by AI intelligence. Discover insights that adapt to your needs.
 
 ## Subtitle
 
-- **Subtitle size**：设置文章分类或标签控制项的字号。截图中选择的是 **XL**。
+- **Subtitle size**：设置文章分类或标签控制项的字号，例如 **XL**。
 - **Tab Control Color Scheme**：设置分类标签及其选中状态的配色。
 
 页面中的 `All (6)` 表示“全部”分类及当前文章数量。切换分类或标签后，应确认选中状态、下划线和文字都清晰可见。
 
 ## 旋转徽章
 
-- **Rotate Badge Text**：设置圆形旋转徽章外围的文字。截图中的示例为 `PRODUCT GUARANTEE NATURAL`。
-- **Rotate Badge Percent**：设置徽章中心文字。截图中的示例为 `100%`。
+- **Rotate Badge Text**：设置圆形旋转徽章外围的文字，例如 `PRODUCT GUARANTEE NATURAL`。
+- **Rotate Badge Percent**：设置徽章中心文字，例如 `100%`。
 
 徽章主要用于展示简短的品牌卖点或承诺。外围文字不宜过长，中心内容建议使用百分比或短词；修改后请检查文字是否完整环绕且不会与标题重叠。
 
 ## 文章列表
 
-- **Articles per page**：设置每页显示的文章数量。截图中设置为 `3`，因此桌面端首行显示三张文章卡片。
+- **Articles per page**：设置每页显示的文章数量。例如设为 `3` 时，桌面端首行显示三张文章卡片。
 - **Link Text**：设置文章卡片的阅读链接文字，例如 `Read More`。正式发布时可替换为“阅读更多”或其他符合商店语言的文案。
 
 每页文章数会影响页面长度和卡片排布。修改后请同时检查桌面端与移动端；如果文章总数超过单页数量，还应测试翻页功能是否正常。
@@ -68,9 +68,9 @@
 - **Padding Top**：调整 Blog 分区顶部留白，单位为 `px`。
 - **Padding Bottom**：调整 Blog 分区底部留白，单位为 `px`。
 
-截图中上下间距均为 `32 px`。如果标题区域显得拥挤，可适当增加顶部间距；如果 Blog 与后续分区距离过大，可减小底部间距。
+上下间距可先设为 `32 px`。如果标题区域显得拥挤，可适当增加顶部间距；如果 Blog 与后续分区距离过大，可减小底部间距。
 
-## 截图配置示例
+## 配置示例
 
 - **Header Color Scheme**：浅色方案
 - **Heading size**：`3XL`

@@ -19,7 +19,7 @@
 
 ## About 页面
 
-截图中的 About 模板以 **About Us** 作为首屏分区，下方还可以组合 Philosophy Section、Promise Section、Brand Statement、客户评价、前后对比和邮件订阅等内容。
+About 模板可以用 **About Us** 作为首屏分区，下方还可以组合 Philosophy Section、Promise Section、Brand Statement、客户评价、前后对比和邮件订阅等内容。
 
 ### About Us 设置
 
@@ -41,7 +41,7 @@
 
 ## Contact 页面
 
-**Contact Us** 分区采用图片与表单并列的版式。截图中的表单包含 First name、Last name、Email、Phone 和 Message 字段，以及提交按钮；移动端通常会改为纵向排列。
+**Contact Us** 分区采用图片与表单并列的版式。表单可以包含 First name、Last name、Email、Phone 和 Message 字段，以及提交按钮；移动端通常会改为纵向排列。
 
 ### 配色与表单外观
 
@@ -62,7 +62,7 @@
 ### 标题与说明
 
 - **Heading**：设置联系表单标题，例如 `Reach Us For Radiance`。支持加粗、斜体和链接等基础富文本格式。
-- **Heading size**：选择标题字号。截图所示为 **XL**。
+- **Heading size**：选择标题字号，例如 **XL**。
 - **Description**：填写表单上方的辅助说明，可用于告知访客适合咨询的内容或预计的回复方式。支持基础富文本和列表格式。
 
 说明文字建议简短直接，避免承诺无法稳定保证的回复时间。
@@ -77,14 +77,14 @@
 
 ### Padding
 
-- **Padding Top**：调整 Contact 分区顶部留白，单位为 `px`。截图所示为 `32 px`。
-- **Padding Bottom**：调整 Contact 分区底部留白，单位为 `px`。截图所示为 `32 px`。
+- **Padding Top**：调整 Contact 分区顶部留白，单位为 `px`，例如 `32 px`。
+- **Padding Bottom**：调整 Contact 分区底部留白，单位为 `px`，例如 `32 px`。
 
 上下间距会影响该分区与 Header 及后续内容之间的衔接。若首屏显得过高，可适当减小间距，但应保留足够空间避免表单拥挤。
 
 ## Contact 配置示例
 
-可参考截图使用以下设置：
+可参考以下配置：
 
 - **Form background color**：`#FFFFFF`
 - **Form text color**：`#1A1A1A`

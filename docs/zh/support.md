@@ -4,4 +4,3 @@
 
 安装主题更新前请备份当前主题。自定义 Liquid、CSS 或 JavaScript 通常需要手动迁移。
 
-![技术支持信息](/images/zh/support.svg)
