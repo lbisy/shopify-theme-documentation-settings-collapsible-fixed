@@ -163,7 +163,7 @@ export default defineConfig({
               { text: "品牌宣言", link: "/zh/sections/brand-statement" },
               { text: "购物车弹层", link: "/zh/sections/cart-overlay" },
               { text: "分类网格", link: "/zh/sections/category-grid" },
-              { text: "集合网格", link: "/zh/sections/collections" },
+              { text: "商品系列商品列表", link: "/zh/sections/collections" },
               { text: "自定义 Liquid", link: "/zh/sections/custom-liquid" },
               { text: "精选单品", link: "/zh/sections/featured-product" },
               { text: "精选商品列表", link: "/zh/sections/featured-products" },
