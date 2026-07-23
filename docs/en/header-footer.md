@@ -66,7 +66,7 @@ The footer provides brand information, supporting navigation, and follow actions
 
 - **Color Scheme**: footer colors.
 - **Background Image**: a wide image that keeps overlaid text readable.
-- **Brand Name**: rich text such as `Eccenova®`.
+- **Brand Name**: rich text such as `Esen`.
 - **Brush Texture Image**: a transparent PNG or WebP decorative texture.
 - **Location Text**: brand or store location, such as `Shibuya, JP`.
 

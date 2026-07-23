@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: Shopify Theme Documentation
+  name: Esen Theme Documentation
   text: Setup, customization, and storefront guide
   tagline: Complete bilingual help documentation based on the current theme structure.
   image:

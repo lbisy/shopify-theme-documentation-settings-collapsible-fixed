@@ -29,7 +29,7 @@ Products must be available and published to Online Store. If a collection contai
 
 The decorative brand band repeats a name and moves it across the section.
 
-- **Brand Name**: short rich text such as `Eccenova®`.
+- **Brand Name**: short rich text such as `Esen`.
 - **Brand marquee direction**
 - **Pause marquee on hover**
 - **Brand marquee speed**: Slow, Normal, or Fast.
@@ -55,7 +55,7 @@ Each Collection block creates one tab. Add, replace, reorder, hide, duplicate, o
 | Desktop / mobile columns | `4` / `1` |
 | Navigation / Pagination / View All | Off / Off / Off |
 | Tab behavior | `Wrap to multiple lines` |
-| Brand Name | `Eccenova®` |
+| Brand Name | `Esen` |
 | Direction / speed | Right to left / Normal |
 | Pause on hover | On |
 | Spacing / height | `64 px` / `380 px` |

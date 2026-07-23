@@ -1,7 +1,7 @@
 <!-- ---
 layout: home
 hero:
-  name: Shopify Theme Documentation
+  name: Esen Theme Documentation
   text: English / 中文
   actions:
     - theme: brand

@@ -25,7 +25,7 @@ About 模板可以用 **About Us** 作为首屏分区，下方还可以组合 Ph
 
 - **Color scheme**：选择首屏背景、文字和相关元素使用的全局配色方案。
 - **Image**：上传品牌图片、产品氛围图或装饰图。图片会与文字内容共同构成首屏视觉。
-- **Eyebrow text**：设置主标题上方的眉题，例如 `About Eccenova`。
+- **Eyebrow text**：设置主标题上方的眉题，例如 `About Esen`。
 - **Subtitle size**：设置辅助标题字号。
 - **Heading**：填写品牌主标题，例如 `A Gentle Approach to Better Skin`。
 - **Heading size**：设置主标题字号。
@@ -71,7 +71,7 @@ About 模板可以用 **About Us** 作为首屏分区，下方还可以组合 Ph
 
 - **Button text**：设置提交按钮文字，例如 `Send`。
 - **Success message**：设置表单提交成功后的提示，例如 `Thank you for your message. We will get back to you soon.`。
-- **Watermark text**：设置 Contact 分区背景中的大号品牌水印，例如 `Eccenova®`。
+- **Watermark text**：设置 Contact 分区背景中的大号品牌水印，例如 `Esen`。
 
 成功提示应明确告诉访客表单已经提交。水印主要用于装饰，建议使用较短的品牌名称，并确认它不会遮挡表单、隐私链接或其他重要内容。
 
@@ -94,7 +94,7 @@ About 模板可以用 **About Us** 作为首屏分区，下方还可以组合 Ph
 - **Description**：`Unlock personalized experiences with our AI technology. Get insights that evolve with your preferences.`
 - **Button text**：`Send`
 - **Success message**：`Thank you for your message. We will get back to you soon.`
-- **Watermark text**：`Eccenova®`
+- **Watermark text**：`Esen`
 - **Padding Top / Bottom**：`32 px`
 
 示例文案仅用于说明字段关系，正式发布时请替换为实际品牌文案。

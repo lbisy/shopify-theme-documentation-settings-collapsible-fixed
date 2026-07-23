@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: Shopify 主题使用文档
+  name: Esen 主题使用文档
   text: 安装、设置与店铺页面配置指南
   tagline: 根据当前主题实际结构生成的完整双语帮助文档。
   image:

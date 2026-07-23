@@ -23,7 +23,7 @@ The About template can begin with an **About Us** hero and continue with Philoso
 
 - **Color scheme**: background, text, and supporting colors.
 - **Image**: brand, product-lifestyle, or decorative image.
-- **Eyebrow text**: short text above the heading, such as `About Eccenova`.
+- **Eyebrow text**: short text above the heading, such as `About Esen`.
 - **Subtitle size**: eyebrow or supporting-title size.
 - **Heading** and **Heading size**: the main brand statement and its size.
 - **Description**: supporting rich text.
@@ -65,7 +65,7 @@ Keep the explanation direct and avoid promising response times the team cannot c
 
 - **Button text**: for example, `Send`.
 - **Success message**: confirm that the form was submitted.
-- **Watermark text**: a short decorative brand name such as `Eccenova®`.
+- **Watermark text**: a short decorative brand name such as `Esen`.
 
 Ensure the watermark does not cover the form, privacy links, or other important content.
 
@@ -82,7 +82,7 @@ Use **Padding Top** and **Padding Bottom** to control spacing around the section
 | Heading size | `XL` |
 | Button text | `Send` |
 | Success message | `Thank you for your message. We will get back to you soon.` |
-| Watermark text | `Eccenova®` |
+| Watermark text | `Esen` |
 | Padding | `32 px / 32 px` |
 
 Replace all sample copy with actual brand content before publishing.

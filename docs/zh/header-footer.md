@@ -72,7 +72,7 @@
 
 ### Brand
 
-- **Brand Name**：填写品牌名称，支持富文本格式，例如 `Eccenova®`。
+- **Brand Name**：填写品牌名称，支持富文本格式，例如 `Esen`。
 - **Brush Texture Image**：上传品牌区域使用的笔刷或纹理装饰图。建议使用透明背景的 PNG 或 WebP 图片，避免遮挡文字。
 - **Location Text**：填写品牌或门店所在地，例如 `Shibuya, JP`。
 

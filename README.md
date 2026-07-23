@@ -1,4 +1,4 @@
-# Shopify Theme Documentation
+# Esen Theme Documentation
 
 Bilingual online documentation project generated from the uploaded Shopify theme.
 
