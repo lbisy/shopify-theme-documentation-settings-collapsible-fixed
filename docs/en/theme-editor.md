@@ -10,4 +10,4 @@ In the Theme Editor, you can:
 - Preview desktop and mobile layouts.
 - Save changes without publishing the theme.
 
-![Theme Editor interface](../public/images/en/theme-editor.jpg)
+![Theme Editor interface](/images/en/theme-editor.jpg)

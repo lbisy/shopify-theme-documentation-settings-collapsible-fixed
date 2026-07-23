@@ -9,4 +9,4 @@ This guide is intended for merchants using the current Shopify theme.
 - Prepare products, collections, pages, blog posts, and policy pages.
 - Duplicate the live theme before making large changes.
 
-![Theme homepage preview](../public/images/en/homepage-preview.jpg)
+![Theme homepage preview](/images/en/homepage-preview.jpg)

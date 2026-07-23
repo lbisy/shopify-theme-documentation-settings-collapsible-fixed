@@ -1,22 +1,29 @@
-# Scrolling Icons with Text
+# Scrolling Icon with Text
 
-Use this section to add **Scrolling Icons with Text** content to a page.
+The **Scrolling icon with text** section repeats icon-and-label Items in a moving horizontal band for categories, service benefits, materials, delivery, or short brand messages.
 
-## How to add the section
+![Scrolling Icon with Text settings and storefront preview](/images/en/scrolling-icon-with-text.svg)
 
-1. Open **Shopify Admin → Online Store → Themes**.
-2. Click **Customize** on the theme.
-3. Open the required page or template.
-4. Click **Add section**.
-5. Select **Scrolling Icons with Text**.
-6. Configure the content and click **Save**.
+## Settings
 
-**Main settings:** Scrolling Icons with Text, Scrolling Icons with Text, Scrolling Icons with Text, Scrolling Icons with Text, Scrolling Icons with Text, Scrolling Icons with Text, Scrolling Icons with Text, Scrolling Icons with Text, Scrolling Icons with Text, Scrolling Icons with Text
+- **Color Scheme**
+- **Direction**, such as Right to left
+- **Speed**: Slow, Normal, or Fast
+- **Horizontal spacing**
+- **Height**
+- **Content size**
+- **Pause on hover**
+- **Show divider**
+- **Padding top / bottom**
 
-**Available blocks:** Scrolling Icons with Text
+Height controls the band; Content size controls icons and text within it. Recheck both whenever either changes. Enable hover pause for desktop and keep the base speed comfortable for touch devices.
 
-## Recommended workflow
+## Item blocks
 
-Preview the section on desktop and mobile. Confirm image cropping, spacing, button links, text contrast, and content order before publishing.
+Each Item pairs an icon with a short phrase. Use a consistent icon family and stroke weight, keep copy concise, align icon and meaning, and do not add duplicate Items just to extend the loop.
 
-![Scrolling Icons with Text settings and storefront preview](/images/en/scrolling-icon-with-text.svg)
+Important shipping conditions, price rules, or legal details should also appear as static content because moving text should not carry essential information alone.
+
+## Before publishing
+
+Verify all Items and order; watch multiple cycles for seamless joins; compare every speed; test hover pause and touch readability; review desktop/mobile spacing, size, and height; check divider, icon, and text contrast; test reduced-motion behavior, animation performance, and Custom CSS; then save and review the actual storefront.

@@ -3,7 +3,7 @@ layout: home
 hero:
   name: Shopify Theme Documentation
   text: Setup, customization, and storefront guide
-  tagline: A complete user guide generated from the current theme structure.
+  tagline: Complete bilingual help documentation based on the current theme structure.
   image:
     src: /images/en/homepage-preview.svg
     alt: Theme preview

@@ -45,9 +45,9 @@ export default defineConfig({
               { text: "Theme Editor", link: "/en/theme-editor" },
               {
                 text: 'Global Theme Settings',
+                link: '/en/theme-settings',
                 collapsed: true,
                 items: [
-                  { text: 'Settings Overview', link: '/en/theme-settings' },
                   { text: 'Logo', link: '/en/settings/logo' },
                   { text: 'Typography', link: '/en/settings/typography' },
                   { text: 'Layout', link: '/en/settings/layout' },

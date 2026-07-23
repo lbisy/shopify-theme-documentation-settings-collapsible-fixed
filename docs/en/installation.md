@@ -8,7 +8,7 @@
 6. Click **Customize** to configure the unpublished theme.
 7. Test the storefront before clicking **Publish**.
 
-![Theme upload page](../public/images/en/theme-upload.jpg)
+![Theme upload page](/images/en/theme-upload.jpg)
 
 ## Important
 
