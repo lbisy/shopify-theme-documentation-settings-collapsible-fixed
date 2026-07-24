@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Esen Theme Documentation',
+  title: 'Esen',
   description: 'Bilingual Shopify theme user documentation',
   cleanUrls: true,
 
