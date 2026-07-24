@@ -4,6 +4,10 @@ export default defineConfig({
   title: 'Esen',
   description: 'Bilingual Shopify theme user documentation',
   cleanUrls: true,
+  head: [
+    ['link', { rel: 'icon', href: '/brand/favicon.ico', sizes: 'any' }],
+    ['link', { rel: 'apple-touch-icon', href: '/brand/apple-touch-icon.png' }]
+  ],
 
   locales: {
     en: { label: 'English', lang: 'en', link: '/en/' },
@@ -11,6 +15,7 @@ export default defineConfig({
   },
 
   themeConfig: {
+    logo: '/brand/esen-mark.png',
     search: { provider: 'local' },
     i18nRouting: true,
 
