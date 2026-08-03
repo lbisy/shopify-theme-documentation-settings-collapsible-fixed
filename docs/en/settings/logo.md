@@ -8,13 +8,13 @@ The **Logo** settings manage the store's brand logo and browser icon.
 2. Find the current theme and click **Customize**.
 3. Open **Theme settings > Logo**.
 
-![Open the Logo settings](/images/en/settings/logo.svg)
+![Open the Logo settings](/images/en/settings/logo.png)
 
 ## Logo
 
 Click **Select image** to upload a new logo or choose an existing file from the Shopify file library.
 
-![Upload a logo](/images/en/settings/logo.svg)
+![Upload a logo](/images/en/settings/logo.png)
 
 For the best result:
 
@@ -31,7 +31,7 @@ After uploading, check the logo on desktop and mobile.
 
 **Logo width** controls the displayed width without changing the source image. Drag the slider to resize it: a higher value displays a larger logo and a lower value displays a smaller one.
 
-![Adjust logo width](/images/en/settings/logo.svg)
+![Adjust logo width](/images/en/settings/logo.png)
 
 Choose a width that works with the header height and number of navigation items. If the menu is crowded, reduce the logo width to leave more room.
 
@@ -39,7 +39,7 @@ Choose a width that works with the header height and number of navigation items.
 
 A favicon is the site icon shown in browser tabs, bookmarks, and some mobile shortcuts. Click **Select image** to upload one.
 
-![Upload a favicon](/images/en/settings/logo.svg)
+![Upload a favicon](/images/en/settings/logo.png)
 
 Use a square PNG with a simple, recognizable brand symbol. Because the displayed icon is very small, avoid detailed artwork or large amounts of text. If the full logo contains a symbol and a wordmark, use only the symbol.
 

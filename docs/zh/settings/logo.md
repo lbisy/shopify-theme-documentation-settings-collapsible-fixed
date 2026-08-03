@@ -10,7 +10,7 @@ Logo 设置用于管理商店的品牌 Logo 和浏览器图标。
 4. 点击左侧的 **主题设置**。
 5. 选择 **Logo**。
 
-![打开 Logo 设置](/images/zh/settings/logo-settings.jpg)
+![打开 Logo 设置](/images/zh/settings/logo.png)
 
 ## Logo
 
@@ -18,7 +18,7 @@ Logo 设置用于管理商店的品牌 Logo 和浏览器图标。
 
 点击 **选择图片** 上传新的 Logo，或者从 Shopify 文件库中选择已经上传的图片。
 
-![上传 Logo](/images/zh/settings/logo-settings.jpg)
+![上传 Logo](/images/zh/settings/logo.png)
 
 ### 建议
 
@@ -39,7 +39,7 @@ Logo 设置用于管理商店的品牌 Logo 和浏览器图标。
 
 拖动设置中的滑块即可调整 Logo 大小。
 
-![调整 Logo 宽度](/images/zh/settings/logo-settings.jpg)
+![调整 Logo 宽度](/images/zh/settings/logo.png)
 
 数值越大，Logo 显示尺寸越大；数值越小，Logo 显示尺寸越小。
 
@@ -57,7 +57,7 @@ Favicon 是显示在浏览器标签页、浏览器收藏夹以及部分移动设
 
 点击 **选择图片** 上传 Favicon。
 
-![上传 Favicon](/images/zh/settings/logo-settings.jpg)
+![上传 Favicon](/images/zh/settings/logo.png)
 
 建议使用：
 
@@ -76,7 +76,7 @@ Favicon 是显示在浏览器标签页、浏览器收藏夹以及部分移动设
 
 完成 Logo 设置后，点击主题编辑器右上角的 **保存**。
 
-![保存 Logo 设置](/images/zh/settings/logo-settings.jpg)
+![保存 Logo 设置](/images/zh/settings/logo.png)
 
 保存后，建议检查以下内容：
 
