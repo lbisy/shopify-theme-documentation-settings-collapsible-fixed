@@ -1,51 +1,75 @@
 # Focus
 
-The **Focus** settings control the focus ring shown during keyboard navigation. It identifies the link, button, input, or other interactive element that will respond when a visitor presses Enter or Space.
+The **Focus** settings control the focus ring shown during keyboard navigation. The ring identifies the link, button, input, or other interactive element that currently receives keyboard input.
 
 ## Open the Focus settings
 
-Go to **Shopify admin > Online Store > Themes**, click **Customize**, then open **Theme settings > Focus**.
+1. In Shopify admin, go to **Online Store > Themes**.
+2. Find the theme you want to edit and click **Customize**.
+3. Open **Theme settings > Focus**.
 
-![Focus settings](/images/en/settings/focus.svg)
+![Focus settings and storefront preview](/images/en/settings/focus.png)
 
-## Focus ring width
+The example above uses a `2 px` focus ring with a `2 px` gap between the ring and the focused element.
 
-**Focus ring width** controls line thickness.
+## Focus ring settings
 
-- Larger values make the ring more noticeable.
-- Smaller values create a lighter visual effect but can disappear on complex backgrounds or high-resolution screens.
+| Setting | Value shown | What it controls |
+| --- | ---: | --- |
+| **Focus ring width** | `2 px` | Thickness of the focus indicator. Larger values are more prominent; very small values can disappear on complex backgrounds. |
+| **Focus ring offset** | `2 px` | Space between the ring and the element edge. A small gap helps separate the ring from borders and outlines. |
 
-Test buttons, text and image links, inputs, and selectors on light and dark backgrounds.
+A `2 px` width and `2 px` offset provide a clear, compact starting point for most interfaces.
 
-::: warning Accessibility
-Do not set the width to `0px`. Removing the focus ring makes it difficult for keyboard-only visitors to understand their current position.
-:::
+## Width and offset guidance
 
-## Focus ring offset
+Do not reduce **Focus ring width** to `0 px`. Removing the visible indicator makes keyboard navigation difficult because visitors can no longer tell which control is active.
 
-**Focus ring offset** controls the gap between the ring and the element.
-
-- Small values keep the ring close to the edge.
-- Large values create more separation and emphasis.
-- `0px` places the ring directly against the outline.
-
-A small offset can prevent the focus ring from blending into a button or input border. Excessive offset may overlap nearby content.
+Use enough offset to distinguish the ring from button, input, card, and image borders. If the offset is too large, the ring can overlap nearby text or controls; if it is too small, it can blend into the element outline. Check that rounded elements display a complete ring without clipping.
 
 ## Focus ring color
 
-Set the color under **Theme settings > Colors > [color scheme] > Focus ring color**. It should contrast with the background, remain distinct from the element's border, and stay visible in every scheme.
+Focus ring color is configured separately under **Theme settings > Colors > [color scheme] > Focus ring color**. Width and offset are global, while color belongs to each color scheme.
 
-Width and offset are global, while color belongs to each color scheme. Test light, dark, and accent schemes after making changes.
+Choose a color that:
 
-## Test keyboard focus
+- Contrasts clearly with the surrounding background.
+- Remains distinct from the element's border and fill.
+- Stays visible on light, dark, image, and accent backgrounds.
+- Is recognizable as the same focus state throughout the store.
 
-1. Open the storefront preview and click an empty area.
-2. Press `Tab` to move forward and `Shift + Tab` to move backward.
-3. Confirm every interactive element shows a complete focus ring.
-4. Press `Enter` or `Space` to verify the focused control works.
+Review every color scheme after changing width, offset, or focus ring color.
 
-Test header navigation, language and search controls, product cards and options, cart interfaces, forms, popups, footer links, and social icons.
+## What to test
 
-## Save and check
+Use `Tab` to move forward and `Shift + Tab` to move backward through the storefront. Test:
 
-Click **Save** and test desktop and mobile layouts. Visibility comes before brand styling: never hide the ring merely because it changes the appearance.
+- Header navigation, search, account, language, and cart controls
+- Product cards, product options, quantity controls, and purchase buttons
+- Forms, selectors, checkboxes, and links
+- Cart drawers, dialogs, overlays, and close controls
+- Footer links and social icons
+
+The focused element should always have a complete, unobscured indicator. Press the appropriate activation key, such as `Enter` or `Space`, to confirm each control still works.
+
+## Recommended adjustment order
+
+1. Set a visible focus ring width.
+2. Add enough offset to separate the ring from element borders.
+3. Configure focus ring color in every color scheme.
+4. Test both forward and backward keyboard navigation.
+5. Check light, dark, image, and high-contrast backgrounds.
+6. Review desktop and narrow mobile layouts.
+
+## Save and test
+
+Click **Save**, then confirm:
+
+- Every interactive element receives a visible focus indicator.
+- The ring is not clipped by cards, dialogs, drawers, or containers.
+- Width and offset remain clear at high browser zoom.
+- The color is visible in every active color scheme.
+- Focus order follows the visual and reading order.
+- Opening and closing overlays returns focus to a logical location.
+
+Focus visibility should take priority over decorative styling. Do not hide the ring merely because it changes the appearance of a component.
