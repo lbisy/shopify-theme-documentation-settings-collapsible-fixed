@@ -9,4 +9,4 @@
 - 准备商品、集合、页面、博客文章和政策页面。
 - 大幅修改前，先复制当前正式主题作为备份。
 
-![主题首页预览](../public/images/zh/homepage-preview.jpg)
+![主题首页预览](../public/images/zh/homepage-preview.png)
