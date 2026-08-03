@@ -1,49 +1,84 @@
 # Product cards
 
-The **Product cards** settings define image ratio, border, corner radius, and shadow across collection pages, search results, featured products, and product recommendations.
+The **Product cards** settings control product image ratio, border, corner radius, and shadow across collection pages, search results, featured product grids, and product recommendations.
 
 ## Open the Product cards settings
 
-Go to **Shopify admin > Online Store > Themes**, click **Customize**, then open **Theme settings > Product cards**.
+1. In Shopify admin, go to **Online Store > Themes**.
+2. Find the theme you want to edit and click **Customize**.
+3. Open **Theme settings > Product cards**.
 
-![Product cards settings](/images/en/settings/product-cards.svg)
+![Product cards settings and storefront preview](/images/en/settings/product-cards.png)
 
-## Image ratio
+The example above adapts each card to its product image, uses an `8 px` corner radius, and displays no border or shadow.
 
-**Adapt to image** preserves each source image's aspect ratio and minimizes cropping. This helps when compositions differ, but card image heights—and therefore titles, prices, and buttons—may not align.
+## Image
 
-Fixed ratios create a more uniform grid but can crop image edges. Check that the product remains complete and centered.
+The image setting controls the shape of the product media area.
 
-::: tip Image preparation
-Upload primary product images with consistent dimensions and aspect ratios. A consistent source set produces an orderly grid even with **Adapt to image**.
-:::
+| Setting | Value shown | What it controls |
+| --- | ---: | --- |
+| **Image ratio** | **Adapt to image** | Preserves each source image's aspect ratio and minimizes cropping. |
+
+**Adapt to image** is useful when product compositions vary or when showing the complete image is more important than keeping every card the same height. If source images have different aspect ratios, image areas—and the vertical position of titles, prices, badges, and buttons—may not align across a row.
+
+For a more uniform grid, prepare primary product images with consistent dimensions, aspect ratios, subject scale, and background treatment. Preview any fixed ratio before using it because image edges may be cropped.
 
 ## Border
 
-**Card border thickness** controls the outline. A thin border subtly separates cards, a thick border defines each card strongly, and `0px` relies on spacing, background, or shadow. Border color comes from the active color scheme.
+Border settings define the product card outline and corner shape.
 
-**Card radius** controls corner roundness. Check that rounded corners do not crop product images, sale badges, or nearby controls. Coordinate this radius with buttons, inputs, and other cards.
+| Setting | Value shown | What it controls |
+| --- | ---: | --- |
+| **Card border thickness** | `0 px` | Width of the card outline. At `0 px`, the border is hidden. |
+| **Card radius** | `8 px` | Roundness of the card corners. Smaller values look sharper; larger values look softer and more rounded. |
+
+When the border is disabled, cards rely on spacing, background contrast, or shadow for separation. Border color comes from the active color scheme. Check that rounded corners do not clip product images, badges, quick-action controls, or focus rings.
 
 ## Shadow
 
-- **Card shadow opacity** controls visibility; `0%` disables the shadow.
-- **Card shadow horizontal offset** moves it right or left.
-- **Card shadow vertical offset** moves it down or up.
-- **Card shadow blur** controls softness; `0px` creates a hard shadow.
+Shadow settings can add depth and visually separate cards from the page.
 
-Set opacity before tuning offset and blur.
+| Setting | Value shown | What it controls |
+| --- | ---: | --- |
+| **Card shadow opacity** | `0%` | Visibility of the shadow. At `0%`, the shadow is disabled. |
+| **Card shadow horizontal offset** | `0 px` | Moves the shadow right with positive values and left with negative values. |
+| **Card shadow vertical offset** | `0 px` | Moves the shadow down with positive values and up with negative values. |
+| **Card shadow blur** | `0 px` | Softness of the shadow edge. Higher values create a softer, wider shadow. |
 
-::: warning Note
-Many cards appear together. Dark, highly offset, or very wide shadows can make a grid feel crowded and compete with product images and text.
-:::
+Set opacity first. When opacity is `0%`, the offsets and blur have no visible effect. Product grids show many cards at once, so use low-opacity shadows and restrained offsets to avoid making the page feel crowded.
 
-## Style ideas
+## Visual consistency and product content
 
-- **Borderless minimal**: `0px` border and no shadow.
-- **Clear grid**: thin border, small radius, no shadow.
-- **Soft cards**: moderate radius, thin border, and faint blurred shadow.
-- **Raised display**: slight downward offset and moderate blur with low opacity.
+Coordinate the card radius with buttons, inputs, dialogs, and other cards. Also review the complete card content, not only the image:
+
+- Long product titles and vendor names
+- Regular prices, sale prices, and compare-at prices
+- Sale, sold-out, and custom badges
+- Color swatches and quick-add controls
+- Hover media and keyboard focus indicators
+
+Test light and dark color schemes separately. A borderless card that works on one background may need more contrast on another.
+
+## Recommended adjustment order
+
+1. Choose the image ratio.
+2. Set the border thickness and corner radius.
+3. Decide whether the design needs a shadow.
+4. If needed, set opacity before offsets and blur.
+5. Check product content and interactive controls.
+6. Preview collection, search, featured, and recommendation grids on desktop and mobile.
+
+The screenshot values (**Adapt to image**, `0 px`, `8 px`, and no shadow) are a balanced starting point for a clean, borderless product grid.
 
 ## Save and test
 
-Click **Save**. Review different image ratios, long titles, prices and sale badges, light and dark schemes, desktop and mobile grids, rounded corners, and keyboard focus. Check collection pages, search results, and recommendation sections separately because their column counts and card widths differ.
+Click **Save**, then check:
+
+- Product images remain clear and important details are not cropped.
+- Cards align acceptably when source image ratios differ.
+- Long titles, prices, badges, swatches, and buttons fit correctly.
+- Rounded corners do not clip images, controls, or focus rings.
+- Desktop and mobile grids have comfortable spacing.
+- Light and dark color schemes provide enough card separation.
+- Collection pages, search results, featured products, and recommendations all display correctly.
