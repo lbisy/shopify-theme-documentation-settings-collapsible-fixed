@@ -47,6 +47,8 @@ Use a square PNG with a simple, recognizable brand symbol. Because the displayed
 
 Click **Save**, then confirm:
 
+![Save the Logo settings](/images/en/settings/logo.png)
+
 - The logo is sharp and appropriately sized.
 - It has enough space around the navigation.
 - It displays correctly on mobile.
