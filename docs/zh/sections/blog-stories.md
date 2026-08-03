@@ -2,7 +2,7 @@
 
 Blog Stories（博客故事）分区用于在普通页面或首页展示精选文章。分区可包含主标题、介绍文字和多张 Article 卡片，适合发布产品故事、使用指南、品牌动态或行业内容。
 
-![Blog Stories 设置面板与前台效果](/images/zh/blog-stories.svg)
+![Blog Stories 设置面板与前台效果](/images/zh/blog-stories.png)
 
 ## 使用前准备
 

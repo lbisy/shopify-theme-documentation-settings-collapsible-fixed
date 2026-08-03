@@ -2,7 +2,7 @@
 
 The **About Stats** section combines brand images, a year or short label, descriptive copy, a link, and key statistics. Use it for brand history, manufacturing standards, service results, sustainability commitments, or company scale.
 
-![About Stats settings and storefront preview](/images/en/about-stats.svg)
+![About Stats settings and storefront preview](/images/en/about-stats.png)
 
 ## Add the section
 

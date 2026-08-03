@@ -2,7 +2,7 @@
 
 Before After Comparison（前后对比）分区用于将两张图片叠放在同一画面中，并通过可拖动的分隔控件展示变化前后的差异。它适合呈现产品使用效果、空间改造、修复过程、材质处理或设计方案对比。
 
-![Before After Comparison 设置面板与前台效果](/images/zh/before-after-comparison.svg)
+![Before After Comparison 设置面板与前台效果](/images/zh/before-after-comparison.png)
 
 ## 添加分区
 

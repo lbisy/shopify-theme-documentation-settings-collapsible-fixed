@@ -2,7 +2,7 @@
 
 The **Blog Stories** section presents selected articles on a standard page or homepage. It can include a heading, introduction, and multiple Article cards for product stories, guides, brand news, or industry content.
 
-![Blog Stories settings and storefront preview](/images/en/blog-stories.svg)
+![Blog Stories settings and storefront preview](/images/en/blog-stories.png)
 
 ## Prepare articles
 

@@ -2,7 +2,7 @@
 
 The **Before After Comparison** section overlays two images and reveals the difference with a draggable divider. Use it for product results, renovations, repairs, material treatments, or design comparisons.
 
-![Before After Comparison settings and storefront preview](/images/en/before-after-comparison.svg)
+![Before After Comparison settings and storefront preview](/images/en/before-after-comparison.png)
 
 ## Add the section
 

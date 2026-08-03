@@ -2,7 +2,7 @@
 
 About Stats（品牌介绍与数据）分区用于组合品牌图片、年份或短标识、介绍文案、跳转链接和多项关键数据。它适合展示品牌历程、制造标准、服务成果、可持续承诺或企业规模等信息。
 
-![About Stats 设置面板与前台效果](/images/zh/about-stats.svg)
+![About Stats 设置面板与前台效果](/images/zh/about-stats.png)
 
 ## 添加分区
 
