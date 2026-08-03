@@ -1,56 +1,86 @@
 # Input
 
-The **Input** settings define the dimensions, border, radius, and shadow of fields used in search, contact forms, newsletter signup, customer details, and other text-entry areas.
+The **Input** settings define the spacing, border, corner radius, and shadow shared by search fields, contact forms, newsletter signup, customer details, and other text-entry controls.
 
 ## Open the Input settings
 
-Go to **Shopify admin > Online Store > Themes**, click **Customize**, then open **Theme settings > Input**.
+1. In Shopify admin, go to **Online Store > Themes**.
+2. Find the current theme and click **Customize**.
+3. Open **Theme settings > Input**.
 
-![Input settings](/images/en/settings/input.svg)
+![Input settings and storefront preview](/images/en/settings/input.png)
+
+The screenshot shows a clean input style with comfortable padding, a thin border, moderately rounded corners, and no shadow.
 
 ## Spacing
 
-**Input horizontal padding** controls the space between text and the left and right edges. Higher values feel more open; lower values conserve space. Check long placeholders and fields containing icons.
+Spacing controls the space between input content and the field edges.
 
-**Input vertical padding** controls field height and the touch target. Keep enough vertical space for comfortable use on mobile.
+| Setting | What it changes | Value shown |
+| --- | --- | --- |
+| **Input horizontal padding** | Space on the left and right of text and icons | `16 px` |
+| **Input vertical padding** | Space above and below the content; also affects field height | `12 px` |
+
+Increase horizontal padding for a more open appearance, but check long placeholders and fields with leading or trailing icons. Vertical padding should provide a comfortable touch target on mobile without making compact forms unnecessarily tall.
 
 ## Border
 
-**Input border thickness** sets the outline width. Thin borders suit most forms; thick borders increase separation; `0px` requires the background or shadow to make the field recognizable. Border color comes from the scheme's **Input border** setting.
+Border settings control the field outline and corner shape.
 
-**Input radius** controls corner roundness. Coordinate it with button radius so search, signup, and form layouts feel consistent.
+| Setting | What it changes | Value shown |
+| --- | --- | --- |
+| **Input border thickness** | Width of the input outline | `1 px` |
+| **Input radius** | Roundness of the four corners | `8 px` |
+
+A `1 px` border clearly separates the input from its background without looking heavy. An `8 px` radius creates moderately rounded corners. Coordinate the input radius with button and dialog styling so forms feel consistent.
+
+The border color is configured separately in **Theme settings > Colors > Input border**.
 
 ## Shadow
 
-- **Input shadow opacity** controls visibility; `0%` disables the shadow.
-- **Input shadow horizontal offset** moves it right or left.
-- **Input shadow vertical offset** moves it down or up.
-- **Input shadow blur** controls edge softness; `0px` creates a hard edge.
+Shadow settings control the depth around input fields.
 
-Set opacity first. A shadow should not replace a clear input boundary, and a strong shadow can make a field look like a button.
+| Setting | What it changes | Value shown |
+| --- | --- | --- |
+| **Input shadow opacity** | Overall shadow visibility | `0%` |
+| **Input shadow horizontal offset** | Moves the shadow left or right | `0 px` |
+| **Input shadow vertical offset** | Moves the shadow up or down | `0 px` |
+| **Input shadow blur** | Softens the shadow edge | `0 px` |
+
+With opacity set to `0%`, the shadow is disabled and the offset and blur values have no visible effect. If a shadow is added, set a low opacity first, then adjust offset and blur. Avoid a heavy shadow that makes an input look like a button.
 
 ## Colors and focus
 
-Under **Theme settings > Colors**, configure:
+Input structure is configured on this page, while visual states are controlled elsewhere:
 
-- **Input text**
-- **Input background**
-- **Input border**
-- **Input placeholder**
-
-Configure focus-ring width and offset under **Theme settings > Focus**.
+- **Theme settings > Colors**: Input text, Input background, Input border, and Input placeholder.
+- **Theme settings > Focus**: Focus-ring width and offset.
 
 ::: info Accessibility
-Placeholder text must not replace a visible field label. Ensure adequate contrast among entered text, placeholder text, borders, and backgrounds.
+Placeholder text must not replace a visible field label. Maintain clear contrast among entered text, placeholder text, borders, and backgrounds, and keep the keyboard focus ring visible.
 :::
 
-## Style ideas
+## Recommended adjustment order
 
-- **Minimal form**: moderate padding, thin border, subtle radius, no shadow.
-- **Soft rounded**: larger radius, generous vertical padding, and a faint blurred shadow.
-- **Defined outline**: visible border, small radius, no shadow.
-- **Slightly raised**: thin border with a low-opacity, lightly offset shadow.
+1. Set horizontal and vertical padding.
+2. Choose border thickness and radius.
+3. Decide whether the design needs a shadow.
+4. Configure input colors in the active color schemes.
+5. Check keyboard focus and validation states.
+6. Preview forms on desktop and mobile.
+
+The values shown in the screenshot are a balanced starting point for a minimal form style. Increase the radius for a softer look, or add a low-opacity blurred shadow for slight elevation.
 
 ## Save and test
 
-Click **Save**. Check search, short and multiline form fields, newsletter layouts, light and dark schemes, keyboard focus, errors, autofill, long text, multiple languages, and mobile tapping. Finally, submit real test entries to verify input, clearing, autofill, validation, and error states.
+Click **Save**, then verify:
+
+- Search, contact, newsletter, customer, and checkout-related inputs are consistent.
+- Placeholder text and entered text are fully visible.
+- Input height remains comfortable on mobile.
+- Icons do not overlap long text.
+- Borders remain visible on light and dark color schemes.
+- `Tab` navigation shows a clear focus ring.
+- Error, autofill, disabled, and completed states remain understandable.
+
+Finally, submit representative forms to confirm typing, clearing, autofill, validation, and error handling all work correctly.
