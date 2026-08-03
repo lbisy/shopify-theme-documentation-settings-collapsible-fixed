@@ -10,7 +10,7 @@ The **Product** section is the main product-page area. It displays media, title,
 4. Select the **Product** section and configure it.
 5. Click **Save**.
 
-![Product page settings](/images/en/product-page.svg)
+![Product page settings](/images/en/product-page.png)
 
 Create additional product templates when different products require different layouts, then assign them in Shopify admin.
 
