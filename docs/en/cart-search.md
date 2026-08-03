@@ -2,8 +2,6 @@
 
 The theme provides full Cart and Search pages plus **Cart Overlay** and **Search Overlay** interactions. This guide covers the page templates and the workflows to test before launch.
 
-![Cart and Search settings](/images/en/cart-search.svg)
-
 ## Open the templates
 
 1. Go to **Shopify admin > Online Store > Themes**.
