@@ -8,7 +8,7 @@
 6. 点击 **自定义**，先编辑未发布主题。
 7. 完成测试后再点击 **发布**。
 
-![主题上传页面](../public/images/zh/theme-upload.jpg)
+![主题上传页面](../public/images/zh/theme-upload.png)
 
 ## 注意
 
