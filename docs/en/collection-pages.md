@@ -2,7 +2,7 @@
 
 Collection pages group related products and help customers narrow choices with filtering and sorting. Create the collection and complete product data in Shopify admin before configuring headings, product count, filters, sorting, columns, and spacing.
 
-![Collection page settings](/images/en/collection-page.svg)
+![Collection page settings](/images/en/collection-page.png)
 
 ## Create a collection
 
