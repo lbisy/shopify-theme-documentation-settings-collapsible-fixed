@@ -16,7 +16,7 @@ Create navigation under **Content > Menus** (or **Online Store > Navigation**) b
 
 The header contains the logo, primary navigation, search, customer account, and cart entry points.
 
-![Header settings](/images/en/header-settings.svg)
+![Header settings](/images/en/header-settings.png)
 
 ### Header and color
 
@@ -60,7 +60,7 @@ Focus on one primary message. If several announcements rotate, put the most impo
 
 The footer provides brand information, supporting navigation, and follow actions.
 
-![Footer settings](/images/en/footer-settings.svg)
+![Footer settings](/images/en/footer-settings.png)
 
 ### Appearance and brand
 

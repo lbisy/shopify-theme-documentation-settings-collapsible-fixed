@@ -16,7 +16,7 @@
 
 页眉用于展示 Logo、主导航以及搜索、账户、购物袋等入口。
 
-![页眉设置](/images/zh/header-settings.svg)
+![页眉设置](/images/zh/header-settings.png)
 
 ### Header
 
@@ -63,7 +63,7 @@
 
 页脚用于承载品牌信息、引导内容、商店关注入口以及底部导航等辅助信息。
 
-![页脚设置](/images/zh/footer-settings.svg)
+![页脚设置](/images/zh/footer-settings.png)
 
 ### 基础外观
 
