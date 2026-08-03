@@ -2,7 +2,7 @@
 
 The blog page displays article lists. Create blogs and articles in Shopify admin first, then configure the page heading, description, category tabs, rotating badge, articles per page, and spacing.
 
-![Blog page settings](/images/en/blog-article.svg)
+![Blog page settings](/images/en/blog-article.png)
 
 ## Create blogs and articles
 
