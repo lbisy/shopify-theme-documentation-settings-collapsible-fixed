@@ -2,8 +2,6 @@
 
 The theme provides dedicated **About** and **Contact** page templates. Use About to tell the brand story and Contact to display a form and collect customer inquiries.
 
-![About and Contact templates](/images/en/about-contact.svg)
-
 ## Create and assign the templates
 
 1. In Shopify admin, go to **Online Store > Pages**.
@@ -18,6 +16,8 @@ If a page does not appear in the selector, confirm that it is saved and uses a t
 ## About page
 
 The About template can begin with an **About Us** hero and continue with Philosophy Section, Promise Section, Brand Statement, testimonials, before-and-after content, and newsletter sections.
+
+![About page template](/images/en/about-contact-about.png)
 
 ### About Us settings
 
@@ -39,6 +39,8 @@ Arrange content as: brand proposition → philosophy → promises → social pro
 ## Contact page
 
 The **Contact Us** section places an image beside a form. The form can include First name, Last name, Email, Phone, Message, and a submit button. On mobile, the columns normally stack vertically.
+
+![Contact page template](/images/en/about-contact-contact.png)
 
 ### Colors and form appearance
 

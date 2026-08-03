@@ -2,8 +2,6 @@
 
 主题提供专用的 **About** 和 **Contact** 页面模板。About 页面用于讲述品牌理念与故事，Contact 页面用于展示联系表单并收集访客咨询。
 
-![About 与 Contact 模板](/images/zh/about-contact.svg)
-
 ## 创建并分配页面模板
 
 先在 Shopify 后台创建页面，再为页面选择对应的主题模板：
@@ -20,6 +18,8 @@
 ## About 页面
 
 About 模板可以用 **About Us** 作为首屏分区，下方还可以组合 Philosophy Section、Promise Section、Brand Statement、客户评价、前后对比和邮件订阅等内容。
+
+![About 页面模板](/images/zh/about-contact-about.png)
 
 ### About Us 设置
 
@@ -42,6 +42,8 @@ About 模板可以用 **About Us** 作为首屏分区，下方还可以组合 Ph
 ## Contact 页面
 
 **Contact Us** 分区采用图片与表单并列的版式。表单可以包含 First name、Last name、Email、Phone 和 Message 字段，以及提交按钮；移动端通常会改为纵向排列。
+
+![Contact 页面模板](/images/zh/about-contact-contact.png)
 
 ### 配色与表单外观
 
