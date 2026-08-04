@@ -9,4 +9,4 @@ This guide is intended for merchants using the current Shopify theme.
 - Prepare products, collections, pages, blog posts, and policy pages.
 - Duplicate the live theme before making large changes.
 
-![Theme homepage preview](/images/en/homepage-preview.png)
+![Ceylune Beauty theme homepage preview](/images/en/homepage-preview.png)
