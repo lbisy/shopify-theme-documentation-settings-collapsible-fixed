@@ -2,7 +2,7 @@
 
 The **Promise Section** combines an image, subtitle, heading, and expandable Accordion Items for ingredients, production, sustainability, animal policies, or service principles.
 
-![Promise Section settings and storefront preview](/images/en/promise-section.svg)
+![Promise Section settings and storefront preview](/images/en/promise-section.png)
 
 ## Add the section
 

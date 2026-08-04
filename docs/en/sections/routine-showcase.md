@@ -2,7 +2,7 @@
 
 The **Routine Showcase** places collection products, a content card, and a rotating badge over a large background. Use it for a launch, themed collection, use case, or brand proposition.
 
-![Routine Showcase settings and storefront preview](/images/en/routine-showcase.svg)
+![Routine Showcase settings and storefront preview](/images/en/routine-showcase.png)
 
 ## Add the section
 

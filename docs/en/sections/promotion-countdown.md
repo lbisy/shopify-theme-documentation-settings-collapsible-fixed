@@ -2,7 +2,7 @@
 
 The **Promotion Countdown** displays remaining days, hours, minutes, and seconds with optional headings and a call-to-action button for launches, seasonal offers, member events, or reservation deadlines.
 
-![Promotion Countdown settings and storefront preview](/images/en/promotion-countdown.svg)
+![Promotion Countdown settings and storefront preview](/images/en/promotion-countdown.png)
 
 ## Configure the section
 

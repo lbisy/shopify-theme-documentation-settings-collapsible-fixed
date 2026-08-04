@@ -2,7 +2,7 @@
 
 The **Search Overlay** is a drawer opened from the header search control. Customers can enter a query, review predictive suggestions, and continue to the full results page without first leaving the current page.
 
-![Search Overlay settings and storefront preview](/images/en/search-overlay.svg)
+![Search Overlay settings and storefront preview](/images/en/search-overlay.png)
 
 The overlay shows a limited predictive list; the full Search page provides complete results, result types, and pagination. Their result limits are independent.
 

@@ -2,7 +2,7 @@
 
 Newsletter Banner（邮件订阅横幅）分区用于展示标题、辅助文案和邮箱订阅表单，可搭配背景图片及局部模糊遮罩。它适合放在首页、博客页面或长内容页面末尾，引导顾客订阅新品、内容更新或营销邮件。
 
-![Newsletter Banner 设置面板与前台效果](/images/zh/newsletter-banner.svg)
+![Newsletter Banner 设置面板与前台效果](/images/zh/newsletter-banner.png)
 
 ## 添加分区
 

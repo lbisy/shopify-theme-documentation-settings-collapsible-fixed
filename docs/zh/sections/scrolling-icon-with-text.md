@@ -2,7 +2,7 @@
 
 Scrolling icon with text（滚动图标与文字）分区用于让多组图标和短文字在横向内容带中循环移动。它适合展示商品类别、服务特点、品牌承诺或活动关键词，并可通过方向、速度、间距和尺寸控制整体节奏。
 
-![Scrolling icon with text 设置面板与前台效果](/images/zh/scrolling-icon-with-text.svg)
+![Scrolling icon with text 设置面板与前台效果](/images/zh/scrolling-icon-with-text.png)
 
 ## 添加分区
 

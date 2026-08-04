@@ -2,7 +2,7 @@
 
 Routine Showcase（场景商品展示）用于在大幅背景区域中组合商品、内容卡片和旋转徽章。它适合突出新品、主题系列、使用场景或品牌主张，并通过独立的位置设置控制各元素在画面中的布局。
 
-![Routine Showcase 设置面板与前台效果](/images/zh/routine-showcase.svg)
+![Routine Showcase 设置面板与前台效果](/images/zh/routine-showcase.png)
 
 ## 添加分区
 

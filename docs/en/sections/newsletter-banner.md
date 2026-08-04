@@ -2,7 +2,7 @@
 
 The **Newsletter Banner** combines a heading, supporting copy, and email form with an optional background image and localized blur overlay. Place it near the end of a homepage, blog, or long content page.
 
-![Newsletter Banner settings and storefront preview](/images/en/newsletter-banner.svg)
+![Newsletter Banner settings and storefront preview](/images/en/newsletter-banner.png)
 
 ## Add the section
 

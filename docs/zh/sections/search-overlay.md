@@ -2,7 +2,7 @@
 
 Search Overlay（搜索弹层）是点击页眉搜索入口后打开的抽屉式搜索界面。顾客可以在不离开当前页面的情况下输入关键词、查看预测建议，并进一步进入完整搜索结果页。
 
-![Search Overlay 设置面板与前台效果](/images/zh/search-overlay.svg)
+![Search Overlay 设置面板与前台效果](/images/zh/search-overlay.png)
 
 ## 与完整搜索页面的区别
 

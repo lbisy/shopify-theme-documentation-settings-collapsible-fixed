@@ -2,7 +2,7 @@
 
 The **Scrolling icon with text** section repeats icon-and-label Items in a moving horizontal band for categories, service benefits, materials, delivery, or short brand messages.
 
-![Scrolling Icon with Text settings and storefront preview](/images/en/scrolling-icon-with-text.svg)
+![Scrolling Icon with Text settings and storefront preview](/images/en/scrolling-icon-with-text.png)
 
 ## Settings
 

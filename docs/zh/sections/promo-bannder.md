@@ -2,7 +2,7 @@
 
 Promo Banner（促销横幅）分区用于组合主视觉图片、活动标题、跳转链接和圆形徽章，适合展示季节促销、新品系列、品牌活动或服务承诺。分区还支持添加 Card 内容块，用于补充与主横幅相关的信息。
 
-![Promo Banner 设置面板与前台效果](/images/zh/promo-bannder.svg)
+![Promo Banner 设置面板与前台效果](/images/zh/promo-bannder.png)
 
 ## 添加分区
 

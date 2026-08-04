@@ -2,7 +2,7 @@
 
 The **Featured Products** section organizes multiple collections into tabs and displays their products as a grid or carousel. Use it for new arrivals, best sellers, or themed selections.
 
-![Featured Products settings and storefront preview](/images/en/featured-products.svg)
+![Featured Products settings and storefront preview](/images/en/featured-products.png)
 
 ## Add the section
 

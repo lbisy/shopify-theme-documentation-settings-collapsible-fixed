@@ -2,7 +2,7 @@
 
 The **Featured Product** section displays one product on a homepage or other page. Customers can view media, title, price, and description, select variants and quantity, and add to cart or use accelerated checkout without first visiting the product page.
 
-![Featured Product settings and storefront preview](/images/en/featured-product.svg)
+![Featured Product settings and storefront preview](/images/en/featured-product.png)
 
 ## Add the section
 

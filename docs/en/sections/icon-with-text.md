@@ -2,7 +2,7 @@
 
 The **Icon with text** section presents multiple icons and short messages for materials, charity support, returns, delivery, or payment reassurance. It supports a carousel, responsive columns, horizontal or vertical arrangement, and separate desktop and mobile icon sizes.
 
-![Icon with Text settings and storefront preview](/images/en/icon-with-text.svg)
+![Icon with Text settings and storefront preview](/images/en/icon-with-text.png)
 
 ## Add the section
 

@@ -2,7 +2,7 @@
 
 The **Newsletter Overlay** displays a subscription invitation above the current page. It supports display conditions, delay, repeat interval, placement, feedback messages, an image, and reorderable Text, Heading, and Form blocks.
 
-![Newsletter Overlay settings and storefront preview](/images/en/newsletter-overlay.svg)
+![Newsletter Overlay settings and storefront preview](/images/en/newsletter-overlay.png)
 
 Unlike a [Newsletter Banner](/en/sections/newsletter-banner), the overlay opens automatically. Both can be used, but avoid repeatedly asking the same visitor to subscribe.
 

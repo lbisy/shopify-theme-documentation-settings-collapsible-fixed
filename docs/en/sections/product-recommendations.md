@@ -2,7 +2,7 @@
 
 The **Related products** section dynamically recommends products based on the current product. Place it after product details or comparison content to offer alternatives or complementary purchases.
 
-![Related products settings and storefront preview](/images/en/product-recommendations.svg)
+![Related products settings and storefront preview](/images/en/product-recommendations.png)
 
 ## Add the section
 

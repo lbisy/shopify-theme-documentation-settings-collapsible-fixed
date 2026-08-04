@@ -4,7 +4,7 @@ Collection（商品系列商品列表）是商品系列模板的主要内容分�
 
 本文统一将 Shopify 的 `Collection` 翻译为“商品系列”，将 `Product grid` 翻译为“商品网格”，以便区分商品分组与商品排列区域。
 
-![Collection 商品系列商品列表设置](/images/zh/collections.svg)
+![Collection product list 设置面板与店铺预览](/images/zh/collections.png)
 
 ::: tip 数据来源
 该分区会自动读取顾客当前访问的商品系列，不需要在主题编辑器中逐件选择商品。系列内的商品、初始排序和发布状态应在 Shopify 后台管理。

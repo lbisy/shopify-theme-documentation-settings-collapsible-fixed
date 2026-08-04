@@ -2,7 +2,7 @@
 
 Featured Products（精选商品）分区用于将多个商品系列组织成标签页，并以商品网格或轮播形式集中展示。顾客可以切换标签查看不同系列，适合在首页呈现新品、畅销商品或主题选品。
 
-![Featured Products 设置面板与前台效果](/images/zh/featured-products.svg)
+![Featured Products 设置面板与前台效果](/images/zh/featured-products.png)
 
 ## 添加分区
 

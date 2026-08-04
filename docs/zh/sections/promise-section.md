@@ -2,7 +2,7 @@
 
 Promise Section（品牌承诺）分区用于通过主标题、图片和可展开的折叠条目介绍品牌理念。它适合展示原料标准、生产流程、环保责任、动物友好政策或服务原则，让顾客按需查看每项承诺的详细说明。
 
-![Promise Section 设置面板与前台效果](/images/zh/promise-section.svg)
+![Promise Section 设置面板与前台效果](/images/zh/promise-section.png)
 
 ## 添加分区
 

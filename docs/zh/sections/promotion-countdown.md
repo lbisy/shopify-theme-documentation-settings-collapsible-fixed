@@ -2,7 +2,7 @@
 
 Promotion Countdown（促销倒计时）分区用于展示限时活动的剩余时间。分区可包含辅助标题、主标题、天数、小时、分钟、秒以及行动按钮，适合新品发布、季节促销、会员活动和预约提醒等场景。
 
-![Promotion Countdown 设置面板与前台效果](/images/zh/promotion-countdown.svg)
+![Promotion Countdown 设置面板与前台效果](/images/zh/promotion-countdown.png)
 
 ## 添加分区
 

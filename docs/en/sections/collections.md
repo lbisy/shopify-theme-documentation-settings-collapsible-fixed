@@ -2,7 +2,7 @@
 
 The **Collection** section is the main content of a collection template. It displays products from the current collection and provides filtering, sorting, pagination, and responsive product-grid controls.
 
-![Collection settings and storefront preview](/images/en/collections.svg)
+![Collection product list settings and storefront preview](/images/en/collections.png)
 
 ## Add or configure the section
 

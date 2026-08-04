@@ -2,7 +2,7 @@
 
 Related products（商品推荐）分区用于根据顾客当前浏览的商品，动态展示相关商品或互补商品。它适合放在商品详情、规格比较等内容之后，帮助顾客继续浏览同类选择，或发现能够搭配购买的商品。
 
-![Related products 设置面板与前台效果](/images/zh/product-recommendations.svg)
+![Related products 设置面板与前台效果](/images/zh/product-recommendations.png)
 
 ## 添加分区
 

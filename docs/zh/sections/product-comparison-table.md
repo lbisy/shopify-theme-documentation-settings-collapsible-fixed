@@ -2,7 +2,7 @@
 
 Comparison Table（商品对比表）分区用于并列展示多件商品的图片、名称、价格、评分、自定义属性和库存状态，帮助顾客比较不同型号或同类商品。它适合放在商品模板、商品系列落地页或选购指南页面中。
 
-![Comparison Table 设置面板与前台效果](/images/zh/product-comparison-table.svg)
+![Comparison Table 设置面板与前台效果](/images/zh/product-comparison-table.png)
 
 ## 使用前准备
 

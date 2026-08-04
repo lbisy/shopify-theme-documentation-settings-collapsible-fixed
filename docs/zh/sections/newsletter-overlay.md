@@ -2,7 +2,7 @@
 
 Newsletter Overlay（邮件订阅弹层）用于在店面以弹窗形式展示订阅邀请。它支持展示条件、延迟时间、重复显示间隔、弹窗位置、订阅反馈文案、左侧图片以及可排序的文字和表单内容块。
 
-![Newsletter Overlay 设置面板与前台效果](/images/zh/newsletter-overlay.svg)
+![Newsletter Overlay 设置面板与前台效果](/images/zh/newsletter-overlay.png)
 
 ## 与邮件订阅横幅的区别
 

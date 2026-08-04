@@ -2,7 +2,7 @@
 
 Featured Product（精选单品）分区用于在首页或其他页面直接展示一件指定商品。顾客无需先进入商品详情页，即可查看媒体、标题、价格和描述，选择变体与数量，并完成加购或快速结账。
 
-![Featured Product 设置面板与前台效果](/images/zh/featured-product.svg)
+![Featured Product 设置面板与前台效果](/images/zh/featured-product.png)
 
 ## 添加分区
 

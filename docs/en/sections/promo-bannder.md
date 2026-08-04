@@ -2,7 +2,7 @@
 
 The **Promo Banner** combines a hero image, campaign heading, destination link, circular badge, and optional Card blocks for seasonal promotions, launches, brand events, or service promises.
 
-![Promo Banner settings and storefront preview](/images/en/promo-bannder.svg)
+![Promo Banner settings and storefront preview](/images/en/promo-bannder.png)
 
 ## Add the section
 

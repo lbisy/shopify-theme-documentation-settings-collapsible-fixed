@@ -2,7 +2,7 @@
 
 Icon with text（图标与文字）分区用于横向展示多组图标和短文案，适合突出环保材质、公益支持、退换货政策、配送服务或支付保障等卖点。分区支持轮播、响应式列数、图标与文字排列方向，以及独立的桌面端和移动端图标尺寸。
 
-![Icon with text 设置面板与前台效果](/images/zh/icon-with-text.svg)
+![Icon with text 设置面板与前台效果](/images/zh/icon-with-text.png)
 
 ## 添加分区
 

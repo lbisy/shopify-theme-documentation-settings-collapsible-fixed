@@ -2,7 +2,7 @@
 
 Custom Liquid（自定义 Liquid）分区用于在主题编辑器中加入少量自定义 HTML、Liquid 输出或现有主题代码片段。它适合展示主题原有分区无法完成的简单动态内容，但不应替代完整的主题开发或应用功能。
 
-![Custom Liquid 设置面板与前台效果](/images/zh/custom-liquid.svg)
+![Custom Liquid 设置面板与前台效果](/images/zh/custom-liquid.png)
 
 ::: warning 修改前备份
 Liquid 代码错误可能导致当前分区无法显示，也可能破坏页面布局。修改前建议复制当前主题，并保存一份可正常工作的代码。

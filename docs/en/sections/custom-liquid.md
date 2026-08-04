@@ -2,7 +2,7 @@
 
 Use **Custom Liquid** to add small amounts of HTML, Liquid output, or existing theme snippets in the editor. It suits simple dynamic content that existing sections cannot provide, but it is not a replacement for full theme development or an app.
 
-![Custom Liquid settings and storefront preview](/images/en/custom-liquid.svg)
+![Custom Liquid settings and storefront preview](/images/en/custom-liquid.png)
 
 ::: warning Back up first
 Invalid Liquid can hide the section or break the page layout. Duplicate the theme and keep a working copy of the code before editing.

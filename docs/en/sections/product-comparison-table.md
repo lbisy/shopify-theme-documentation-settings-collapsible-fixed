@@ -2,7 +2,7 @@
 
 The **Comparison Table** places product images, names, prices, ratings, custom attributes, and availability side by side to help customers compare related products or models.
 
-![Comparison Table settings and storefront preview](/images/en/product-comparison-table.svg)
+![Comparison Table settings and storefront preview](/images/en/product-comparison-table.png)
 
 ## Prepare product data
 
