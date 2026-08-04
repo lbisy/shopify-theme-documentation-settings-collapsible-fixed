@@ -21,7 +21,7 @@ Repeat **Add Slide** for additional slides. Every Slide can use a different imag
 - Click **Add Slide** to create another.
 - Use **Remove block** to delete the selected slide.
 
-![Slideshow settings](/images/en/slides-show.svg)
+![Slideshow settings](/images/en/slides-show.png)
 
 ## Slide Image
 

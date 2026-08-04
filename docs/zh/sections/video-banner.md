@@ -2,7 +2,7 @@
 
 Video Banner（视频横幅）分区用于展示 Shopify 托管视频或 YouTube、Vimeo 外部视频，并可叠加副标题、主标题和说明文字。它适合品牌故事、产品演示、活动预告和使用场景展示。
 
-![Video Banner 设置面板与前台效果](/images/zh/video-banner.svg)
+![Video Banner 设置面板与前台效果](/images/zh/video-banner.png)
 
 ## 添加分区
 

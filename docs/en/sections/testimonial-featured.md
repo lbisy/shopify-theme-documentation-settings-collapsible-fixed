@@ -2,7 +2,7 @@
 
 The **Testimonial Featured** section displays customer reviews in a carousel with an optional hero image and floating information card.
 
-![Featured Testimonials settings and storefront preview](/images/en/testimonial-featured.svg)
+![Featured Testimonials settings and storefront preview](/images/en/testimonial-featured.png)
 
 ## Add the section
 

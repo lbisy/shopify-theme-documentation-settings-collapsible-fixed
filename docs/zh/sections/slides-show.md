@@ -21,7 +21,7 @@
 - 点击 **添加 Slide**，可以继续增加幻灯片。
 - 点击内容块底部的 **移除区块**，可以删除当前幻灯片。
 
-![幻灯片轮播设置](/images/zh/slides-show.svg)
+![幻灯片轮播设置](/images/zh/slides-show.png)
 
 ## Slide Image
 

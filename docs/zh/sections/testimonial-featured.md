@@ -2,7 +2,7 @@
 
 Testimonial Featured（精选客户评价）分区用于以轮播形式展示顾客评价，并可搭配主视觉图片和悬浮信息卡。它适合放在首页、品牌故事页或商品介绍内容之间，用真实反馈帮助顾客了解使用体验。
 
-![Testimonial Featured 设置面板与前台效果](/images/zh/testimonial-featured.svg)
+![Testimonial Featured 设置面板与前台效果](/images/zh/testimonial-featured.png)
 
 ## 添加分区
 

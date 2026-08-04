@@ -2,7 +2,7 @@
 
 The **Video Banner** displays Shopify-hosted video or a YouTube/Vimeo video with optional subheading, heading, and supporting text. Use it for brand stories, demonstrations, event previews, and product use cases.
 
-![Video Banner settings and storefront preview](/images/en/video-banner.svg)
+![Video Banner settings and storefront preview](/images/en/video-banner.png)
 
 ## Add the section
 
