@@ -1,0 +1,120 @@
+.vp-doc img.docs-image-zoom-trigger {
+  cursor: zoom-in;
+}
+
+.vp-doc img.docs-image-zoom-trigger:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid var(--vp-c-brand-1);
+  outline-offset: 4px;
+}
+
+.docs-image-lightbox {
+  position: fixed;
+  z-index: 10000;
+  inset: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  place-items: center;
+  gap: 12px;
+  overflow: auto;
+  padding: 56px 24px 20px;
+  background: rgb(0 0 0 / 88%);
+  backdrop-filter: blur(4px);
+  cursor: zoom-out;
+}
+
+.docs-image-lightbox__image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(96vw, 1920px);
+  max-height: calc(100dvh - 108px);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 45%);
+  object-fit: contain;
+  cursor: default;
+}
+
+.docs-image-lightbox__caption {
+  max-width: min(90vw, 80ch);
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.docs-image-lightbox__close {
+  position: fixed;
+  z-index: 1;
+  top: 12px;
+  right: 16px;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 999px;
+  background: rgb(0 0 0 / 45%);
+  color: #fff;
+  font: inherit;
+  font-size: 30px;
+  line-height: 1;
+  place-items: center;
+  cursor: pointer;
+}
+
+.docs-image-lightbox__close:hover {
+  background: rgb(255 255 255 / 18%);
+}
+
+.docs-image-lightbox__close:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.docs-image-lightbox-enter-active,
+.docs-image-lightbox-leave-active {
+  transition: opacity 180ms ease;
+}
+
+.docs-image-lightbox-enter-active .docs-image-lightbox__image,
+.docs-image-lightbox-leave-active .docs-image-lightbox__image {
+  transition: transform 180ms ease;
+}
+
+.docs-image-lightbox-enter-from,
+.docs-image-lightbox-leave-to {
+  opacity: 0;
+}
+
+.docs-image-lightbox-enter-from .docs-image-lightbox__image,
+.docs-image-lightbox-leave-to .docs-image-lightbox__image {
+  transform: scale(0.97);
+}
+
+@media (max-width: 640px) {
+  .docs-image-lightbox {
+    padding: 52px 10px 14px;
+  }
+
+  .docs-image-lightbox__image {
+    max-width: 100%;
+    max-height: calc(100dvh - 96px);
+  }
+
+  .docs-image-lightbox__close {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .docs-image-lightbox-enter-active,
+  .docs-image-lightbox-leave-active,
+  .docs-image-lightbox-enter-active .docs-image-lightbox__image,
+  .docs-image-lightbox-leave-active .docs-image-lightbox__image {
+    transition: none;
+  }
+}
