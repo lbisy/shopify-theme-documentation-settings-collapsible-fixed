@@ -2,7 +2,7 @@
 
 The **Brand Statement** section uses large text to emphasize a philosophy, value proposition, or core promise. An optional brushstroke image can add visual focus between sections on a homepage or brand story.
 
-![Brand Statement settings and storefront preview](/images/en/brand-statement.svg)
+![Brand Statement settings and storefront preview](/images/en/brand-statement.png)
 
 ## Add the section
 

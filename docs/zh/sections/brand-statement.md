@@ -2,7 +2,7 @@
 
 Brand Statement（品牌宣言）分区用于以大字号文字集中展示品牌理念、价值主张或核心承诺。分区结构简洁，可配合笔刷装饰图增强视觉重点，适合放在关于我们页面、品牌故事页面或首页内容之间。
 
-![Brand Statement 设置面板与前台效果](/images/zh/brand-statement.svg)
+![Brand Statement 设置面板与前台效果](/images/zh/brand-statement.png)
 
 ## 添加分区
 

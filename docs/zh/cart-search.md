@@ -16,7 +16,7 @@
 
 购物车页面用于显示已加入的商品、订单摘要和结账入口。空购物车左侧显示 **Cart** 标题和 **Shop More** 引导，右侧为 **Order Summary**；加入商品后，应进一步检查商品信息、数量调整和删除操作。
 
-![购物车弹层设置](/images/zh/cart-search-cart.png)
+![购物车页面设置与店铺预览](/images/zh/cart-search-cart.png)
 
 ### 页面设置
 
@@ -60,7 +60,7 @@
 
 搜索页面用于提交关键词并展示完整结果。结果类型包含 **PRODUCTS**、**ARTICLES** 和 **PAGES**；当关键词没有匹配内容时，页面会显示无结果提示。
 
-![搜索弹层设置](/images/zh/cart-search-search.png)
+![搜索页面设置与店铺预览](/images/zh/cart-search-search.png)
 
 ### 页面设置
 

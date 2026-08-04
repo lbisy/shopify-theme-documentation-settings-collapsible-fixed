@@ -2,7 +2,7 @@
 
 The **Cart Overlay** shows the cart in a side drawer after a customer opens the cart or adds a product. The customer remains on the current page while a backdrop separates the drawer from the page.
 
-![Cart Overlay settings and storefront preview](/images/en/cart-overlay.svg)
+![Cart Overlay settings and storefront preview](/images/en/cart-overlay.png)
 
 ## Open the settings
 

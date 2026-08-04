@@ -2,7 +2,7 @@
 
 Category grid（分类网格）用于以图片卡片组成分类入口，帮助顾客快速进入不同的商品系列或内容页面。分区支持独立设置标题、说明、“查看全部”链接、桌面端与移动端网格，以及卡片图片样式。
 
-![Category grid 设置面板与前台效果](/images/zh/category-grid.svg)
+![Category grid 设置面板与前台效果](/images/zh/category-grid.png)
 
 ## 添加分区
 

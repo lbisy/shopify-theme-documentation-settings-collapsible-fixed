@@ -16,7 +16,7 @@ Overlay, Header, and Footer are shared groups. Configure the global cart behavio
 
 The Cart page displays products, an order summary, and checkout. The empty state includes a **Shop More** prompt; also test the populated state and every quantity and removal action.
 
-![Cart overlay settings](/images/en/cart-search-cart.png)
+![Cart page settings and storefront preview](/images/en/cart-search-cart.png)
 
 ### Page settings
 
@@ -53,7 +53,7 @@ Choose **Drawer** under **Theme settings > Cart > Cart type** to keep customers 
 
 The Search page submits a query and displays full **PRODUCTS**, **ARTICLES**, and **PAGES** results, plus an empty state when nothing matches.
 
-![Search overlay settings](/images/en/cart-search-search.png)
+![Search page settings and storefront preview](/images/en/cart-search-search.png)
 
 ### Page settings
 

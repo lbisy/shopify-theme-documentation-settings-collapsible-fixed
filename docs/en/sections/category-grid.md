@@ -2,7 +2,7 @@
 
 The **Category grid** creates image-card entry points to collections or content pages. It supports a heading, description, View all link, responsive grid controls, and card image styling.
 
-![Category Grid settings and storefront preview](/images/en/category-grid.svg)
+![Category Grid settings and storefront preview](/images/en/category-grid.png)
 
 ## Add the section
 
