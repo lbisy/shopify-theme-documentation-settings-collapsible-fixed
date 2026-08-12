@@ -2,7 +2,7 @@
 
 本页介绍 Esen 主题的技术支持范围、问题反馈方式、更新前的准备工作以及版本记录。
 
-![Esen 技术支持与主题更新](/images/zh/support.svg)
+<!-- ![Esen 技术支持与主题更新](/images/zh/support.svg) -->
 
 ## 获取技术支持
 

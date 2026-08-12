@@ -2,7 +2,7 @@
 
 This page explains the scope of technical support for the Esen theme, how to report an issue, how to prepare for an update, and where to find version information.
 
-![Esen support and theme updates](/images/en/support.svg)
+<!-- ![Esen support and theme updates](/images/en/support.svg) -->
 
 ## Getting Support
 
