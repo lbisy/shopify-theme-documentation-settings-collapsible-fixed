@@ -82,3 +82,20 @@
 6. 只使用键盘重复整个流程。
 
 确认建议不会超出屏幕，较长文字能够正确处理，并且搜索可以正常打开和关闭，不会丢失焦点或阻止页面继续操作。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Search
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Enable predictive search<br>`predictive_search_enabled` | checkbox：勾选开启，取消关闭 | true | — |
+
+<!-- latest-schema:end -->

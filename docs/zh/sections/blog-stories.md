@@ -132,3 +132,73 @@ Blog Stories（博客故事）分区用于在普通页面或首页展示精选�
 8. 使用键盘 `Tab` 和 `Enter` 测试所有文章链接，确认焦点状态清晰可见。
 9. 检查配色方案下的标题、说明、卡片文字和链接对比度。
 10. 检查上下间距以及该分区与前后内容的衔接，点击 **保存** 后再从实际店面完成浏览测试。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/blog-stories.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Blog stories
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+### Font
+
+### Heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select：从选项中选择 | title-2xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Heading<br>`heading` | inline_richtext：编辑行内格式化文字 | Product stories, updates, and useful insights. | — |
+
+### Subtitle
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Subtitle size<br>`subtitle_size` | select：从选项中选择 | copy-l | Extra large (`copy-xl`); Large (`copy-l`); Default (`copy-m`); Small (`copy-s`) |
+| Description<br>`description` | richtext：编辑格式化文字 | &lt;p&gt;Introduce the stories, guides, or updates featured in this section.&lt;/p&gt; | — |
+| Blog<br>`blog` | blog：选择博客 | 未声明 | — |
+| Articles to show<br>`articles_limit` | range：拖动滑块调整数值 | 3 | 1–12 ; 步长 1<br>visible_if: &#123;&#123; section.settings.blog &#125;&#125; |
+| Link text<br>`link_text` | text：输入文字 | Read more | visible_if: &#123;&#123; section.settings.blog &#125;&#125; |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+### 内容块：Article
+
+`type`: `article`
+
+#### Font
+
+#### Title
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`card_title_size` | select：从选项中选择 | title-m | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+
+#### Subtitle
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Subtitle size<br>`card_subtitle_size` | select：从选项中选择 | copy-l | Extra large (`copy-xl`); Large (`copy-l`); Default (`copy-m`); Small (`copy-s`) |
+| Image<br>`image` | image_picker：选择或上传图片 | 未声明 | — |
+| Subtitle<br>`subtitle` | inline_richtext：编辑行内格式化文字 | Article category | — |
+| Title<br>`title` | inline_richtext：编辑行内格式化文字 | Article title | — |
+| Link<br>`link` | url：选择或填写链接 | 未声明 | — |
+| Link text<br>`article_link_text` | text：输入文字 | Read more | — |
+
+<!-- latest-schema:end -->

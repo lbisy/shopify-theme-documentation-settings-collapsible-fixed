@@ -132,3 +132,52 @@ Before Label 和 After Label 应采用成对且含义一致的表达，例如“
 7. 确认宽屏比例下没有裁掉关键主体，并测试其他可用图片比例。
 8. 检查长标题、隐藏标题和不同语言标签的排版。
 9. 点击 **保存**，并在实际店面分别完成桌面端和移动端测试。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/before-after-comparison.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Before/after comparison
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+### Font
+
+### Heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select：从选项中选择 | title-2xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Heading<br>`heading` | inline_richtext：编辑行内格式化文字 | Compare every detail | — |
+
+### Subtitle
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Subtitle size<br>`subtitle_size` | select：从选项中选择 | copy-xl | Extra large (`copy-xl`); Large (`copy-l`); Default (`copy-m`); Small (`copy-s`) |
+| Subheading<br>`sub_heading` | inline_richtext：编辑行内格式化文字 | Before and after | — |
+| Image ratio<br>`image_ratio` | select：从选项中选择 | 16/9 | Adapt to image (`auto`); Wide (16:9) (`16/9`); Landscape (4:3) (`4/3`); Square (1:1) (`1/1`) |
+| Before image<br>`before_img` | image_picker：选择或上传图片 | 未声明 | — |
+| After image<br>`after_img` | image_picker：选择或上传图片 | 未声明 | — |
+| Before label<br>`before_label` | text：输入文字 | Before | — |
+| After label<br>`after_label` | text：输入文字 | After | — |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+<!-- latest-schema:end -->

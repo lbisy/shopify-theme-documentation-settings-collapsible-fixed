@@ -82,3 +82,20 @@ Click **Save**, then test on desktop and mobile:
 6. Repeat the flow using only the keyboard.
 
 Confirm that suggestions do not overflow the screen, long text is handled cleanly, and search can be opened and closed without losing focus or blocking page interaction.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Search
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Enable predictive search<br>`predictive_search_enabled` | checkbox | true | — |
+
+<!-- latest-schema:end -->

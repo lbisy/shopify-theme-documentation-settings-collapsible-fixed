@@ -82,3 +82,39 @@
 - 桌面端和移动端网格间距是否舒适。
 - 浅色和深色配色方案是否都能清楚区分卡片。
 - 集合页面、搜索结果、精选商品和推荐区域是否都能正常显示。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Product cards
+
+### Image
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Image ratio<br>`product_card_image_ratio` | select：从选项中选择 | adapt | Adapt to image (`adapt`); Square (`square`); Portrait (`portrait`); Landscape (`landscape`) |
+
+### Border
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Card border thickness<br>`product_card_border_thickness` | range：拖动滑块调整数值 | 0 | 0–10 px; 步长 1 |
+| Card radius<br>`product_card_radius` | range：拖动滑块调整数值 | 0 | 0–48 px; 步长 2 |
+| Feature card radius<br>`card_radius` | range：拖动滑块调整数值 | 16 | 0–40 px; 步长 2<br>info: Large radius for editorial cards (category, testimonial, gallery). Medium media radius is half this value. |
+
+### Shadow
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Card shadow opacity<br>`product_card_shadow_opacity` | range：拖动滑块调整数值 | 0 | 0–100 %; 步长 5 |
+| Card shadow horizontal offset<br>`product_card_shadow_horizontal_offset` | range：拖动滑块调整数值 | 0 | -20–20 px; 步长 2 |
+| Card shadow vertical offset<br>`product_card_shadow_vertical_offset` | range：拖动滑块调整数值 | 0 | -20–20 px; 步长 2 |
+| Card shadow blur<br>`product_card_shadow_blur` | range：拖动滑块调整数值 | 0 | 0–40 px; 步长 2 |
+
+<!-- latest-schema:end -->

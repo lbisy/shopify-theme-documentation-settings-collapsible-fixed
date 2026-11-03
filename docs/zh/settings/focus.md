@@ -73,3 +73,21 @@
 - 打开和关闭覆盖层后，焦点会返回合理位置。
 
 焦点可见性应优先于装饰样式。不要仅因为焦点环改变了组件外观就将其隐藏。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Focus
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Focus ring width<br>`focus_ring_width` | range：拖动滑块调整数值 | 2 | 1–4 px; 步长 1 |
+| Focus ring offset<br>`focus_ring_offset` | range：拖动滑块调整数值 | 2 | 0–4 px; 步长 1 |
+
+<!-- latest-schema:end -->

@@ -132,3 +132,52 @@ Promise Section（品牌承诺）分区用于通过主标题、图片和可展�
 8. 检查上下留白以及图片与右侧内容的视觉平衡。
 9. 核对所有品牌、原料、环保和政策声明是否真实有效。
 10. 点击 **保存**，并在实际店面再次完成一次展开与收起测试。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/promise-section.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Promise section
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+| Image<br>`image` | image_picker：选择或上传图片 | 未声明 | — |
+| Subtitle<br>`subtitle` | inline_richtext：编辑行内格式化文字 | Our Promise | — |
+| Heading<br>`heading` | inline_richtext：编辑行内格式化文字 | Thoughtfully Crafted for Your Skin | — |
+
+### Heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select：从选项中选择 | title-xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+### 内容块：Accordion item
+
+`type`: `accordion_item`
+
+#### Title
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`title_size` | select：从选项中选择 | title-m | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Title<br>`title` | inline_richtext：编辑行内格式化文字 | Accordion title | — |
+| Content<br>`text` | richtext：编辑格式化文字 | &lt;p&gt;Accordion description text goes here.&lt;/p&gt; | — |
+
+<!-- latest-schema:end -->

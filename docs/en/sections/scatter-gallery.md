@@ -1,0 +1,53 @@
+# Scatter gallery
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/scatter-gallery.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Scatter gallery
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+### General
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+
+### Heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Statement<br>`heading` | text | Ceylune brings together innovation, transparency, and quality to redefine the skincare shopping experience. | — |
+| Heading size<br>`heading_size` | select | title-m | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Mobile heading size<br>`heading_size_mobile` | select | title-xs | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+
+### Decoration
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Brush stroke image<br>`decoration_image` | image_picker | Not declared | — |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+### Block: Image
+
+`type`: `image`; `limit`: 8
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Image<br>`image` | image_picker | Not declared | — |
+
+<!-- latest-schema:end -->

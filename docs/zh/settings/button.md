@@ -77,3 +77,39 @@
 - 边框在浅色和深色配色方案中是否清晰可见。
 - 悬停、焦点和禁用状态是否容易区分。
 - 添加到购物车、结账和表单提交等关键操作是否正常。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Button
+
+### Spacing
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Button horizontal padding<br>`button_padding_horizontal` | range：拖动滑块调整数值 | 24 | 12–48 px; 步长 2 |
+| Button vertical padding<br>`button_padding_vertical` | range：拖动滑块调整数值 | 12 | 6–24 px; 步长 2 |
+
+### Border
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Button border thickness<br>`button_border_thickness` | range：拖动滑块调整数值 | 1 | 0–10 px; 步长 1 |
+| Button radius<br>`button_radius` | range：拖动滑块调整数值 | 4 | 0–40 px; 步长 2 |
+
+### Shadow
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Button shadow opacity<br>`button_shadow_opacity` | range：拖动滑块调整数值 | 0 | 0–100 %; 步长 5 |
+| Button shadow horizontal offset<br>`button_shadow_horizontal_offset` | range：拖动滑块调整数值 | 0 | -4–4 px; 步长 2 |
+| Button shadow vertical offset<br>`button_shadow_vertical_offset` | range：拖动滑块调整数值 | 0 | -4–4 px; 步长 2 |
+| Button shadow blur<br>`button_shadow_blur` | range：拖动滑块调整数值 | 0 | 0–8 px; 步长 2 |
+
+<!-- latest-schema:end -->

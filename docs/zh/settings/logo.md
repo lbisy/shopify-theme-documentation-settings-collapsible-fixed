@@ -88,3 +88,22 @@ Favicon 是显示在浏览器标签页、浏览器收藏夹以及部分移动设
 
 ::: info 提示
 浏览器可能会缓存旧的 Favicon。如果修改 Favicon 后没有立即显示，可以尝试刷新浏览器缓存或使用无痕窗口查看。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Logo
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Logo<br>`logo` | image_picker：选择或上传图片 | 未声明 | — |
+| Logo width<br>`logo_width` | range：拖动滑块调整数值 | 100 | 50–300 px; 步长 10 |
+| Favicon<br>`favicon` | image_picker：选择或上传图片 | 未声明 | info: Recommended size: 32 × 32 px. |
+
+<!-- latest-schema:end -->

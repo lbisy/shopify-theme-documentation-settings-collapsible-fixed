@@ -134,3 +134,60 @@ About Stats（品牌介绍与数据）分区用于组合品牌图片、年份或
 8. 检查所有文字、大号数值和链接与背景之间的对比度。
 9. 使用键盘 `Tab` 和 `Enter` 测试链接，确认焦点状态清晰可见。
 10. 检查上下间距以及该分区与前后内容的衔接，保存后再从实际店面完成浏览和跳转测试。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/about-stats.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → t:sections.about-stats.name
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.about-stats.settings.color_scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+### Font
+
+### t:sections.about-stats.content.stat_title
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Subtitle size<br>`stat_title_size` | select：从选项中选择 | body-3xl | t:sections.scroll-categories.options.body_3xl (`body-3xl`); t:sections.scroll-categories.options.body_2xl (`body-2xl`); XL (`body-xl`); Large (`body-lg`); Medium (`body-md`); Small (`body-sm`) |
+
+### t:sections.about-stats.content.stat_subtitle
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`stat_subtitle_size` | select：从选项中选择 | heading-2xl | t:sections.slides-show.options.heading_4xl (`heading-4xl`); t:sections.slides-show.options.heading_3xl (`heading-3xl`); t:sections.slides-show.options.heading_2xl (`heading-2xl`); t:sections.slides-show.options.heading_xl (`heading-xl`); t:sections.slides-show.options.heading_h1 (`heading-h1`); t:sections.slides-show.options.heading_h2 (`heading-h2`); t:sections.slides-show.options.heading_h3 (`heading-h3`); t:sections.slides-show.options.heading_h4 (`heading-h4`); t:sections.slides-show.options.heading_h5 (`heading-h5`); t:sections.slides-show.options.heading_h6 (`heading-h6`) |
+| t:sections.about-stats.settings.image<br>`image` | image_picker：选择或上传图片 | 未声明 | — |
+| t:sections.about-stats.settings.secondary_image<br>`image_secondary` | image_picker：选择或上传图片 | 未声明 | — |
+| t:sections.about-stats.settings.year_text<br>`year` | text：输入文字 | 2026© | — |
+| t:sections.about-stats.settings.description<br>`description` | richtext：编辑格式化文字 | t:sections.about-stats.defaults.description_html | — |
+| t:sections.about-stats.settings.link<br>`link` | url：选择或填写链接 | 未声明 | — |
+| t:sections.about-stats.settings.link_text<br>`link_text` | text：输入文字 | t:sections.about-stats.defaults.link_text | — |
+
+### t:sections.about-stats.content.padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.about-stats.settings.padding_top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| t:sections.about-stats.settings.padding_bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+### 内容块：t:sections.about-stats.blocks.stat
+
+`type`: `stat`
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.about-stats.block_settings.label<br>`label` | inline_richtext：编辑行内格式化文字 | t:sections.about-stats.defaults.block_label | — |
+| t:sections.about-stats.block_settings.value<br>`value` | inline_richtext：编辑行内格式化文字 | t:sections.about-stats.defaults.block_value | — |
+
+<!-- latest-schema:end -->

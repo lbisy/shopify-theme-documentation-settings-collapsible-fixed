@@ -107,3 +107,35 @@ Back up the theme; validate Liquid, HTML, and quotes; guard template objects; es
 - [Theme architecture](https://shopify.dev/docs/storefronts/themes/architecture)
 - [Snippets](https://shopify.dev/docs/storefronts/themes/architecture/snippets)
 - [Customizing sections](https://help.shopify.com/en/manual/online-store/themes/customizing-themes/theme-editor/customizing-sections)
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/custom-liquid.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Custom Liquid
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["custom.overlay"]&#125;
+
+Add Liquid code to customize this section.
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+| Section width<br>`section_width` | select | fixed | Fixed width (`fixed`); Full width (`full`) |
+| Custom liquid<br>`custom_liquid` | liquid | &lt;div class="rte"&gt;&lt;p&gt;Use this section to add app snippets, custom markup, or theme-aware Liquid content.&lt;/p&gt;&lt;/div&gt; | — |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+<!-- latest-schema:end -->

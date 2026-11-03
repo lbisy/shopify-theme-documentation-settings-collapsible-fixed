@@ -168,3 +168,80 @@ Category grid（分类网格）用于以图片卡片组成分类入口，帮助�
 ::: tip 建议
 分类卡片应尽量使用统一的图片比例、背景风格和命名规则。视觉一致的图片比单纯增加列数更能帮助顾客快速识别分类。
 :::
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/category-grid.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → t:sections.category-grid.name
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.category-grid.settings.color_scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+### t:sections.category-grid.content.heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.category-grid.settings.heading<br>`heading` | inline_richtext：编辑行内格式化文字 | t:sections.category-grid.defaults.heading | — |
+| t:sections.category-grid.settings.heading_size<br>`heading_size` | select：从选项中选择 | heading-2xl | t:sections.slides-show.options.heading_4xl (`heading-4xl`); t:sections.slides-show.options.heading_3xl (`heading-3xl`); t:sections.slides-show.options.heading_2xl (`heading-2xl`); t:sections.slides-show.options.heading_xl (`heading-xl`); t:sections.slides-show.options.heading_h1 (`heading-h1`); t:sections.slides-show.options.heading_h2 (`heading-h2`); t:sections.slides-show.options.heading_h3 (`heading-h3`) |
+| t:sections.category-grid.settings.subheading<br>`subheading` | richtext：编辑格式化文字 | t:sections.category-grid.defaults.subheading | — |
+| t:sections.category-grid.settings.subheading_size<br>`subheading_size` | select：从选项中选择 | body-lg | XL (`body-xl`); Large (`body-lg`); Medium (`body-md`); Small (`body-sm`) |
+| t:sections.category-grid.settings.view_all_label<br>`view_all_label` | text：输入文字 | t:sections.category-grid.defaults.view_all_label | — |
+| t:sections.category-grid.settings.view_all_link<br>`view_all_link` | url：选择或填写链接 | 未声明 | — |
+| t:sections.category-grid.settings.text_alignment<br>`text_alignment` | select：从选项中选择 | left | t:sections.category-grid.options.left (`left`); t:sections.category-grid.options.center (`center`); t:sections.category-grid.options.right (`right`) |
+
+### t:sections.category-grid.content.layout
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.category-grid.settings.section_width<br>`section_width` | select：从选项中选择 | fixed | t:sections.category-grid.options.full_width (`full`); t:sections.category-grid.options.fixed_width (`fixed`) |
+
+### t:sections.category-grid.content.grid
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.category-grid.settings.desktop_columns<br>`desktop_columns` | range：拖动滑块调整数值 | 4 | 2–6 ; 步长 1 |
+| t:sections.category-grid.settings.desktop_rows<br>`desktop_rows` | range：拖动滑块调整数值 | 2 | 2–4 ; 步长 1 |
+| t:sections.category-grid.settings.mobile_columns<br>`mobile_columns` | select：从选项中选择 | 2 | t:sections.category-grid.options.1_column (`1`); t:sections.category-grid.options.2_columns (`2`) |
+| t:sections.category-grid.settings.gap<br>`gap` | range：拖动滑块调整数值 | 8 | 0–40 px; 步长 4<br>info: t:sections.category-grid.info.gap |
+| t:sections.category-grid.settings.show_grid_borders<br>`show_grid_borders` | checkbox：勾选开启，取消关闭 | true | — |
+
+### t:sections.category-grid.content.card
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.category-grid.settings.image_shape<br>`image_shape` | select：从选项中选择 | circle | t:sections.category-grid.options.circle (`circle`); t:sections.category-grid.options.square (`square`); t:sections.category-grid.options.rounded (`rounded`); t:sections.category-grid.options.arch (`arch`) |
+| t:sections.category-grid.settings.image_frame_style<br>`image_frame_style` | select：从选项中选择 | soft | t:sections.category-grid.options.soft (`soft`); t:sections.category-grid.options.border (`border`); t:sections.category-grid.options.none (`none`) |
+| t:sections.category-grid.settings.show_arrow<br>`show_arrow` | checkbox：勾选开启，取消关闭 | true | — |
+
+### t:sections.category-grid.content.padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.category-grid.settings.padding_top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| t:sections.category-grid.settings.padding_bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+### 内容块：t:sections.category-grid.blocks.item
+
+`type`: `item`
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.category-grid.block_settings.source_type<br>`source_type` | select：从选项中选择 | custom | t:sections.category-grid.options.custom (`custom`); t:sections.category-grid.options.collection (`collection`); t:sections.category-grid.options.product (`product`) |
+| t:sections.category-grid.block_settings.collection<br>`collection` | collection：选择商品系列 | 未声明 | — |
+| t:sections.category-grid.block_settings.product<br>`product` | product：选择商品 | 未声明 | — |
+| t:sections.category-grid.block_settings.custom_image<br>`custom_image` | image_picker：选择或上传图片 | 未声明 | — |
+| t:sections.category-grid.block_settings.custom_title<br>`custom_title` | text：输入文字 | t:sections.category-grid.blocks_defaults.title | — |
+| t:sections.category-grid.block_settings.custom_link<br>`custom_link` | url：选择或填写链接 | 未声明 | — |
+
+<!-- latest-schema:end -->

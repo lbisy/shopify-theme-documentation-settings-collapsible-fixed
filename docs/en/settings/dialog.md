@@ -70,3 +70,32 @@ Click **Save**, then open each type of dialog used by the store and check:
 - Titles, text, inputs, buttons, and the close icon remain readable and usable.
 - Light and dark color schemes both provide enough contrast.
 - Open, close, submit, cancel, and keyboard interactions work correctly.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Dialog
+
+### Border
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Dialog border thickness<br>`dialog_border_thickness` | range | 0 | 0–10 px; step 1 |
+| Dialog radius<br>`dialog_radius` | range | 16 | 0–48 px; step 2 |
+
+### Shadow
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Dialog shadow opacity<br>`dialog_shadow_opacity` | range | 10 | 0–100 %; step 5 |
+| Dialog shadow horizontal offset<br>`dialog_shadow_horizontal_offset` | range | 0 | -20–20 px; step 2 |
+| Dialog shadow vertical offset<br>`dialog_shadow_vertical_offset` | range | 8 | -20–20 px; step 2 |
+| Dialog shadow blur<br>`dialog_shadow_blur` | range | 24 | 0–40 px; step 2 |
+
+<!-- latest-schema:end -->

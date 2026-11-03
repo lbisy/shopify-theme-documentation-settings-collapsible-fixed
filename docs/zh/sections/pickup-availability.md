@@ -105,3 +105,22 @@
 10. 在每种已发布的店面语言下重复检查。
 
 开发实现可参考 Shopify 的[到店取货可用性指南](https://shopify.dev/docs/storefronts/themes/delivery-fulfillment/pickup-availability)。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/pickup-availability.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Pickup availability
+
+未声明 presets；不要据此假定可在任意页面通过“添加分区”添加。
+
+`enabled_on`: &#123;"templates": ["product"]&#125;
+
+未声明分区级设置。
+
+<!-- latest-schema:end -->

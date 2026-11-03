@@ -82,3 +82,36 @@
 6. 核对隐私链接、订阅同意说明和促销承诺。
 7. 确认密码进入链接可用，并保持 Password header、Password 和 Password footer 的视觉风格一致。
 8. 保存主题后，在无痕窗口打开密码页，完成一次端到端测试。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/password.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Password
+
+未声明 presets；不要据此假定可在任意页面通过“添加分区”添加。
+
+`enabled_on`: &#123;"templates": ["password"]&#125;
+
+`limit`: 1
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+| Heading<br>`heading` | text：输入文字 | Opening soon | — |
+| Message<br>`message` | richtext：编辑格式化文字 | &lt;p&gt;Be the first to know about new collections and exclusive offers.&lt;/p&gt; | — |
+| Email placeholder<br>`placeholder` | text：输入文字 | Email | — |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–200 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–200 px; 步长 4 |
+
+<!-- latest-schema:end -->

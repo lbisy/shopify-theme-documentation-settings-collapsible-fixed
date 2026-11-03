@@ -77,3 +77,39 @@ Click **Save**, then check:
 - Borders remain visible on light and dark color schemes.
 - Hover, focus, and disabled states are distinguishable.
 - Critical actions such as adding to cart, checkout, and form submission still work correctly.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Button
+
+### Spacing
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Button horizontal padding<br>`button_padding_horizontal` | range | 24 | 12–48 px; step 2 |
+| Button vertical padding<br>`button_padding_vertical` | range | 12 | 6–24 px; step 2 |
+
+### Border
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Button border thickness<br>`button_border_thickness` | range | 1 | 0–10 px; step 1 |
+| Button radius<br>`button_radius` | range | 4 | 0–40 px; step 2 |
+
+### Shadow
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Button shadow opacity<br>`button_shadow_opacity` | range | 0 | 0–100 %; step 5 |
+| Button shadow horizontal offset<br>`button_shadow_horizontal_offset` | range | 0 | -4–4 px; step 2 |
+| Button shadow vertical offset<br>`button_shadow_vertical_offset` | range | 0 | -4–4 px; step 2 |
+| Button shadow blur<br>`button_shadow_blur` | range | 0 | 0–8 px; step 2 |
+
+<!-- latest-schema:end -->

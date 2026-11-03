@@ -41,3 +41,28 @@ Open from multiple templates; verify drawer side and RTL languages; test full/pa
 - [Predictive search](https://help.shopify.com/en/manual/online-store/storefront-search/predictive-search)
 - [Shopify Search & Discovery](https://help.shopify.com/en/manual/online-store/search-and-discovery/settings)
 - [Managing searchability](https://help.shopify.com/en/manual/online-store/storefront-search/managing-searchability)
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/search-overlay.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Search overlay
+
+Has presets for the Add section picker.
+
+`enabled_on`: &#123;"groups": ["custom.overlay"]&#125;
+
+`limit`: 1
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+| Drawer position<br>`drawer_position` | select | right | Left (`left`); Right (`right`) |
+| Predictive search result limit<br>`search_result_limit` | range | 8 | 2–20 ; step 1 |
+
+<!-- latest-schema:end -->

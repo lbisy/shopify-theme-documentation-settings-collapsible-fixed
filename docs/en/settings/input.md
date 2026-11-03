@@ -84,3 +84,39 @@ Click **Save**, then verify:
 - Error, autofill, disabled, and completed states remain understandable.
 
 Finally, submit representative forms to confirm typing, clearing, autofill, validation, and error handling all work correctly.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Input
+
+### Spacing
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Input horizontal padding<br>`input_padding_horizontal` | range | 16 | 8–32 px; step 2 |
+| Input vertical padding<br>`input_padding_vertical` | range | 12 | 6–24 px; step 2 |
+
+### Border
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Input border thickness<br>`input_border_thickness` | range | 1 | 0–10 px; step 1 |
+| Input radius<br>`input_radius` | range | 4 | 0–40 px; step 2 |
+
+### Shadow
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Input shadow opacity<br>`input_shadow_opacity` | range | 0 | 0–100 %; step 5 |
+| Input shadow horizontal offset<br>`input_shadow_horizontal_offset` | range | 0 | -12–12 px; step 2 |
+| Input shadow vertical offset<br>`input_shadow_vertical_offset` | range | 0 | -12–12 px; step 2 |
+| Input shadow blur<br>`input_shadow_blur` | range | 0 | 0–20 px; step 5 |
+
+<!-- latest-schema:end -->

@@ -45,6 +45,7 @@ export default defineConfig({
         {
           text: 'Guide',
           items: [
+              { text: "Latest package audit", link: "/en/version-audit" },
               { text: "Getting Started", link: "/en/getting-started" },
               { text: "Installation", link: "/en/installation" },
               { text: "Theme Editor", link: "/en/theme-editor" },
@@ -61,9 +62,11 @@ export default defineConfig({
                   { text: 'Button', link: '/en/settings/button' },
                   { text: 'Dialog', link: '/en/settings/dialog' },
                   { text: 'Product cards', link: '/en/settings/product-cards' },
+                  { text: 'Product badges', link: '/en/settings/product-badges' },
                   { text: 'Toast', link: '/en/settings/toast' },
                   { text: 'Cart', link: '/en/settings/cart' },
                   { text: 'Search', link: '/en/settings/search' },
+                  { text: 'Collection navigation', link: '/en/settings/collection-navigation' },
                   { text: 'Animations', link: '/en/settings/animations' },
                   { text: 'Focus', link: '/en/settings/focus' },
                   { text: 'Social icon', link: '/en/settings/social-icon' }
@@ -139,9 +142,11 @@ export default defineConfig({
                   { text: 'Button', link: '/zh/settings/button' },
                   { text: 'Dialog', link: '/zh/settings/dialog' },
                   { text: 'Product cards', link: '/zh/settings/product-cards' },
+                  { text: 'Product badges', link: '/zh/settings/product-badges' },
                   { text: 'Toast', link: '/zh/settings/toast' },
                   { text: 'Cart', link: '/zh/settings/cart' },
                   { text: 'Search', link: '/zh/settings/search' },
+                  { text: 'Collection navigation', link: '/zh/settings/collection-navigation' },
                   { text: 'Animations', link: '/zh/settings/animations' },
                   { text: 'Focus', link: '/zh/settings/focus' },
                   { text: 'Social icon', link: '/zh/settings/social-icon' }
@@ -194,6 +199,43 @@ export default defineConfig({
               { text: "幻灯片轮播", link: "/zh/sections/slides-show" },
               { text: "客户评价", link: "/zh/sections/testimonial-featured" },
               { text: "视频横幅", link: "/zh/sections/video-banner" }
+          ]
+        },
+        {
+          text: '新版补充展示板块',
+          collapsed: true,
+          items: [
+              { text: "商品系列卡片列表", link: "/zh/sections/collection-list" },
+              { text: "编辑式图片拼贴", link: "/zh/sections/editorial-collage" },
+              { text: "图片热点与特色标签", link: "/zh/sections/feature-tabs" },
+              { text: "配方与成分介绍", link: "/zh/sections/formula-details" },
+              { text: "心情选品展示", link: "/zh/sections/mood-finder" },
+              { text: "步骤与使用仪式", link: "/zh/sections/ritual-steps" },
+              { text: "错落图片画廊", link: "/zh/sections/scatter-gallery" }
+          ]
+        },
+        {
+          text: '页面主分区与全局区域',
+          collapsed: true,
+          items: [
+              { text: "公告栏", link: "/zh/sections/announcement-bar" },
+              { text: "页眉", link: "/zh/sections/header" },
+              { text: "页脚", link: "/zh/sections/footer" },
+              { text: "商品详情主分区", link: "/zh/sections/product" },
+              { text: "商品系列主分区", link: "/zh/sections/collection" },
+              { text: "购物车主分区", link: "/zh/sections/cart" },
+              { text: "搜索结果主分区", link: "/zh/sections/search" },
+              { text: "博客列表主分区", link: "/zh/sections/blog" },
+              { text: "博客文章主分区", link: "/zh/sections/article" },
+              { text: "关于我们主分区", link: "/zh/sections/main-page-about" },
+              { text: "联系我们主分区", link: "/zh/sections/main-page-contact" }
+          ]
+        },
+        {
+          text: '内部组件',
+          collapsed: true,
+          items: [
+              { text: "商品系列导航加载组件", link: "/zh/sections/collection-navigation-items" }
           ]
         }
       ]

@@ -134,3 +134,33 @@ The screenshot is used only to identify the available settings and is not used a
 10. Save the theme and test the published or preview storefront outside the theme editor.
 
 For embed details, see Google's [Maps embedding documentation](https://developers.google.com/maps/documentation/embed/embedding-map).
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/google-map.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → t:sections.google-map.name
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| t:sections.google-map.settings.show_map<br>`show_map` | checkbox | true | — |
+| t:sections.google-map.settings.map_embed_code<br>`map_embed_code` | textarea | Not declared | info: t:sections.google-map.info.map_embed_code |
+| t:sections.google-map.settings.map_height<br>`map_height` | range | 450 | 200–1000 px; step 10 |
+
+### t:sections.google-map.content.padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| t:sections.google-map.settings.padding_top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| t:sections.google-map.settings.padding_bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+<!-- latest-schema:end -->

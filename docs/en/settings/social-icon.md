@@ -71,3 +71,28 @@ Click **Save**, then confirm:
 - No field contains a username-only or placeholder value.
 - Icons remain visible and correctly spaced in every color scheme.
 - Keyboard focus is clear and the links are accessible on mobile.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Social icon
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Facebook<br>`social_facebook_link` | text | Not declared | placeholder:  |
+| Instagram<br>`social_instagram_link` | text | Not declared | placeholder:  |
+| YouTube<br>`social_youtube_link` | text | Not declared | placeholder:  |
+| TikTok<br>`social_tiktok_link` | text | Not declared | placeholder:  |
+| X / Twitter<br>`social_twitter_link` | text | Not declared | placeholder:  |
+| Snapchat<br>`social_snapchat_link` | text | Not declared | placeholder:  |
+| Pinterest<br>`social_pinterest_link` | text | Not declared | placeholder:  |
+| Tumblr<br>`social_tumblr_link` | text | Not declared | placeholder:  |
+| Vimeo<br>`social_vimeo_link` | text | Not declared | placeholder:  |
+
+<!-- latest-schema:end -->

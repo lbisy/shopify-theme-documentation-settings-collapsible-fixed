@@ -90,3 +90,54 @@ Use **Padding top / bottom** in `px`; full-width video usually needs less additi
 ## Before publishing
 
 Test source priority, actual mobile replacement, every ratio and width, allowed and blocked autoplay, cover and play states, all playback switches, keyboard controls, captions, text contrast, slow networks, YouTube/Vimeo embedding and privacy, custom CSS isolation, and the complete desktop/mobile playback flow.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/video-banner.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Video banner
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+| Section height<br>`section_height` | select | adapt | Adapt to media (`adapt`); Small (`small`); Medium (`medium`); Large (`large`); Full screen (`full`) |
+
+### Video
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Shopify-hosted video<br>`video` | video | Not declared | — |
+| Mobile video<br>`video_mobile` | video | Not declared | info: Optional. If set, this video replaces the desktop video on mobile screens. |
+| External video URL<br>`external_video_url` | video_url | https://www.youtube.com/watch?v=_9VUPq3SxOc | info: YouTube or Vimeo URL. Only shown when no Shopify-hosted video is selected above.<br>accept: ["youtube", "vimeo"] |
+| Cover image<br>`poster` | image_picker | Not declared | — |
+| Aspect ratio<br>`aspect_ratio` | select | 16/9 | 16:9 (`16/9`); 4:3 (`4/3`); 1:1 (`1/1`) |
+| Container width<br>`container_width` | select | page | Page width (`page`); Full width (`full`) |
+
+### Playback
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Autoplay<br>`autoplay` | checkbox | false | — |
+| Loop<br>`loop` | checkbox | false | — |
+| Muted<br>`muted` | checkbox | true | info: Autoplay videos are always muted to comply with browser policies. |
+| Show controls<br>`controls` | checkbox | true | — |
+| Show play button<br>`show_play_button` | checkbox | true | — |
+| Show mute button (Shopify-hosted video only)<br>`show_mute_button` | checkbox | false | — |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+<!-- latest-schema:end -->

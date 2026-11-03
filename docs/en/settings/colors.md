@@ -126,3 +126,96 @@ Removal may not be directly reversible, so only remove a scheme after its depend
 7. Click **Save** after checking contrast and component states.
 
 Hex values can be copied between schemes to keep brand colors consistent. After saving, verify text, links, buttons, inputs, badges, messages, focus rings, and gradients everywhere the scheme is used.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Colors
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| color_schemes<br>`color_schemes` | color_scheme_group | Not declared | — |
+
+### color_schemes / Scheme fields
+
+#### General colors
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Background<br>`background_color` | color | #f1f1f1 | — |
+| Background gradient<br>`background_gradient_color` | color_background | Not declared | info: The background gradient will replace the background color at all applicable positions. |
+| Text color<br>`text_color` | color | #263d29 | — |
+| Border color<br>`border_color` | color | #263d29 | — |
+| Focus ring color<br>`focus_ring_color` | color | #263d29 | — |
+
+#### Inputs
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Input text<br>`input_text_color` | color | #263d29 | — |
+| Input background<br>`input_background_color` | color | #FFFFFF | — |
+| Input border<br>`input_border_color` | color | #677769 | — |
+| Input placeholder<br>`input_placeholder_color` | color | #677769 | — |
+
+#### Primary button
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Primary button background color<br>`primary_button_background_color` | color | #263d29 | — |
+| Primary button label color<br>`primary_button_label_color` | color | #FFFFFF | — |
+| Primary button border color<br>`primary_button_border_color` | color | #263d29 | — |
+
+#### Secondary button
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Secondary button background color<br>`secondary_button_background_color` | color | #FFFFFF | — |
+| Secondary button label color<br>`secondary_button_label_color` | color | #263d29 | — |
+| Secondary button border color<br>`secondary_button_border_color` | color | #263d29 | — |
+
+#### Badges
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Badge background color<br>`badge_background_color` | color | #FFFFFF | — |
+| Badge label color<br>`badge_label_color` | color | #263d29 | — |
+| Badge border color<br>`badge_border_color` | color | #263d29 | — |
+
+#### Accent
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Accent color<br>`accent_color` | color | #D5FF83 | info: Used for highlights such as active slideshow pagination. |
+
+#### Card surface
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Card background<br>`card_background_color` | color | #ffffff | — |
+
+#### Feedback messages
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Success background color<br>`success_background_color` | color | #ECFDF5 | — |
+| Success foreground color<br>`success_foreground_color` | color | #065F46 | — |
+| Warning background color<br>`warning_background_color` | color | #FFFBEB | — |
+| Warning foreground color<br>`warning_foreground_color` | color | #92400E | — |
+| Error background color<br>`error_background_color` | color | #FEF2F2 | — |
+| Error foreground color<br>`error_foreground_color` | color | #991B1B | — |
+| Info background color<br>`info_background_color` | color | #F4F4F5 | — |
+| Info foreground color<br>`info_foreground_color` | color | #27272A | — |
+
+Role mapping: &#123;"background": &#123;"solid": "background_color", "gradient": "background_gradient_color"&#125;, "icons": "text_color", "links": "text_color", "on_primary_button": "primary_button_label_color", "on_secondary_button": "secondary_button_label_color", "primary_button": "primary_button_background_color", "primary_button_border": "primary_button_border_color", "secondary_button": "secondary_button_background_color", "secondary_button_border": "secondary_button_border_color", "text": "text_color"&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Page background color scheme<br>`page_canvas_color_scheme` | color_scheme | scheme-2 | info: Used behind sections and for areas without their own color scheme. |
+
+<!-- latest-schema:end -->

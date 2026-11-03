@@ -39,3 +39,39 @@ Use customer-friendly, specific language instead of jargon or unverifiable super
 ## Before publishing
 
 Replace defaults; proofread grammar, punctuation, and claims; review wrapping, alignment, and height on desktop and mobile; check bold, italic, and link contrast; test links with mouse and keyboard; ensure the image does not obscure content; check file size and spacing; verify Custom CSS isolation; then save and test the storefront.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/brand-statement.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Brand statement
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+| Statement text<br>`statement` | richtext | &lt;p&gt;Share a concise statement that expresses your brand's point of view.&lt;/p&gt; | — |
+
+### Heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select | title-2xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Brushstroke decoration image<br>`brushstroke_image` | image_picker | Not declared | — |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+<!-- latest-schema:end -->

@@ -100,3 +100,68 @@ Click **Save**, then check:
 - Navigation, buttons, and product-card labels remain fully visible.
 - Desktop and mobile sizes both look balanced.
 - Chinese and English characters display correctly with the selected fonts.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Typography
+
+### Font family
+
+### Heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Font<br>`type_header_font` | font_picker | instrument_sans_n4 | — |
+
+### Body
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Font<br>`type_body_font` | font_picker | instrument_sans_n4 | — |
+
+### Typography
+
+### Heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Weight<br>`heading_weight` | select | 500 | Regular (`400`); Medium (`500`); Bold (`700`) |
+| Line height<br>`heading_line_height` | range | 1.0 | 1–2 ; step 0.1 |
+| Letter spacing<br>`heading_letter_spacing` | select | -0.02em | Tighter (`-0.05em`); Tight (`-0.02em`); Slightly tight (`-0.01em`); Normal (`0em`); Wide (`0.02em`); Wider (`0.05em`); Widest (`0.1em`) |
+| Text transform<br>`heading_text_transform` | select | none | None (`none`); Uppercase (`uppercase`); Lowercase (`lowercase`); Capitalize (`capitalize`) |
+
+### Subtitle
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Font family<br>`subtitle_font_source` | select | heading | Heading font (`heading`); Body font (`body`) |
+| Weight<br>`subtitle_weight` | select | 500 | Regular (`400`); Medium (`500`); Bold (`700`) |
+| Line height<br>`subtitle_line_height` | range | 1.4 | 1–2 ; step 0.1 |
+| Letter spacing<br>`subtitle_letter_spacing` | select | 0em | Tighter (`-0.05em`); Tight (`-0.02em`); Slightly tight (`-0.01em`); Normal (`0em`); Wide (`0.02em`); Wider (`0.05em`); Widest (`0.1em`) |
+| Text transform<br>`subtitle_text_transform` | select | none | None (`none`); Uppercase (`uppercase`); Lowercase (`lowercase`); Capitalize (`capitalize`) |
+
+### Body
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Font size (desktop)<br>`body_font_size` | range | 16 | 16–32 px; step 1 |
+| Font size (mobile)<br>`body_font_size_mobile` | range | 14 | 14–32 px; step 1 |
+| Line height<br>`body_line_height` | range | 1.4 | 1–2 ; step 0.1 |
+| Letter spacing<br>`body_letter_spacing` | select | 0em | Tighter (`-0.05em`); Tight (`-0.02em`); Slightly tight (`-0.01em`); Normal (`0em`); Wide (`0.02em`); Wider (`0.05em`); Widest (`0.1em`) |
+| Text transform<br>`body_text_transform` | select | none | None (`none`); Uppercase (`uppercase`); Lowercase (`lowercase`); Capitalize (`capitalize`) |
+
+### Scale
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading scale<br>`heading_scale` | range | 100 | 100–150 %; step — |
+| Body scale<br>`body_scale` | range | 100 | 100–150 %; step — |
+
+<!-- latest-schema:end -->

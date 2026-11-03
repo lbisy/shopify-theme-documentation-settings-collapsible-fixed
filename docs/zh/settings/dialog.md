@@ -70,3 +70,32 @@
 - 标题、文字、输入框、按钮和关闭图标是否清晰、易用。
 - 浅色和深色配色方案是否都具有足够的对比度。
 - 打开、关闭、提交、取消和键盘操作是否正常。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Dialog
+
+### Border
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Dialog border thickness<br>`dialog_border_thickness` | range：拖动滑块调整数值 | 0 | 0–10 px; 步长 1 |
+| Dialog radius<br>`dialog_radius` | range：拖动滑块调整数值 | 16 | 0–48 px; 步长 2 |
+
+### Shadow
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Dialog shadow opacity<br>`dialog_shadow_opacity` | range：拖动滑块调整数值 | 10 | 0–100 %; 步长 5 |
+| Dialog shadow horizontal offset<br>`dialog_shadow_horizontal_offset` | range：拖动滑块调整数值 | 0 | -20–20 px; 步长 2 |
+| Dialog shadow vertical offset<br>`dialog_shadow_vertical_offset` | range：拖动滑块调整数值 | 8 | -20–20 px; 步长 2 |
+| Dialog shadow blur<br>`dialog_shadow_blur` | range：拖动滑块调整数值 | 24 | 0–40 px; 步长 2 |
+
+<!-- latest-schema:end -->

@@ -71,3 +71,69 @@ First, open every **Philosophy card** block and replace the preset title and tex
 ## Before publishing
 
 Verify the subtitle, heading, and description; replace all preset and missing-translation content; check every card image, title, and text; confirm image rights and meaningful alt text in the media library; review card order and incomplete rows; test image crops and heading wrapping on desktop and mobile; check color contrast and spacing; and confirm any Custom CSS is limited to this section before saving and reviewing the live storefront.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/philosophy-section.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Philosophy section
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+| Subtitle<br>`subtitle` | inline_richtext | Our Philosophy | — |
+
+### Subtitle
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Subtitle size<br>`subtitle_size` | select | copy-l | Extra large (`copy-xl`); Large (`copy-l`); Default (`copy-m`); Small (`copy-s`) |
+| Heading<br>`heading` | inline_richtext | Created with Intention | — |
+
+### Heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select | title-2xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Description<br>`description` | richtext | &lt;p&gt;Our skincare is crafted with precision, integrity, and respect for the skin.&lt;/p&gt; | — |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+### Block: Philosophy card
+
+`type`: `card`
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Image<br>`image` | image_picker | Not declared | — |
+
+#### Title
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`title_size` | select | title-m | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Title<br>`title` | inline_richtext | Not declared | — |
+| Description<br>`text` | richtext | &lt;p&gt;Card description&lt;/p&gt; | — |
+
+#### Link
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Link<br>`link` | url | Not declared | — |
+| Link label<br>`link_text` | text | Learn more | info: Shown under the description when a link is set. Leave blank to use the image link only. |
+
+<!-- latest-schema:end -->

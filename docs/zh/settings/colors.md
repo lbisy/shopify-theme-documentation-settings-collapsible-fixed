@@ -126,3 +126,96 @@ General colors 决定当前方案的基础外观。后三张图中的 Scheme 3 �
 7. 检查对比度与组件状态后，点击 **保存**。
 
 十六进制颜色值可以在不同方案之间复制，以保持品牌颜色一致。保存后，请在方案使用的所有位置检查文字、链接、按钮、输入框、徽章、反馈消息、焦点轮廓和渐变效果。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Colors
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| color_schemes<br>`color_schemes` | color_scheme_group：添加或编辑配色方案 | 未声明 | — |
+
+### color_schemes / 方案内设置
+
+#### General colors
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Background<br>`background_color` | color：选择颜色 | #f1f1f1 | — |
+| Background gradient<br>`background_gradient_color` | color_background：设置背景颜色或渐变 | 未声明 | info: The background gradient will replace the background color at all applicable positions. |
+| Text color<br>`text_color` | color：选择颜色 | #263d29 | — |
+| Border color<br>`border_color` | color：选择颜色 | #263d29 | — |
+| Focus ring color<br>`focus_ring_color` | color：选择颜色 | #263d29 | — |
+
+#### Inputs
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Input text<br>`input_text_color` | color：选择颜色 | #263d29 | — |
+| Input background<br>`input_background_color` | color：选择颜色 | #FFFFFF | — |
+| Input border<br>`input_border_color` | color：选择颜色 | #677769 | — |
+| Input placeholder<br>`input_placeholder_color` | color：选择颜色 | #677769 | — |
+
+#### Primary button
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Primary button background color<br>`primary_button_background_color` | color：选择颜色 | #263d29 | — |
+| Primary button label color<br>`primary_button_label_color` | color：选择颜色 | #FFFFFF | — |
+| Primary button border color<br>`primary_button_border_color` | color：选择颜色 | #263d29 | — |
+
+#### Secondary button
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Secondary button background color<br>`secondary_button_background_color` | color：选择颜色 | #FFFFFF | — |
+| Secondary button label color<br>`secondary_button_label_color` | color：选择颜色 | #263d29 | — |
+| Secondary button border color<br>`secondary_button_border_color` | color：选择颜色 | #263d29 | — |
+
+#### Badges
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Badge background color<br>`badge_background_color` | color：选择颜色 | #FFFFFF | — |
+| Badge label color<br>`badge_label_color` | color：选择颜色 | #263d29 | — |
+| Badge border color<br>`badge_border_color` | color：选择颜色 | #263d29 | — |
+
+#### Accent
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Accent color<br>`accent_color` | color：选择颜色 | #D5FF83 | info: Used for highlights such as active slideshow pagination. |
+
+#### Card surface
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Card background<br>`card_background_color` | color：选择颜色 | #ffffff | — |
+
+#### Feedback messages
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Success background color<br>`success_background_color` | color：选择颜色 | #ECFDF5 | — |
+| Success foreground color<br>`success_foreground_color` | color：选择颜色 | #065F46 | — |
+| Warning background color<br>`warning_background_color` | color：选择颜色 | #FFFBEB | — |
+| Warning foreground color<br>`warning_foreground_color` | color：选择颜色 | #92400E | — |
+| Error background color<br>`error_background_color` | color：选择颜色 | #FEF2F2 | — |
+| Error foreground color<br>`error_foreground_color` | color：选择颜色 | #991B1B | — |
+| Info background color<br>`info_background_color` | color：选择颜色 | #F4F4F5 | — |
+| Info foreground color<br>`info_foreground_color` | color：选择颜色 | #27272A | — |
+
+角色映射：&#123;"background": &#123;"solid": "background_color", "gradient": "background_gradient_color"&#125;, "icons": "text_color", "links": "text_color", "on_primary_button": "primary_button_label_color", "on_secondary_button": "secondary_button_label_color", "primary_button": "primary_button_background_color", "primary_button_border": "primary_button_border_color", "secondary_button": "secondary_button_background_color", "secondary_button_border": "secondary_button_border_color", "text": "text_color"&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Page background color scheme<br>`page_canvas_color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | info: Used behind sections and for areas without their own color scheme. |
+
+<!-- latest-schema:end -->

@@ -190,3 +190,68 @@ Newsletter Overlay 支持通过内容块组织弹层内容。在左侧可以拖�
 13. 检查图片、文字、输入框、按钮及反馈信息与背景之间的对比度。
 14. 确认隐私政策、营销同意和取消订阅流程符合目标市场要求。
 15. 点击 **保存**，再从实际店面完成一次正常访客订阅流程。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/newsletter-overlay.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Newsletter overlay
+
+可通过“添加分区”添加（声明了 presets）。
+
+`enabled_on`: &#123;"groups": ["custom.overlay"]&#125;
+
+`limit`: 1
+
+### Display settings
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Display mode<br>`display_mode` | select：从选项中选择 | enable | Enable (`enable`); Test (`test`)<br>info: Test mode always opens the popup. |
+| Show on home page<br>`show_in_home` | checkbox：勾选开启，取消关闭 | true | — |
+| Show for visitors<br>`show_for_visitor` | checkbox：勾选开启，取消关闭 | true | — |
+| Delay<br>`delay` | range：拖动滑块调整数值 | 3 | 0–60 s; 步长 1 |
+| Expire after<br>`expired` | range：拖动滑块调整数值 | 7 | 1–30 day; 步长 1 |
+| Popup placement<br>`modal_placement` | select：从选项中选择 | bottom-right | Bottom left (`bottom-left`); Bottom right (`bottom-right`); Center (`center`) |
+
+### Text and style
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Text alignment<br>`alignment` | text：输入文字 | left | — |
+| Email placeholder<br>`placeholder` | text：输入文字 | Enter your email address | — |
+| Success toast<br>`success_message` | text：输入文字 | Thanks for subscribing. | — |
+| Error toast<br>`error_message` | text：输入文字 | Subscription failed. Please try again. | — |
+| Left image<br>`image` | image_picker：选择或上传图片 | 未声明 | — |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+### 内容块：Text
+
+`type`: `text`
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Text<br>`text` | richtext：编辑格式化文字 | &lt;p&gt;First timer?&lt;/p&gt; | — |
+| Text size<br>`body_text_size` | select：从选项中选择 | copy-l | Extra large (`copy-xl`); Large (`copy-l`); Default (`copy-m`); Small (`copy-s`) |
+
+### 内容块：Heading
+
+`type`: `heading`
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading<br>`heading` | inline_richtext：编辑行内格式化文字 | Sign up and get 20% off your first order | — |
+| Heading size<br>`heading_text_size` | select：从选项中选择 | title-m | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+
+### 内容块：Form
+
+`type`: `form`; `limit`: 1
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+<!-- latest-schema:end -->

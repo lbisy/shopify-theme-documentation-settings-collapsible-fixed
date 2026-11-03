@@ -55,3 +55,62 @@ Explain email use, link to the privacy policy, obtain marketing consent where re
 ## Before publishing
 
 Replace and translate all copy; verify image rights, crop, fit, and position; align the blur to every content state; check contrast; test empty, invalid, valid, duplicate, network-error, and success states; confirm the Shopify record; test keyboard and mobile soft-keyboard behavior; review privacy and consent; verify Custom CSS isolation; then save and complete a real subscription.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/newsletter-banner.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Newsletter banner
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+
+### Font
+
+### Heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select | title-xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Heading<br>`heading` | inline_richtext | Stay in the loop | — |
+
+### Subtitle
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Subtitle size<br>`subtitle_size` | select | copy-xl | Extra large (`copy-xl`); Large (`copy-l`); Default (`copy-m`); Small (`copy-s`) |
+| Subtitle<br>`subtitle` | inline_richtext | News, stories, and updates | — |
+| Background image<br>`background_image` | image_picker | Not declared | — |
+| Background image fit<br>`background_image_fit` | select | cover | Cover (fill frame) (`cover`); Contain (show full image) (`contain`) |
+| Background image position<br>`background_image_position` | select | center | Center (`center`); Top (`top`); Bottom (`bottom`); Left (`left`); Right (`right`); Top left (`top left`); Top right (`top right`); Bottom left (`bottom left`); Bottom right (`bottom right`) |
+| Input placeholder<br>`placeholder` | text | Enter your email address | — |
+
+### Blur overlay
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Enable blur overlay<br>`enable_blur_overlay` | checkbox | true | — |
+| Blur radius<br>`blur_radius` | range | 12 | 0–40 px; step 1 |
+| Blur width<br>`blur_mask_width` | range | 60 | 10–100 %; step 5 |
+| Blur height<br>`blur_mask_height` | range | 80 | 10–100 %; step 5 |
+| Horizontal blur position<br>`blur_position_x` | range | 50 | 0–100 %; step 5 |
+| Vertical blur position<br>`blur_position_y` | range | 50 | 0–100 %; step 5 |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+<!-- latest-schema:end -->

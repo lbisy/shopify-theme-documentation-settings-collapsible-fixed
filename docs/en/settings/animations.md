@@ -16,13 +16,13 @@ The example above enables motion, reveals content with **Rise**, reveals media w
 
 | Setting | Value shown | What it controls |
 | --- | ---: | --- |
-| **Enable motion** | **On** | Master switch for page reveal animations. When off, content appears immediately. |
-| **Content reveal style** | **Rise** | How headings, text, buttons, and other content appear. **Rise** combines a fade with slight upward movement. |
-| **Media reveal style** | **Zoom** | How images, video, and other media appear. **Zoom** combines a fade with subtle scaling. |
-| **Motion speed** | **Normal** | Overall reveal timing. Available speed choices are **Slow**, **Normal**, and **Fast**. |
-| **Reveal behavior** | **Replay on re-enter** | Replays a reveal whenever an element leaves and later re-enters the viewport. |
+| **Enable motion**〔Current label: Scroll and reveal animations〕 | **On** | Master switch for page reveal animations. When off, content appears immediately. |
+| **Content reveal style**〔Not declared in package〕 | **Rise** | How headings, text, buttons, and other content appear. **Rise** combines a fade with slight upward movement. |
+| **Media reveal style**〔Not declared in package〕 | **Zoom** | How images, video, and other media appear. **Zoom** combines a fade with subtle scaling. |
+| **Motion speed**〔Not declared in package〕 | **Normal** | Overall reveal timing. Available speed choices are **Slow**, **Normal**, and **Fast**. |
+| **Reveal behavior**〔Not declared in package〕 | **Replay on re-enter** | Replays a reveal whenever an element leaves and later re-enters the viewport. |
 
-Disabling **Enable motion** prevents reveal animation from delaying content; it does not hide the content.
+Disabling **Enable motion**〔Current label: Scroll and reveal animations〕 prevents reveal animation from delaying content; it does not hide the content.
 
 ## Content and media reveal styles
 
@@ -41,7 +41,7 @@ The screenshot combination—**Rise** for content and **Zoom** for media—creat
 - **Normal** balances motion with responsiveness for most storefronts.
 - **Fast** completes reveals quickly and can suit content-dense pages.
 
-For **Reveal behavior**:
+For **Reveal behavior**〔Not declared in package〕:
 
 - **Once** plays each reveal the first time the element enters the viewport.
 - **Replay on re-enter** plays it again whenever the element re-enters the viewport.
@@ -76,3 +76,20 @@ Click **Save**, then check:
 - Mobile scrolling remains responsive.
 - Keyboard focus is not moved or obscured by animation.
 - Reduced-motion mode and disabled motion show all content immediately.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Animations
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Scroll and reveal animations<br>`motion_enabled` | checkbox | true | info: When off, list and card cascade motion and decorative loops stop. Hover, focus, dialogs, and loading motion still follow the visitor's reduced-motion preference. |
+
+<!-- latest-schema:end -->

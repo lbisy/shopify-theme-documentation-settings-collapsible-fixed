@@ -132,3 +132,48 @@ Caption 可用于补充系列说明、活动信息或浏览提示。没有需要
 8. 检查配色方案下所有文字和链接的对比度。
 9. 点击 **保存**，并在实际店面完成一次从该分区进入商品详情页的流程。
 
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/scroll-categories.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Collection product list
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-1 | — |
+
+### Font
+
+### Section heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select：从选项中选择 | title-3xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+
+### Collection title heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`collection_heading_size` | select：从选项中选择 | title-l | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Maximum items<br>`max_items` | range：拖动滑块调整数值 | 4 | 4–8 ; 步长 1 |
+| Heading<br>`heading` | inline_richtext：编辑行内格式化文字 | 未声明 | — |
+| Panel link label<br>`link_label` | text：输入文字 | Discover the ritual | — |
+| Select collection<br>`collection` | collection：选择商品系列 | 未声明 | — |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+<!-- latest-schema:end -->

@@ -100,3 +100,68 @@
 - 导航、按钮和商品卡片标签是否完整显示。
 - 桌面端与移动端字号是否都协调。
 - 中文与英文字符是否都能使用所选字体正常显示。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Typography
+
+### Font family
+
+### Heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Font<br>`type_header_font` | font_picker：选择字体 | instrument_sans_n4 | — |
+
+### Body
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Font<br>`type_body_font` | font_picker：选择字体 | instrument_sans_n4 | — |
+
+### Typography
+
+### Heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Weight<br>`heading_weight` | select：从选项中选择 | 500 | Regular (`400`); Medium (`500`); Bold (`700`) |
+| Line height<br>`heading_line_height` | range：拖动滑块调整数值 | 1.0 | 1–2 ; 步长 0.1 |
+| Letter spacing<br>`heading_letter_spacing` | select：从选项中选择 | -0.02em | Tighter (`-0.05em`); Tight (`-0.02em`); Slightly tight (`-0.01em`); Normal (`0em`); Wide (`0.02em`); Wider (`0.05em`); Widest (`0.1em`) |
+| Text transform<br>`heading_text_transform` | select：从选项中选择 | none | None (`none`); Uppercase (`uppercase`); Lowercase (`lowercase`); Capitalize (`capitalize`) |
+
+### Subtitle
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Font family<br>`subtitle_font_source` | select：从选项中选择 | heading | Heading font (`heading`); Body font (`body`) |
+| Weight<br>`subtitle_weight` | select：从选项中选择 | 500 | Regular (`400`); Medium (`500`); Bold (`700`) |
+| Line height<br>`subtitle_line_height` | range：拖动滑块调整数值 | 1.4 | 1–2 ; 步长 0.1 |
+| Letter spacing<br>`subtitle_letter_spacing` | select：从选项中选择 | 0em | Tighter (`-0.05em`); Tight (`-0.02em`); Slightly tight (`-0.01em`); Normal (`0em`); Wide (`0.02em`); Wider (`0.05em`); Widest (`0.1em`) |
+| Text transform<br>`subtitle_text_transform` | select：从选项中选择 | none | None (`none`); Uppercase (`uppercase`); Lowercase (`lowercase`); Capitalize (`capitalize`) |
+
+### Body
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Font size (desktop)<br>`body_font_size` | range：拖动滑块调整数值 | 16 | 16–32 px; 步长 1 |
+| Font size (mobile)<br>`body_font_size_mobile` | range：拖动滑块调整数值 | 14 | 14–32 px; 步长 1 |
+| Line height<br>`body_line_height` | range：拖动滑块调整数值 | 1.4 | 1–2 ; 步长 0.1 |
+| Letter spacing<br>`body_letter_spacing` | select：从选项中选择 | 0em | Tighter (`-0.05em`); Tight (`-0.02em`); Slightly tight (`-0.01em`); Normal (`0em`); Wide (`0.02em`); Wider (`0.05em`); Widest (`0.1em`) |
+| Text transform<br>`body_text_transform` | select：从选项中选择 | none | None (`none`); Uppercase (`uppercase`); Lowercase (`lowercase`); Capitalize (`capitalize`) |
+
+### Scale
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading scale<br>`heading_scale` | range：拖动滑块调整数值 | 100 | 100–150 %; 步长 — |
+| Body scale<br>`body_scale` | range：拖动滑块调整数值 | 100 | 100–150 %; 步长 — |
+
+<!-- latest-schema:end -->

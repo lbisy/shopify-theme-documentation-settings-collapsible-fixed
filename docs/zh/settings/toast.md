@@ -74,3 +74,33 @@ Toast 颜色来自**主题设置 > Colors > Feedback messages**。每种消息�
 - 阴影在浅色和深色背景上是否保持克制。
 - 成功、警告、错误和信息消息是否容易区分。
 - 键盘和屏幕阅读器用户是否能够感知重要反馈。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Toast
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Toast radius<br>`toast_radius` | range：拖动滑块调整数值 | 8 | 0–48 px; 步长 2 |
+| Position<br>`toast_position` | select：从选项中选择 | bottom-right | Top left (`top-left`); Top center (`top-center`); Top right (`top-right`); Bottom left (`bottom-left`); Bottom center (`bottom-center`); Bottom right (`bottom-right`) |
+| Auto-dismiss (seconds)<br>`toast_duration` | range：拖动滑块调整数值 | 3 | 0–15 s; 步长 1 |
+| Preview<br>`toast_preview_type` | select：从选项中选择 | off | Off (`off`); Success (`success`); Warning (`warning`); Error (`error`); Info (`info`) |
+| Keep preview visible until dismissed<br>`toast_preview_persistent` | checkbox：勾选开启，取消关闭 | true | — |
+
+### Shadow
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Toast shadow opacity<br>`toast_shadow_opacity` | range：拖动滑块调整数值 | 10 | 0–100 %; 步长 5 |
+| Toast shadow horizontal offset<br>`toast_shadow_horizontal_offset` | range：拖动滑块调整数值 | 0 | -20–20 px; 步长 2 |
+| Toast shadow vertical offset<br>`toast_shadow_vertical_offset` | range：拖动滑块调整数值 | 4 | -20–20 px; 步长 2 |
+| Toast shadow blur<br>`toast_shadow_blur` | range：拖动滑块调整数值 | 16 | 0–40 px; 步长 2 |
+
+<!-- latest-schema:end -->

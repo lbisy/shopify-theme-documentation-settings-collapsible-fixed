@@ -178,3 +178,73 @@ Comparison Table（商品对比表）分区用于并列展示多件商品的图�
 10. 检查长商品标题、长元字段值以及不同商品数量下的换行、列宽和行高。
 11. 确认自定义 CSS 不会影响页面上的其他分区。
 12. 点击 **保存**，再从实际店面完成一次商品比较和进入商品详情页的流程。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/product-comparison-table.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Comparison table
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+| Section heading<br>`heading` | inline_richtext：编辑行内格式化文字 | Similar Comparison Products | — |
+
+### Heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select：从选项中选择 | title-2xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Select products<br>`products` | product_list：选择多个商品 | 未声明 | limit: 8 |
+| Highlight column index<br>`highlight_index` | range：拖动滑块调整数值 | 0 | 0–8 ; 步长 1<br>info: 1 = first product column; 0 = no highlight |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+### 内容块：Product info
+
+`type`: `header`; `limit`: 1
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+### 内容块：Price
+
+`type`: `price`; `limit`: 1
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+### 内容块：Rating
+
+`type`: `rating`; `limit`: 1
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+### 内容块：Ingredients / metafield
+
+`type`: `metafield_text`
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Row title<br>`row_title` | inline_richtext：编辑行内格式化文字 | Ingredients | — |
+| Metafield key (namespace.key)<br>`metafield_key` | text：输入文字 | custom.ingredients | info: e.g. custom.ingredients |
+
+### 内容块：Availability
+
+`type`: `availability`; `limit`: 1
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+<!-- latest-schema:end -->

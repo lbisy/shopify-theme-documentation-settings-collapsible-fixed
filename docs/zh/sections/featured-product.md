@@ -161,3 +161,142 @@ Featured Product（精选单品）分区用于在首页或其他页面直接展�
 8. 在桌面端检查媒体宽度，在移动端检查媒体顺序、按钮宽度和触控区域。
 9. 使用键盘 `Tab`、方向键和 `Enter` 测试媒体、变体、数量及购买控件。
 10. 点击 **保存**，并在实际店面完成一次从选择变体到加购或结账的完整流程。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/featured-product.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Featured product
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+| Select product<br>`product` | product：选择商品 | 未声明 | — |
+| Gallery layout<br>`gallery_layout` | select：从选项中选择 | thumbnails | Thumbnails (`thumbnails`); Carousel (`carousel`)<br>info: Carousel shows a full-height image with pagination dots. Thumbnails keeps the existing thumbnail gallery. |
+| Thumbnail position<br>`thumb_position` | select：从选项中选择 | left | Left (`left`); Bottom (`bottom`) |
+| Desktop media width<br>`desktop_media_width` | range：拖动滑块调整数值 | 60 | 40–60 %; 步长 1 |
+| Media aspect ratio<br>`media_aspect_ratio` | select：从选项中选择 | adapt | Adapt to image (`adapt`); Portrait (3:4) (`portrait_3_4`); Square (1:1) (`square_1_1`) |
+| Desktop media height<br>`desktop_media_height` | select：从选项中选择 | balanced | Original (`original`); Compact (`compact`); Balanced (`balanced`); Full screen (`full_screen`) |
+| Thumbnail size<br>`thumbnail_size` | select：从选项中选择 | standard | Compact (`compact`); Standard (`standard`); Large (`large`)<br>info: Controls thumbnail size for both left and bottom positions. |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+### 内容块：@app
+
+`type`: `@app`
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+### 内容块：Title
+
+`type`: `title`; `limit`: 1
+
+#### Heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select：从选项中选择 | title-m | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+
+### 内容块：Vendor
+
+`type`: `vendor`; `limit`: 1
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+### 内容块：Price
+
+`type`: `price`; `limit`: 1
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Show product rating<br>`show_rating` | checkbox：勾选开启，取消关闭 | true | — |
+
+### 内容块：Description
+
+`type`: `description`; `limit`: 1
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+### 内容块：Variant picker
+
+`type`: `variant_picker`; `limit`: 1
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Style<br>`picker_type` | select：从选项中选择 | button | Dropdown (`dropdown`); Pills (`button`) |
+| Swatch shape<br>`swatch_shape` | select：从选项中选择 | circle | Circle (`circle`); Square (`square`); None (`none`) |
+
+### 内容块：Quantity selector
+
+`type`: `quantity_selector`; `limit`: 1
+
+此处未声明本地设置（应用或主题区块需查看其自身定义）。
+
+### 内容块：Buy buttons
+
+`type`: `buy_buttons`; `limit`: 1
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Show dynamic checkout buttons<br>`show_dynamic_checkout` | checkbox：勾选开启，取消关闭 | true | info: Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. |
+
+### 内容块：Icon with text
+
+`type`: `icon_with_text_group`
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Position (desktop)<br>`icon_with_text_position_desktop` | select：从选项中选择 | form | Form column (`form`); Gallery column (`gallery`) |
+| Direction<br>`direction` | select：从选项中选择 | vertical | Vertical (`vertical`); Horizontal (`horizontal`) |
+| Icon and text gap<br>`icon_text_gap` | range：拖动滑块调整数值 | 8 | 4–32 px; 步长 2 |
+
+#### Item 1
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Title<br>`item_1_title` | inline_richtext：编辑行内格式化文字 | Product details | — |
+| Text<br>`item_1_text` | inline_richtext：编辑行内格式化文字 | 未声明 | — |
+| Icon<br>`item_1_icon` | select：从选项中选择 | icon-content-package | None (`none`); Package (`icon-content-package`); Truck (`icon-content-truck`); Airplane (`icon-content-airplane`); Gift (`icon-content-gift`); Tag (`icon-content-tag`); Currency (`icon-content-currency-circle-dollar`); Phone (`icon-content-phone`); Chat (`icon-content-chat`); Calendar (`icon-content-calendar-blank`); Clock (`icon-content-clock`); Globe (`icon-content-globe`); Location (`icon-content-map-pin`); Check (`icon-content-check`); Heart (`icon-content-heart`); Leaf (`icon-content-leaf`); Acorn (`icon-content-acorn`); Lightning (`icon-content-lightning`); Water off (`icon-content-drop-slash`); Smiley (`icon-content-smiley`); Stool (`icon-content-stool`); Recycle (`icon-content-recycle`); Flask (`icon-content-flask`) |
+| Link<br>`item_1_link` | url：选择或填写链接 | 未声明 | — |
+
+#### Item 2
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Title<br>`item_2_title` | inline_richtext：编辑行内格式化文字 | Care instructions | — |
+| Text<br>`item_2_text` | inline_richtext：编辑行内格式化文字 | 未声明 | — |
+| Icon<br>`item_2_icon` | select：从选项中选择 | icon-content-leaf | None (`none`); Package (`icon-content-package`); Truck (`icon-content-truck`); Airplane (`icon-content-airplane`); Gift (`icon-content-gift`); Tag (`icon-content-tag`); Currency (`icon-content-currency-circle-dollar`); Phone (`icon-content-phone`); Chat (`icon-content-chat`); Calendar (`icon-content-calendar-blank`); Clock (`icon-content-clock`); Globe (`icon-content-globe`); Location (`icon-content-map-pin`); Check (`icon-content-check`); Heart (`icon-content-heart`); Leaf (`icon-content-leaf`); Acorn (`icon-content-acorn`); Lightning (`icon-content-lightning`); Water off (`icon-content-drop-slash`); Smiley (`icon-content-smiley`); Stool (`icon-content-stool`); Recycle (`icon-content-recycle`); Flask (`icon-content-flask`) |
+| Link<br>`item_2_link` | url：选择或填写链接 | 未声明 | — |
+
+#### Item 3
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Title<br>`item_3_title` | inline_richtext：编辑行内格式化文字 | Shipping information | — |
+| Text<br>`item_3_text` | inline_richtext：编辑行内格式化文字 | 未声明 | — |
+| Icon<br>`item_3_icon` | select：从选项中选择 | icon-content-truck | None (`none`); Package (`icon-content-package`); Truck (`icon-content-truck`); Airplane (`icon-content-airplane`); Gift (`icon-content-gift`); Tag (`icon-content-tag`); Currency (`icon-content-currency-circle-dollar`); Phone (`icon-content-phone`); Chat (`icon-content-chat`); Calendar (`icon-content-calendar-blank`); Clock (`icon-content-clock`); Globe (`icon-content-globe`); Location (`icon-content-map-pin`); Check (`icon-content-check`); Heart (`icon-content-heart`); Leaf (`icon-content-leaf`); Acorn (`icon-content-acorn`); Lightning (`icon-content-lightning`); Water off (`icon-content-drop-slash`); Smiley (`icon-content-smiley`); Stool (`icon-content-stool`); Recycle (`icon-content-recycle`); Flask (`icon-content-flask`) |
+| Link<br>`item_3_link` | url：选择或填写链接 | 未声明 | — |
+
+### 内容块：Custom liquid
+
+`type`: `custom_liquid`
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Custom liquid<br>`custom_liquid` | liquid：编辑 Liquid 内容 | 未声明 | — |
+
+<!-- latest-schema:end -->

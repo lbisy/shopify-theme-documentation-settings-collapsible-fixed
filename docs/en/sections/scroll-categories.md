@@ -27,3 +27,49 @@ Height controls the moving band itself, while Padding controls separation from a
 ## Before publishing
 
 Watch several complete cycles for gaps or jumps; test every speed and direction; verify all labels and links; check pause behavior, touch readability, mobile spacing, content size, height, divider contrast, keyboard focus, reduced-motion behavior, performance, and Custom CSS isolation. Save and test every category destination.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/scroll-categories.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Collection product list
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-1 | — |
+
+### Font
+
+### Section heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select | title-3xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+
+### Collection title heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`collection_heading_size` | select | title-l | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Maximum items<br>`max_items` | range | 4 | 4–8 ; step 1 |
+| Heading<br>`heading` | inline_richtext | Not declared | — |
+| Panel link label<br>`link_label` | text | Discover the ritual | — |
+| Select collection<br>`collection` | collection | Not declared | — |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+<!-- latest-schema:end -->

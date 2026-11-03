@@ -82,3 +82,39 @@ Click **Save**, then check:
 - Desktop and mobile grids have comfortable spacing.
 - Light and dark color schemes provide enough card separation.
 - Collection pages, search results, featured products, and recommendations all display correctly.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Product cards
+
+### Image
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Image ratio<br>`product_card_image_ratio` | select | adapt | Adapt to image (`adapt`); Square (`square`); Portrait (`portrait`); Landscape (`landscape`) |
+
+### Border
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Card border thickness<br>`product_card_border_thickness` | range | 0 | 0–10 px; step 1 |
+| Card radius<br>`product_card_radius` | range | 0 | 0–48 px; step 2 |
+| Feature card radius<br>`card_radius` | range | 16 | 0–40 px; step 2<br>info: Large radius for editorial cards (category, testimonial, gallery). Medium media radius is half this value. |
+
+### Shadow
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Card shadow opacity<br>`product_card_shadow_opacity` | range | 0 | 0–100 %; step 5 |
+| Card shadow horizontal offset<br>`product_card_shadow_horizontal_offset` | range | 0 | -20–20 px; step 2 |
+| Card shadow vertical offset<br>`product_card_shadow_vertical_offset` | range | 0 | -20–20 px; step 2 |
+| Card shadow blur<br>`product_card_shadow_blur` | range | 0 | 0–40 px; step 2 |
+
+<!-- latest-schema:end -->

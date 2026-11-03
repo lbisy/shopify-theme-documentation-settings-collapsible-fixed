@@ -134,3 +134,33 @@ Google Maps 属于第三方内容，可能根据访客地区和 Google 配置发
 10. 保存主题，并在主题编辑器之外的预览店面或正式店面完成测试。
 
 嵌入实现详情可参考 Google 的[地图嵌入文档](https://developers.google.com/maps/documentation/embed/embedding-map)。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/google-map.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → t:sections.google-map.name
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.google-map.settings.show_map<br>`show_map` | checkbox：勾选开启，取消关闭 | true | — |
+| t:sections.google-map.settings.map_embed_code<br>`map_embed_code` | textarea：输入多行文字 | 未声明 | info: t:sections.google-map.info.map_embed_code |
+| t:sections.google-map.settings.map_height<br>`map_height` | range：拖动滑块调整数值 | 450 | 200–1000 px; 步长 10 |
+
+### t:sections.google-map.content.padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| t:sections.google-map.settings.padding_top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| t:sections.google-map.settings.padding_bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+<!-- latest-schema:end -->

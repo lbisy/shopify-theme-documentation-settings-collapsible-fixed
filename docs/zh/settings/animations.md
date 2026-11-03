@@ -16,13 +16,13 @@
 
 | 设置项 | 图中数值 | 作用 |
 | --- | ---: | --- |
-| **Enable motion** | **开启** | 页面出现动画的总开关。关闭后，内容会立即显示。 |
-| **Content reveal style** | **Rise** | 控制标题、文字、按钮和其他内容的出现方式。**Rise** 会在淡入时轻微向上移动。 |
-| **Media reveal style** | **Zoom** | 控制图片、视频和其他媒体的出现方式。**Zoom** 会在淡入时轻微缩放。 |
-| **Motion speed** | **Normal** | 控制整体出现动画的速度，可选择 **Slow**、**Normal** 或 **Fast**。 |
-| **Reveal behavior** | **Replay on re-enter** | 元素离开视口后再次进入时，重新播放出现动画。 |
+| **Enable motion**〔新版名称：Scroll and reveal animations〕 | **开启** | 页面出现动画的总开关。关闭后，内容会立即显示。 |
+| **Content reveal style**〔安装包无此设置〕 | **Rise** | 控制标题、文字、按钮和其他内容的出现方式。**Rise** 会在淡入时轻微向上移动。 |
+| **Media reveal style**〔安装包无此设置〕 | **Zoom** | 控制图片、视频和其他媒体的出现方式。**Zoom** 会在淡入时轻微缩放。 |
+| **Motion speed**〔安装包无此设置〕 | **Normal** | 控制整体出现动画的速度，可选择 **Slow**、**Normal** 或 **Fast**。 |
+| **Reveal behavior**〔安装包无此设置〕 | **Replay on re-enter** | 元素离开视口后再次进入时，重新播放出现动画。 |
 
-关闭 **Enable motion** 只会阻止出现动画延迟内容，不会隐藏页面内容。
+关闭 **Enable motion**〔新版名称：Scroll and reveal animations〕 只会阻止出现动画延迟内容，不会隐藏页面内容。
 
 ## 内容与媒体展示样式
 
@@ -41,7 +41,7 @@
 - **Normal**：在动态效果和响应速度之间保持平衡，适合大多数商店。
 - **Fast**：更快完成出现动画，适合内容较密集的页面。
 
-**Reveal behavior** 可选择：
+**Reveal behavior**〔安装包无此设置〕 可选择：
 
 - **Once**：元素第一次进入视口时播放一次出现动画。
 - **Replay on re-enter**：元素每次重新进入视口时再次播放动画。
@@ -76,3 +76,20 @@
 - 移动端滚动是否保持流畅。
 - 键盘焦点是否不会被动画移动或遮挡。
 - 减少动态效果模式和关闭动画时，所有内容是否立即可见。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Animations
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Scroll and reveal animations<br>`motion_enabled` | checkbox：勾选开启，取消关闭 | true | info: When off, list and card cascade motion and decorative loops stop. Hover, focus, dialogs, and loading motion still follow the visitor's reduced-motion preference. |
+
+<!-- latest-schema:end -->

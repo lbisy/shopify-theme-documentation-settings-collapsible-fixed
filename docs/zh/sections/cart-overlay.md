@@ -73,3 +73,27 @@ Cart Overlay 是 Overlay 分组中的弹层分区，不需要添加到某个页�
 4. 清空购物车，确认显示正确的空状态。
 5. 检查浅色与深色配色下的文字、边框和按钮对比度。
 6. 分别在桌面端和移动端完成一次从加购到进入结账页的完整流程。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/cart-overlay.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Cart overlay
+
+可通过“添加分区”添加（声明了 presets）。
+
+`enabled_on`: &#123;"groups": ["custom.overlay"]&#125;
+
+`limit`: 1
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Drawer position<br>`drawer_position` | select：从选项中选择 | right | Left (`left`); Right (`right`) |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+<!-- latest-schema:end -->

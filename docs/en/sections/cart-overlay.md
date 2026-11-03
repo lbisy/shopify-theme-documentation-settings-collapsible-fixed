@@ -37,3 +37,27 @@ Removing the section can stop the drawer from working. To use the full cart page
 - On mobile, review width, long titles, prices, quantity controls, footer actions, and safe areas.
 
 Finally open the drawer both from a product add-to-cart action and the header icon, test light and dark schemes, and complete a desktop and mobile add-to-checkout flow.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/cart-overlay.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Cart overlay
+
+Has presets for the Add section picker.
+
+`enabled_on`: &#123;"groups": ["custom.overlay"]&#125;
+
+`limit`: 1
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Drawer position<br>`drawer_position` | select | right | Left (`left`); Right (`right`) |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+
+<!-- latest-schema:end -->

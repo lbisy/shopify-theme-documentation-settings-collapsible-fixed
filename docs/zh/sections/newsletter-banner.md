@@ -167,3 +167,62 @@ Newsletter Banner（邮件订阅横幅）分区用于展示标题、辅助文案
 11. 检查隐私政策、营销同意文案及取消订阅流程符合目标市场要求。
 12. 确认自定义 CSS 不会影响页面上的其他表单。
 13. 点击 **保存**，再从实际店面完成一次完整订阅流程。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/newsletter-banner.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Newsletter banner
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+### Font
+
+### Heading
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select：从选项中选择 | title-xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Heading<br>`heading` | inline_richtext：编辑行内格式化文字 | Stay in the loop | — |
+
+### Subtitle
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Subtitle size<br>`subtitle_size` | select：从选项中选择 | copy-xl | Extra large (`copy-xl`); Large (`copy-l`); Default (`copy-m`); Small (`copy-s`) |
+| Subtitle<br>`subtitle` | inline_richtext：编辑行内格式化文字 | News, stories, and updates | — |
+| Background image<br>`background_image` | image_picker：选择或上传图片 | 未声明 | — |
+| Background image fit<br>`background_image_fit` | select：从选项中选择 | cover | Cover (fill frame) (`cover`); Contain (show full image) (`contain`) |
+| Background image position<br>`background_image_position` | select：从选项中选择 | center | Center (`center`); Top (`top`); Bottom (`bottom`); Left (`left`); Right (`right`); Top left (`top left`); Top right (`top right`); Bottom left (`bottom left`); Bottom right (`bottom right`) |
+| Input placeholder<br>`placeholder` | text：输入文字 | Enter your email address | — |
+
+### Blur overlay
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Enable blur overlay<br>`enable_blur_overlay` | checkbox：勾选开启，取消关闭 | true | — |
+| Blur radius<br>`blur_radius` | range：拖动滑块调整数值 | 12 | 0–40 px; 步长 1 |
+| Blur width<br>`blur_mask_width` | range：拖动滑块调整数值 | 60 | 10–100 %; 步长 5 |
+| Blur height<br>`blur_mask_height` | range：拖动滑块调整数值 | 80 | 10–100 %; 步长 5 |
+| Horizontal blur position<br>`blur_position_x` | range：拖动滑块调整数值 | 50 | 0–100 %; 步长 5 |
+| Vertical blur position<br>`blur_position_y` | range：拖动滑块调整数值 | 50 | 0–100 %; 步长 5 |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+<!-- latest-schema:end -->

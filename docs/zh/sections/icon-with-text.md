@@ -137,3 +137,74 @@ Icon with text（图标与文字）分区用于横向展示多组图标和短文
 ::: tip 建议
 此分区最适合展示三至四条简短、可信且能降低购买顾虑的信息。政策类文案应与店铺实际条款保持一致，并避免只依靠图标传达关键信息。
 :::
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/icon-with-text.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Icon with text
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+### Carousel
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Enable carousel<br>`enable_carousel` | checkbox：勾选开启，取消关闭 | false | — |
+
+### Layout
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Desktop columns<br>`desktop_columns` | select：从选项中选择 | 3 | 2 columns (`2`); 3 columns (`3`); 4 columns (`4`) |
+| Mobile columns<br>`mobile_columns` | select：从选项中选择 | 1 | 1 column (`1`); 2 columns (`2`) |
+| Item gap<br>`item_gap` | range：拖动滑块调整数值 | 32 | 8–80 px; 步长 4 |
+
+### Icon and text
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Direction<br>`direction` | select：从选项中选择 | vertical | Vertical (`vertical`); Horizontal (`horizontal`) |
+| Icon size<br>`icon_size` | range：拖动滑块调整数值 | 56 | 20–96 px; 步长 2 |
+| Icon size mobile<br>`icon_size_mobile` | range：拖动滑块调整数值 | 48 | 20–96 px; 步长 2 |
+| Icon and text gap<br>`icon_text_gap` | range：拖动滑块调整数值 | 16 | 4–48 px; 步长 2 |
+| Alignment<br>`alignment` | select：从选项中选择 | center | Left (`left`); Center (`center`) |
+
+### Bottom wave
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Show bottom wave<br>`show_wave` | checkbox：勾选开启，取消关闭 | false | — |
+| Wave color scheme<br>`wave_color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+### 内容块：Item
+
+`type`: `item`
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Title<br>`title` | inline_richtext：编辑行内格式化文字 | Heading | — |
+| Description<br>`text` | inline_richtext：编辑行内格式化文字 | 未声明 | — |
+| Icon<br>`icon` | select：从选项中选择 | icon-content-check | None (`none`); Package (`icon-content-package`); Truck (`icon-content-truck`); Airplane (`icon-content-airplane`); Gift (`icon-content-gift`); Tag (`icon-content-tag`); Currency (`icon-content-currency-circle-dollar`); Phone (`icon-content-phone`); Chat (`icon-content-chat`); Calendar (`icon-content-calendar-blank`); Clock (`icon-content-clock`); Globe (`icon-content-globe`); Location (`icon-content-map-pin`); Shield check (`icon-content-shield-check`); Check (`icon-content-check`); Heart (`icon-content-heart`); Hand heart (`icon-content-hand-heart`); Leaf (`icon-content-leaf`); Acorn (`icon-content-acorn`); Lightning (`icon-content-lightning`); Water off (`icon-content-drop-slash`); Smiley (`icon-content-smiley`); Stool (`icon-content-stool`) |
+| Image icon<br>`image_icon` | image_picker：选择或上传图片 | 未声明 | — |
+| Link<br>`link` | url：选择或填写链接 | 未声明 | — |
+
+<!-- latest-schema:end -->

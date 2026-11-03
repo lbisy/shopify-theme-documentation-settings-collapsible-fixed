@@ -57,3 +57,22 @@ Click **Save**, then confirm:
 ::: info
 Browsers can cache the previous favicon. If the new icon does not appear immediately, clear the browser cache or check in a private window.
 :::
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Logo
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Logo<br>`logo` | image_picker | Not declared | — |
+| Logo width<br>`logo_width` | range | 100 | 50–300 px; step 10 |
+| Favicon<br>`favicon` | image_picker | Not declared | info: Recommended size: 32 × 32 px. |
+
+<!-- latest-schema:end -->

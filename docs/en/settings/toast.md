@@ -74,3 +74,33 @@ Click **Save**, then trigger each toast type and check:
 - The shadow remains subtle on light and dark backgrounds.
 - Success, warning, error, and informational messages are easy to distinguish.
 - Keyboard and screen-reader users can perceive important feedback.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Toast
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Toast radius<br>`toast_radius` | range | 8 | 0–48 px; step 2 |
+| Position<br>`toast_position` | select | bottom-right | Top left (`top-left`); Top center (`top-center`); Top right (`top-right`); Bottom left (`bottom-left`); Bottom center (`bottom-center`); Bottom right (`bottom-right`) |
+| Auto-dismiss (seconds)<br>`toast_duration` | range | 3 | 0–15 s; step 1 |
+| Preview<br>`toast_preview_type` | select | off | Off (`off`); Success (`success`); Warning (`warning`); Error (`error`); Info (`info`) |
+| Keep preview visible until dismissed<br>`toast_preview_persistent` | checkbox | true | — |
+
+### Shadow
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Toast shadow opacity<br>`toast_shadow_opacity` | range | 10 | 0–100 %; step 5 |
+| Toast shadow horizontal offset<br>`toast_shadow_horizontal_offset` | range | 0 | -20–20 px; step 2 |
+| Toast shadow vertical offset<br>`toast_shadow_vertical_offset` | range | 4 | -20–20 px; step 2 |
+| Toast shadow blur<br>`toast_shadow_blur` | range | 16 | 0–40 px; step 2 |
+
+<!-- latest-schema:end -->

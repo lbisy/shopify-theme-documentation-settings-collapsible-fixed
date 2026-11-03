@@ -73,3 +73,21 @@ Click **Save**, then confirm:
 - Opening and closing overlays returns focus to a logical location.
 
 Focus visibility should take priority over decorative styling. Do not hide the ring merely because it changes the appearance of a component.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Focus
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Focus ring width<br>`focus_ring_width` | range | 2 | 1–4 px; step 1 |
+| Focus ring offset<br>`focus_ring_offset` | range | 2 | 0–4 px; step 1 |
+
+<!-- latest-schema:end -->

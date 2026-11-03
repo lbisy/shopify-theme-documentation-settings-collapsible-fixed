@@ -84,3 +84,39 @@ Shadow 设置控制输入框周围的层次效果。
 - 错误、自动填充、禁用和完成状态是否容易理解。
 
 最后实际提交有代表性的表单，确认输入、清除、自动填充、验证和错误处理都能正常工作。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Input
+
+### Spacing
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Input horizontal padding<br>`input_padding_horizontal` | range：拖动滑块调整数值 | 16 | 8–32 px; 步长 2 |
+| Input vertical padding<br>`input_padding_vertical` | range：拖动滑块调整数值 | 12 | 6–24 px; 步长 2 |
+
+### Border
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Input border thickness<br>`input_border_thickness` | range：拖动滑块调整数值 | 1 | 0–10 px; 步长 1 |
+| Input radius<br>`input_radius` | range：拖动滑块调整数值 | 4 | 0–40 px; 步长 2 |
+
+### Shadow
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Input shadow opacity<br>`input_shadow_opacity` | range：拖动滑块调整数值 | 0 | 0–100 %; 步长 5 |
+| Input shadow horizontal offset<br>`input_shadow_horizontal_offset` | range：拖动滑块调整数值 | 0 | -12–12 px; 步长 2 |
+| Input shadow vertical offset<br>`input_shadow_vertical_offset` | range：拖动滑块调整数值 | 0 | -12–12 px; 步长 2 |
+| Input shadow blur<br>`input_shadow_blur` | range：拖动滑块调整数值 | 0 | 0–20 px; 步长 5 |
+
+<!-- latest-schema:end -->

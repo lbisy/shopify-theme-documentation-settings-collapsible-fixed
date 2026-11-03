@@ -82,3 +82,36 @@ The **Enter using password** link shown at the top of the preview belongs to the
 6. Verify privacy links, consent wording, and promotional claims.
 7. Confirm the password-entry link works and that the password header and footer are configured consistently.
 8. Save the theme, open the password page in a private browser window, and complete one final end-to-end test.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/password.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Password
+
+No presets declared; do not assume this can be added freely through Add section.
+
+`enabled_on`: &#123;"templates": ["password"]&#125;
+
+`limit`: 1
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+| Heading<br>`heading` | text | Opening soon | — |
+| Message<br>`message` | richtext | &lt;p&gt;Be the first to know about new collections and exclusive offers.&lt;/p&gt; | — |
+| Email placeholder<br>`placeholder` | text | Email | — |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–200 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–200 px; step 4 |
+
+<!-- latest-schema:end -->

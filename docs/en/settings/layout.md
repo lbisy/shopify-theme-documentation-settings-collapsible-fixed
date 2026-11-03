@@ -16,7 +16,7 @@ After changing the width, check the desktop homepage, collection pages, and prod
 
 ## Setting Small Border Radius
 
-**Setting Small Border Radius** controls small rounded corners across the site:
+**Setting Small Border Radius**〔Not declared in package〕 controls small rounded corners across the site:
 
 - **small**: crisp, structured corners.
 - **medium**: a balance of clean and soft styling.
@@ -27,3 +27,28 @@ This setting does not affect fully rounded elements, such as certain buttons and
 :::
 
 Choose a value that fits the brand and coordinates with images, cards, and inputs. Review several pages after making a change to confirm that the result stays consistent.
+
+<!-- latest-layout-note -->
+::: warning Update the old range
+The current Page width range is 1000–2000 px with a 1600 px default. Small Border Radius is not declared in Layout; Page margin is declared instead.
+:::
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `config/settings_schema.json` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → Theme settings → Layout
+
+### Page settings
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Page width<br>`page_width` | range | 1600 | 1000–2000 px; step 100 |
+| Page margin<br>`page_margin` | range | 24 | 10–100 px; step 1 |
+
+<!-- latest-schema:end -->

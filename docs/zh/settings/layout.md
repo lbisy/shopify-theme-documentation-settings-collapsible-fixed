@@ -18,7 +18,7 @@ Layout（布局）设置用于调整页面内容的最大宽度和小圆角尺�
 
 ## 设置小圆角
 
-**Setting Small Border Radius** 用于设置网站中小圆角元素的圆角大小，共有 **small（小）**、**medium（中）** 和 **large（大）** 三种选项。
+**Setting Small Border Radius**〔安装包无此设置〕 用于设置网站中小圆角元素的圆角大小，共有 **small（小）**、**medium（中）** 和 **large（大）** 三种选项。
 
 - **small**：圆角较小，整体风格更利落、规整。
 - **medium**：圆角适中，在简洁感与柔和感之间取得平衡。
@@ -29,3 +29,28 @@ Layout（布局）设置用于调整页面内容的最大宽度和小圆角尺�
 :::
 
 选择圆角大小时，建议结合品牌风格以及图片、卡片和输入框的设计统一考虑。修改后请检查不同页面中的相关元素，确保圆角效果保持一致。
+
+<!-- latest-layout-note -->
+::: warning 旧版范围需更新
+上方 1000–1600 px 是旧说明；新版 Page width 范围为 1000–2000 px，默认 1600 px。Small Border Radius 未在新版 Layout 中声明；Page margin 是新版包实际提供的另一个设置项。
+:::
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Layout
+
+### Page settings
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Page width<br>`page_width` | range：拖动滑块调整数值 | 1600 | 1000–2000 px; 步长 100 |
+| Page margin<br>`page_margin` | range：拖动滑块调整数值 | 24 | 10–100 px; 步长 1 |
+
+<!-- latest-schema:end -->

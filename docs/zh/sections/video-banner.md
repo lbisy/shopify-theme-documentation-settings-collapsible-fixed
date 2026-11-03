@@ -218,3 +218,54 @@ Video Banner（视频横幅）分区用于展示 Shopify 托管视频或 YouTube
 - [Uploading and managing files](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/file-uploads)
 - [Accessibility for themes](https://help.shopify.com/en/manual/online-store/themes/customizing-themes/accessibility)
 - [Supporting media in themes](https://shopify.dev/docs/storefronts/themes/product-merchandising/media/support-media)
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `sections/video-banner.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 对应页面模板或分区组 → Video banner
+
+可通过“添加分区”添加（声明了 presets）。
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+| Section height<br>`section_height` | select：从选项中选择 | adapt | Adapt to media (`adapt`); Small (`small`); Medium (`medium`); Large (`large`); Full screen (`full`) |
+
+### Video
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Shopify-hosted video<br>`video` | video：选择视频 | 未声明 | — |
+| Mobile video<br>`video_mobile` | video：选择视频 | 未声明 | info: Optional. If set, this video replaces the desktop video on mobile screens. |
+| External video URL<br>`external_video_url` | video_url：填写视频地址 | https://www.youtube.com/watch?v=_9VUPq3SxOc | info: YouTube or Vimeo URL. Only shown when no Shopify-hosted video is selected above.<br>accept: ["youtube", "vimeo"] |
+| Cover image<br>`poster` | image_picker：选择或上传图片 | 未声明 | — |
+| Aspect ratio<br>`aspect_ratio` | select：从选项中选择 | 16/9 | 16:9 (`16/9`); 4:3 (`4/3`); 1:1 (`1/1`) |
+| Container width<br>`container_width` | select：从选项中选择 | page | Page width (`page`); Full width (`full`) |
+
+### Playback
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Autoplay<br>`autoplay` | checkbox：勾选开启，取消关闭 | false | — |
+| Loop<br>`loop` | checkbox：勾选开启，取消关闭 | false | — |
+| Muted<br>`muted` | checkbox：勾选开启，取消关闭 | true | info: Autoplay videos are always muted to comply with browser policies. |
+| Show controls<br>`controls` | checkbox：勾选开启，取消关闭 | true | — |
+| Show play button<br>`show_play_button` | checkbox：勾选开启，取消关闭 | true | — |
+| Show mute button (Shopify-hosted video only)<br>`show_mute_button` | checkbox：勾选开启，取消关闭 | false | — |
+
+### Padding
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+
+<!-- latest-schema:end -->

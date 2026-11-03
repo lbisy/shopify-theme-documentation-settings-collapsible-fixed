@@ -60,3 +60,54 @@ Use **Padding Top / Bottom** in `px` to control separation from the header and f
 ## Before publishing
 
 Confirm the correct template assignment and Online Store publication; check media, titles, prices, and inventory; verify dynamic titles and descriptions across shared templates; test badge wrapping, fewer/equal/more products than the page limit, filters, show-more, clear, counts, sorting, browser back, pagination, every column count, long titles, sale and sold-out states, keyboard access, contrast, and the complete filter-to-product journey after saving.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/collections.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Collections grid
+
+No presets declared; do not assume this can be added freely through Add section.
+
+`enabled_on`: &#123;"templates": ["list-collections"]&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+
+### Font
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading<br>`heading` | inline_richtext | Latest Brand | — |
+
+### Heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select | title-2xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Description<br>`description` | inline_richtext | Introduce the collections customers can browse on this page. | — |
+
+### Subtitle
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Subtitle size<br>`subtitle_size` | select | copy-l | Extra large (`copy-xl`); Large (`copy-l`); Default (`copy-m`); Small (`copy-s`) |
+| Collections per page<br>`collections_per_page` | range | 12 | 4–24 ; step 4 |
+| Show badge<br>`show_badge` | checkbox | true | — |
+| Badge text<br>`badge_text` | text | EXPLORE • DISCOVER • SHOP • | — |
+| Badge value<br>`badge_value` | text | EXPLORE | — |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+<!-- latest-schema:end -->

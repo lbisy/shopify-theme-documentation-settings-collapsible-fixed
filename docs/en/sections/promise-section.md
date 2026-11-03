@@ -40,3 +40,52 @@ Customers should be able to expand and collapse by clicking the title or arrow a
 ## Before publishing
 
 Replace the image; proofread nonduplicate headings and details; expand and collapse every item; test long copy on desktop, tablet, and mobile; verify logical order, color contrast, spacing, image balance, and Custom CSS behavior; substantiate all brand, ingredient, environmental, and policy claims; then save and repeat the interaction on the storefront.
+
+<!-- latest-schema:start -->
+## Latest package settings reference
+
+::: warning Version reference
+Generated from the schema in `sections/promise-section.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
+“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
+[Full audit](/en/version-audit)
+:::
+
+Open: Theme editor → relevant template or section group → Promise section
+
+Has presets for the Add section picker.
+
+`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
+| Image<br>`image` | image_picker | Not declared | — |
+| Subtitle<br>`subtitle` | inline_richtext | Our Promise | — |
+| Heading<br>`heading` | inline_richtext | Thoughtfully Crafted for Your Skin | — |
+
+### Heading
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`heading_size` | select | title-xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+
+### Padding
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
+| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+
+### Block: Accordion item
+
+`type`: `accordion_item`
+
+#### Title
+
+| Editor label / ID | Type and action | Default | Options / range / conditions |
+| --- | --- | --- | --- |
+| Heading size<br>`title_size` | select | title-m | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+| Title<br>`title` | inline_richtext | Accordion title | — |
+| Content<br>`text` | richtext | &lt;p&gt;Accordion description text goes here.&lt;/p&gt; | — |
+
+<!-- latest-schema:end -->

@@ -71,3 +71,28 @@
 - 所有字段中都没有只有用户名或数字占位内容的情况。
 - 图标在每个配色方案中都清晰可见、间距正确。
 - 移动端可以正常操作，键盘焦点清晰，链接具备无障碍支持。
+
+<!-- latest-schema:start -->
+## 新版安装包设置项（核对清单）
+
+::: warning 版本核对说明
+依据 `latest.zip` 内 `config/settings_schema.json` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
+“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
+[完整核对报告](/zh/version-audit)
+:::
+
+入口：主题编辑器 → 主题设置 → Social icon
+
+| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
+| --- | --- | --- | --- |
+| Facebook<br>`social_facebook_link` | text：输入文字 | 未声明 | placeholder:  |
+| Instagram<br>`social_instagram_link` | text：输入文字 | 未声明 | placeholder:  |
+| YouTube<br>`social_youtube_link` | text：输入文字 | 未声明 | placeholder:  |
+| TikTok<br>`social_tiktok_link` | text：输入文字 | 未声明 | placeholder:  |
+| X / Twitter<br>`social_twitter_link` | text：输入文字 | 未声明 | placeholder:  |
+| Snapchat<br>`social_snapchat_link` | text：输入文字 | 未声明 | placeholder:  |
+| Pinterest<br>`social_pinterest_link` | text：输入文字 | 未声明 | placeholder:  |
+| Tumblr<br>`social_tumblr_link` | text：输入文字 | 未声明 | placeholder:  |
+| Vimeo<br>`social_vimeo_link` | text：输入文字 | 未声明 | placeholder:  |
+
+<!-- latest-schema:end -->
