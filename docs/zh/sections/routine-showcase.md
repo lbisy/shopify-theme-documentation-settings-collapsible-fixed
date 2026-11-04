@@ -13,6 +13,13 @@ Routine showcase 将多个商品组织成步骤展示，结合场景图片、悬
 
 此分区不能添加到页眉、页脚或自定义弹层分组中。
 
+<!-- 截图添加方式：将图片放入 docs/public/images/zh/，取消下方图片语句的注释，并删除对应的“截图预留”提示。 -->
+<!-- ![Routine showcase 配色、标题与背景设置](/images/zh/routine-showcase-settings.png) -->
+
+::: info 截图预留：分区设置
+此处可添加包含 Color scheme、Heading size、Background image、Eyebrow、Heading 和 Description 的设置面板截图。
+:::
+
 ## 配色（Color scheme）
 
 选择分区使用的全局配色方案。截图中第二行中间的配色缩略图带有蓝色选中边框。
@@ -38,6 +45,12 @@ Routine showcase 将多个商品组织成步骤展示，结合场景图片、悬
 Eyebrow 和 Heading 支持行内富文本，可使用加粗、斜体或链接。Description 支持富文本段落和列表；建议保持简短，避免移动端介绍区域过长。
 
 ## 按钮（Button label / Button link）
+
+<!-- ![Routine showcase 按钮、自动播放与间距设置](/images/zh/routine-showcase-autoplay.png) -->
+
+::: info 截图预留：按钮、自动播放与间距
+此处可添加包含 Button label、Button link、Autoplay steps、Autoplay interval 和 Padding 的设置面板截图。
+:::
 
 | 设置项 | 截图当前值 | 作用 |
 | --- | --- | --- |
@@ -67,6 +80,12 @@ Eyebrow 和 Heading 支持行内富文本，可使用加粗、斜体或链接。
 ## Step 小块
 
 每个 **Step** 对应一个商品步骤。点击左侧已有 Step 编辑，或通过 **添加 Step** 新增，最多 5 个。
+
+<!-- ![Routine showcase 的 Step 小块设置](/images/zh/routine-showcase-step.png) -->
+
+::: info 截图预留：Step 小块
+此处可添加包含 Product、Step label、Arch scene image 和 Floating product image 的小块设置截图。
+:::
 
 | 设置项 | 截图当前值 | 作用 |
 | --- | --- | --- |

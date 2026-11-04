@@ -65,7 +65,6 @@ Verify heading and View all content, every Item image/name/destination, grid siz
 ::: warning Version reference
 Generated from the schema in `sections/category-grid.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
 “Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
-[Full audit](/en/version-audit)
 :::
 
 Open: Theme editor → relevant template or section group → t:sections.category-grid.name

@@ -45,7 +45,6 @@ export default defineConfig({
         {
           text: 'Guide',
           items: [
-              { text: "Latest package audit", link: "/en/version-audit" },
               { text: "Getting Started", link: "/en/getting-started" },
               { text: "Installation", link: "/en/installation" },
               { text: "Theme Editor", link: "/en/theme-editor" },

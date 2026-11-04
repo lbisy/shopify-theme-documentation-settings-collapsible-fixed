@@ -47,7 +47,6 @@ Replace the image; proofread nonduplicate headings and details; expand and colla
 ::: warning Version reference
 Generated from the schema in `sections/promise-section.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
 “Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
-[Full audit](/en/version-audit)
 :::
 
 Open: Theme editor → relevant template or section group → Promise section

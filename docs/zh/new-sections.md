@@ -38,4 +38,3 @@
 
 - [商品徽章](/zh/settings/product-badges)
 - [商品系列导航](/zh/settings/collection-navigation)
-- [新版设置与缺失项核对报告](/zh/version-audit)

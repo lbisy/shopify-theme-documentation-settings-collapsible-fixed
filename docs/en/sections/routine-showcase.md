@@ -13,6 +13,13 @@ Routine showcase organizes products into steps, combining scene images, floating
 
 This section cannot be added to header, footer or custom overlay groups.
 
+<!-- To add screenshots: place the files in docs/public/images/en/, uncomment the corresponding image line below, and remove its screenshot placeholder callout. -->
+<!-- ![Routine showcase color scheme, heading and background settings](/images/en/routine-showcase-settings.png) -->
+
+::: info Screenshot placeholder: section settings
+Add a settings panel screenshot showing Color scheme, Heading size, Background image, Eyebrow, Heading and Description here.
+:::
+
 ## Color scheme
 
 Choose the global color scheme for the section. The screenshot shows a blue selection border around the middle thumbnail in the second row.
@@ -38,6 +45,12 @@ Use **Background image → Select** to choose or upload an image, or explore fre
 Eyebrow and Heading support inline formatting such as bold, italic and links. Description supports rich-text paragraphs and lists. Keep copy concise to avoid an excessively tall introduction on mobile.
 
 ## Button
+
+<!-- ![Routine showcase button, autoplay and padding settings](/images/en/routine-showcase-autoplay.png) -->
+
+::: info Screenshot placeholder: button, autoplay and padding
+Add a settings panel screenshot showing Button label, Button link, Autoplay steps, Autoplay interval and Padding here.
+:::
 
 | Setting | Current screenshot value | Purpose |
 | --- | --- | --- |
@@ -67,6 +80,12 @@ Both controls range from **0–100 px**, in **4 px** steps. The screenshot and p
 ## Step blocks
 
 Each **Step** represents one product step. Select an existing Step in the left sidebar or use **Add Step** to create another, up to 5.
+
+<!-- ![Routine showcase Step block settings](/images/en/routine-showcase-step.png) -->
+
+::: info Screenshot placeholder: Step block
+Add a block settings screenshot showing Product, Step label, Arch scene image and Floating product image here.
+:::
 
 | Setting | Current screenshot value | Purpose |
 | --- | --- | --- |
