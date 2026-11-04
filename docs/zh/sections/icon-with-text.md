@@ -1,209 +1,140 @@
 # 图标与文字（Icon with text）
 
-Icon with text（图标与文字）分区用于横向展示多组图标和短文案，适合突出环保材质、公益支持、退换货政策、配送服务或支付保障等卖点。分区支持轮播、响应式列数、图标与文字排列方向，以及独立的桌面端和移动端图标尺寸。
+Icon with text 将图标、标题和说明组合成多列内容，适合介绍配送、支付保障和客户服务等信息。分区设置控制列数、间距、图标尺寸、对齐和底部波浪；每个 **Item** 小块单独配置标题、说明、图标和链接。
 
-![Icon with text 设置面板与前台效果](/images/zh/icon-with-text.png)
+![Icon with text 设置面板与前台效果](/images/zh/icon-with-text.jpg)
 
-## 添加分区
+## 添加与配置
 
-1. 进入 **Shopify 后台 → 在线商店 → 主题**。
-2. 在当前主题上点击 **自定义**。
-3. 打开需要编辑的页面或模板。
-4. 点击 **添加分区**，选择 **Icon with text**。
-5. 展开分区并点击 **添加 Item**。
-6. 为每个 Item 设置图标和短文案，并拖动 Item 调整显示顺序。
-7. 完成设置后，点击右上角的 **保存**。
+1. 进入 **Shopify 后台 → 在线商店 → 主题 → 自定义**。
+2. 打开需要编辑的页面模板，选择 **添加分区 → Icon with text**。
+3. 设置配色、轮播、桌面端与移动端列数。
+4. 展开分区，点击 **添加 Item**，为每项填写标题、说明并选择图标。
+5. 调整图标与文字的排列、尺寸、对齐和间距，按需开启底部波浪。
+6. 拖动 Item 调整顺序，预览桌面端与移动端后点击 **保存**。
 
-截图中的三个 Item 分别展示 **Sustainable Materials**、**Supporting Local Charity** 和 **90-Days Return Policy**。每个 Item 对应前台的一组图标与文字。
+截图中共有三个 Item：**Free shipping**、**Secure checkout** 和 **Here for you**，在桌面端以三列展示。
 
-## Color scheme
+## 配色（Color scheme）
 
-选择当前分区使用的全局配色方案，影响分区背景、图标和文字颜色。
+选择分区使用的全局配色方案。截图中第一行第二个配色缩略图被选中。
 
-点击 **编辑方案** 可进入全局颜色设置。修改方案本身会同时影响其他使用同一方案的分区，因此保存前应检查图标和文字与背景之间是否具有足够的对比度。
+点击 **编辑方案** 可修改所选方案，其他使用同一方案的区域也会受到影响。请检查图标、标题、说明与背景之间的对比度。
 
-## Carousel
+## 轮播（Carousel）
 
-### Enable carousel
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Enable carousel** | **关闭** | 控制是否以轮播形式浏览 Item。 |
 
-控制是否将 Item 以轮播方式展示。
+关闭时，Item 按设置的列数排列；开启后，以轮播方式浏览内容。截图中的三个 Item 直接显示在同一行。若开启轮播，请分别在桌面端和移动端检查切换操作，以及所有内容是否都能浏览到。
 
-- 关闭：所有 Item 按当前列数排列，适合内容数量较少且希望顾客同时查看全部卖点的场景。
-- 开启：顾客可以轮播浏览超出当前可见范围的 Item，适合 Item 数量较多或移动端空间有限的场景。
+## 布局（Layout）
 
-启用后，应分别在桌面端和移动端测试切换操作、内容顺序及最后一项的显示效果。如果全部 Item 已能在一行内完整显示，通常不必启用轮播。
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Desktop columns** | **3 columns** | 设置桌面端每行的 Item 数量，可选 2、3 或 4 列。 |
+| **Mobile columns** | **1 column** | 设置移动端每行的 Item 数量，可选 1 或 2 列。 |
+| **Item gap** | `48 px` | 设置不同 Item 之间的间距。 |
 
-## Layout
+Item gap 范围为 **8–80 px**，步长 **4 px**。截图当前为 `48 px`，安装包默认值为 `32 px`。列数越多，单项可用宽度越小，请检查较长说明的换行效果。
 
-### Desktop columns
+## 图标与文字（Icon and text）
 
-设置桌面端每行显示的 Item 列数。截图中选择 **3 columns**，三个 Item 等宽排列在同一行。
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Direction** | **Vertical** | 设置每个 Item 内图标与文字的排列方向。 |
+| **Icon size** | `64 px` | 设置桌面端图标尺寸。 |
+| **Icon size mobile** | `56 px` | 单独设置移动端图标尺寸。 |
+| **Icon and text gap** | `40 px` | 设置单个 Item 内图标与文字区域之间的距离。 |
+| **Alignment** | **Left** | 设置内容左对齐或居中对齐。 |
 
-列数越多，每个 Item 可用的水平空间越小。文案较长时，应适当减少列数，避免文字频繁换行。
+### 排列方向与对齐
 
-### Mobile columns
+- **Vertical**：图标位于文字上方，截图使用此布局。
+- **Horizontal**：图标与文字横向并排。
+- **Left**：内容左对齐，截图中的图标和文字均靠左。
+- **Center**：内容居中对齐。
 
-设置移动端每行显示的 Item 数量：
+Direction 与 Alignment 分别控制排列方向和对齐方式。Vertical 不代表必须居中；截图采用的是 **Vertical + Left**。
 
-- **1 column**：每行 1 项，图标和文字拥有更充足的空间。
-- **2 columns**：每行 2 项，可缩短分区高度，但单项宽度更窄。
+### 图标尺寸与内部间距
 
-截图中选择 **1 column**。如果使用 2 列，应重点检查长文案的换行以及图标与文字之间的间距。
+Icon size 和 Icon size mobile 范围均为 **20–96 px**，步长 **2 px**。截图分别为 `64 px`、`56 px`，安装包默认值分别为 `56 px`、`48 px`。
 
-### Item gap
+Icon and text gap 范围为 **4–48 px**，步长 **2 px**。截图为 `40 px`，安装包默认值为 `16 px`。Vertical 时它控制上下距离，Horizontal 时控制左右距离；它与不同 Item 之间的 Item gap 分开设置。
 
-设置相邻 Item 之间的间距，单位为 `px`。截图中的值为 `32 px`。
+截图中的 Alignment 为 Left，安装包默认值为 Center。更改方向、对齐或字号后，请重新检查每项的图标与文字是否协调。
 
-间距过小会使各项显得拥挤，间距过大则会削弱内容之间的整体关联。调整后应同时查看桌面端多列布局和移动端布局。
+## 底部波浪（Bottom wave）
 
-## Icon and text
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Show bottom wave** | **开启** | 显示分区底部的装饰波浪。 |
+| **Wave color scheme** | 第一行第二个配色缩略图被选中 | 选择底部波浪使用的配色方案。 |
 
-### Direction
+截图开启了底部波浪，安装包默认关闭。波浪配色与分区 Color scheme 可分别选择；点击对应的 **编辑方案** 可修改配色。
 
-设置单个 Item 内图标与文字的排列方向：
+请结合相邻分区的背景检查波浪衔接。截图中此分区位于页脚上方，应同时预览与页脚交界的位置。
 
-- **Vertical**：图标位于文字上方，适合居中展示简短卖点。截图采用此布局。
-- **Horizontal**：图标与文字横向并排，适合紧凑布局或较多 Item。
+## 上下间距（Padding）
 
-切换方向后，应重新检查文字对齐、换行和整体高度。
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Padding top** | `100 px` | 调整分区顶部留白。 |
+| **Padding bottom** | `100 px` | 调整分区底部留白。 |
 
-### Icon size
+两项范围均为 **0–100 px**，步长 **4 px**。截图均设为 `100 px`，安装包默认均为 `32 px`。较大留白能让内容更舒展，请同时检查移动端分区高度和底部波浪效果。
 
-设置桌面端图标尺寸，单位为 `px`。截图中的值为 `56 px`。
+## Item 小块
 
-图标过大会抢占文案的视觉重点，过小则不易识别。建议所有 Item 使用风格和视觉重量一致的图标。
+每个 **Item** 对应一组图标、标题和说明。点击左侧已有 Item 编辑，或通过 **添加 Item** 新增。
 
-### Icon size mobile
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Title** | `Free shipping` | 设置当前 Item 的标题，支持行内富文本。 |
+| **Description** | `Complimentary shipping on orders over $99.` | 填写标题下方的说明，支持行内富文本。 |
+| **Icon** | **Truck** | 选择主题内置图标。 |
+| **Image icon** | 未显示已选图片缩略图 | 选择或上传图片作为自定义图标。 |
+| **Link** | 未填写，显示“粘贴链接或搜索” | 为该 Item 设置可选的跳转地址。 |
 
-设置移动端图标尺寸，单位为 `px`。截图中的值为 `48 px`。
+### 标题与说明
 
-移动端通常可使用略小于桌面端的尺寸，以减少分区高度并保持图标与文案的比例协调。
+Title 与 Description 可通过工具栏设置加粗、斜体或链接等格式。标题保持简短，说明补充具体服务内容；配送门槛和服务时间应与店铺实际政策一致。
 
-### Icon and text gap
+截图中的三项文案为：
 
-设置单个 Item 中图标与文字之间的距离，单位为 `px`。截图中的值为 `16 px`。
-
-使用 **Vertical** 时，该值控制上下距离；使用 **Horizontal** 时，则控制左右距离。调整排列方向后应重新确认间距是否自然。
-
-## Padding
-
-- **Padding Top**：设置分区顶部留白，单位为 `px`。截图中的值为 `32 px`。
-- **Padding Bottom**：设置分区底部留白，单位为 `px`。截图中的值为 `32 px`。
-
-上下留白通常可以保持一致。如果相邻分区本身已有较大间距，可适当减小数值，避免页面出现过宽的空白区域。
-
-## Item 内容块
-
-每个 **Item** 对应一组图标与短文案。管理 Item 时可以：
-
-- 点击 **添加 Item** 新增一项内容。
-- 打开 Item，根据面板提供的字段选择图标并填写文字。
-- 拖动 Item 调整前台显示顺序。
-- 隐藏、复制或移除不需要的 Item。
-
-文案建议控制在一个短句内，并确保图标能够直观表达对应含义。所有 Item 应保持相近的文案长度和图标风格，例如不要混用粗线条图标、实心图标和细线条图标。
-
-## 自定义 CSS
-
-展开 **自定义 CSS** 可添加仅作用于当前分区的样式覆盖。建议优先使用面板已有的列数、间距、方向、尺寸和留白设置；添加 CSS 后，应重新检查桌面端、移动端以及轮播状态下的布局。
-
-## 参考配置
-
-以下配置与截图一致：
-
-| 设置项 | 示例值 |
+| 标题 | 说明 |
 | --- | --- |
-| Enable carousel | 关闭 |
-| Desktop columns | `3 columns` |
-| Mobile columns | `1 column` |
-| Item gap | `32 px` |
-| Direction | `Vertical` |
-| Icon size | `56 px` |
-| Icon size mobile | `48 px` |
-| Icon and text gap | `16 px` |
-| Padding Top / Bottom | `32 px / 32 px` |
+| **Free shipping** | Complimentary shipping on orders over $99. |
+| **Secure checkout** | Safe, simple, and secure payment every time. |
+| **Here for you** | Our care team is available 7 days a week. |
 
-## 发布前检查
+### 内置图标与图片图标
 
-1. 确认每个 Item 的图标与文案含义一致，且没有空白或重复内容。
-2. 检查 Item 的排列顺序，优先展示对购买决策最重要的信息。
-3. 分别预览桌面端与移动端，确认列数、图标尺寸和文字换行正常。
-4. 切换 **Vertical** 与 **Horizontal** 时，检查对齐方式及图标文字间距。
-5. 如果启用轮播，测试所有 Item 是否都能到达，切换控件是否清晰可用。
-6. 确认当前配色方案下的图标、文字和背景具有足够对比度。
-7. 检查上下留白与相邻分区是否协调。
-8. 点击 **保存**，并在实际店面再次检查桌面端和移动端效果。
+**Icon** 可选择 Truck、Shield check、Hand heart 等内置图标，也可选择 None 不使用内置图标。截图选中的 Free shipping 小块使用 Truck，与配送文案对应。
 
-::: tip 建议
-此分区最适合展示三至四条简短、可信且能降低购买顾虑的信息。政策类文案应与店铺实际条款保持一致，并避免只依靠图标传达关键信息。
-:::
+点击 **Image icon → 选择** 可选择或上传图片，也可浏览免费图片。设置 Image icon 后，图片优先于内置图标显示。建议各项图标保持相近的风格与视觉大小，并检查桌面端 `64 px`、移动端 `56 px` 下的清晰度。
 
-<!-- latest-schema:start -->
-## 新版安装包设置项（核对清单）
+### 链接与管理
 
-::: warning 版本核对说明
-依据 `latest.zip` 内 `sections/icon-with-text.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。上方旧说明和截图尚未逐项实机验证。
-“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
-:::
+在 **Link** 中选择或填写配送政策、服务说明或其他目标页面，设置后该 Item 可点击；截图留空，不提供跳转。
 
-入口：主题编辑器 → 对应页面模板或分区组 → Icon with text
+- 拖动左侧 Item 调整显示顺序。
+- 点击 **添加 Item** 增加一项服务说明。
+- 点击小块底部的 **移除区块**，只删除当前 Item。
 
-可通过“添加分区”添加（声明了 presets）。
+## 自定义 CSS 与删除分区
 
-`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+**自定义 CSS** 是主题编辑器提供的分区样式入口。优先使用现有列数、尺寸、间距和对齐设置；添加 CSS 后检查桌面端、移动端及轮播布局。
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+点击 **删除分区** 会从当前模板移除整个 Icon with text 及其 Item 小块。若只需删除单项，请使用该 Item 的移除区块操作。
 
-### Carousel
+## 保存并检查
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Enable carousel<br>`enable_carousel` | checkbox：勾选开启，取消关闭 | false | — |
-
-### Layout
-
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Desktop columns<br>`desktop_columns` | select：从选项中选择 | 3 | 2 columns (`2`); 3 columns (`3`); 4 columns (`4`) |
-| Mobile columns<br>`mobile_columns` | select：从选项中选择 | 1 | 1 column (`1`); 2 columns (`2`) |
-| Item gap<br>`item_gap` | range：拖动滑块调整数值 | 32 | 8–80 px; 步长 4 |
-
-### Icon and text
-
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Direction<br>`direction` | select：从选项中选择 | vertical | Vertical (`vertical`); Horizontal (`horizontal`) |
-| Icon size<br>`icon_size` | range：拖动滑块调整数值 | 56 | 20–96 px; 步长 2 |
-| Icon size mobile<br>`icon_size_mobile` | range：拖动滑块调整数值 | 48 | 20–96 px; 步长 2 |
-| Icon and text gap<br>`icon_text_gap` | range：拖动滑块调整数值 | 16 | 4–48 px; 步长 2 |
-| Alignment<br>`alignment` | select：从选项中选择 | center | Left (`left`); Center (`center`) |
-
-### Bottom wave
-
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Show bottom wave<br>`show_wave` | checkbox：勾选开启，取消关闭 | false | — |
-| Wave color scheme<br>`wave_color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
-
-### Padding
-
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
-| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
-
-### 内容块：Item
-
-`type`: `item`
-
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Title<br>`title` | inline_richtext：编辑行内格式化文字 | Heading | — |
-| Description<br>`text` | inline_richtext：编辑行内格式化文字 | 未声明 | — |
-| Icon<br>`icon` | select：从选项中选择 | icon-content-check | None (`none`); Package (`icon-content-package`); Truck (`icon-content-truck`); Airplane (`icon-content-airplane`); Gift (`icon-content-gift`); Tag (`icon-content-tag`); Currency (`icon-content-currency-circle-dollar`); Phone (`icon-content-phone`); Chat (`icon-content-chat`); Calendar (`icon-content-calendar-blank`); Clock (`icon-content-clock`); Globe (`icon-content-globe`); Location (`icon-content-map-pin`); Shield check (`icon-content-shield-check`); Check (`icon-content-check`); Heart (`icon-content-heart`); Hand heart (`icon-content-hand-heart`); Leaf (`icon-content-leaf`); Acorn (`icon-content-acorn`); Lightning (`icon-content-lightning`); Water off (`icon-content-drop-slash`); Smiley (`icon-content-smiley`); Stool (`icon-content-stool`) |
-| Image icon<br>`image_icon` | image_picker：选择或上传图片 | 未声明 | — |
-| Link<br>`link` | url：选择或填写链接 | 未声明 | — |
-
-<!-- latest-schema:end -->
+- 桌面端三列、移动端一列，Item gap 为 `48 px`，轮播关闭。
+- 图标在文字上方并左对齐，两端尺寸分别为 `64 px` 和 `56 px`。
+- 图标与文字之间的 `40 px` 间距自然，说明没有异常换行。
+- 三项标题、说明与图标对应正确，设置链接后能够进入预期页面。
+- 底部波浪已开启，配色与相邻分区衔接协调。
+- 上下 `100 px` 留白在桌面端和移动端均符合预期。

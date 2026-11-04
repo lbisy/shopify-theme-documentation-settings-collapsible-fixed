@@ -4,6 +4,8 @@ export default defineConfig({
   title: 'Esen',
   description: 'Bilingual Shopify theme user documentation',
   cleanUrls: true,
+  // 新版本删除部分：保留源文档，但不生成中英文页面及搜索内容。
+  srcExclude: ['**/sections/announcement-bar.md', '**/sections/article.md', '**/sections/google-map.md'],
   head: [
     ['link', { rel: 'icon', href: '/brand/favicon.ico', sizes: 'any' }],
     ['link', { rel: 'apple-touch-icon', href: '/brand/apple-touch-icon.png' }]
@@ -86,7 +88,8 @@ export default defineConfig({
           collapsed: false,
           items: [
               { text: "404 Page", link: "/en/sections/404" },
-              { text: "About Statistics", link: "/en/sections/about-stats" },
+              // 新版本删除部分
+              // { text: "About Statistics", link: "/en/sections/about-stats" },
               { text: "Before & After Comparison", link: "/en/sections/before-after-comparison" },
               { text: "Blog Stories", link: "/en/sections/blog-stories" },
               { text: "Brand Statement", link: "/en/sections/brand-statement" },
@@ -96,7 +99,8 @@ export default defineConfig({
               { text: "Custom Liquid", link: "/en/sections/custom-liquid" },
               { text: "Featured Product", link: "/en/sections/featured-product" },
               { text: "Featured Products", link: "/en/sections/featured-products" },
-              { text: "Google Map", link: "/en/sections/google-map" },
+              // 新版本删除部分
+              // { text: "Google Map", link: "/en/sections/google-map" },
               { text: "Icon with Text", link: "/en/sections/icon-with-text" },
               { text: "Newsletter Banner", link: "/en/sections/newsletter-banner" },
               { text: "Newsletter Overlay", link: "/en/sections/newsletter-overlay" },
@@ -166,18 +170,25 @@ export default defineConfig({
           collapsed: false,
           items: [
               { text: "404 页面", link: "/zh/sections/404" },
-              { text: "品牌介绍与数据", link: "/zh/sections/about-stats" },
+              // 新版本删除部分
+              // { text: "品牌介绍与数据", link: "/zh/sections/about-stats" },
               { text: "前后对比滑块展示", link: "/zh/sections/before-after-comparison" },
               { text: "博客故事", link: "/zh/sections/blog-stories" },
               { text: "品牌宣言", link: "/zh/sections/brand-statement" },
               { text: "购物车弹层", link: "/zh/sections/cart-overlay" },
               { text: "分类精选展示", link: "/zh/sections/category-grid" },
+              { text: "商品系列卡片列表", link: "/zh/sections/collection-list" },
               { text: "商品系列商品列表", link: "/zh/sections/collections" },
               { text: "自定义 Liquid", link: "/zh/sections/custom-liquid" },
+              { text: "编辑式图片拼贴", link: "/zh/sections/editorial-collage" },
+              { text: "图片热点与特色标签", link: "/zh/sections/feature-tabs" },
               { text: "精选单品", link: "/zh/sections/featured-product" },
               { text: "精选商品列表", link: "/zh/sections/featured-products" },
-              { text: "Google 地图", link: "/zh/sections/google-map" },
+              { text: "配方与成分介绍", link: "/zh/sections/formula-details" },
+              // 新版本删除部分
+              // { text: "Google 地图", link: "/zh/sections/google-map" },
               { text: "图标与文字", link: "/zh/sections/icon-with-text" },
+              { text: "心情选品展示", link: "/zh/sections/mood-finder" },
               { text: "邮件订阅横幅", link: "/zh/sections/newsletter-banner" },
               { text: "邮件订阅弹层", link: "/zh/sections/newsletter-overlay" },
               { text: "普通页面", link: "/zh/sections/page" },
@@ -191,7 +202,9 @@ export default defineConfig({
               { text: "品牌承诺", link: "/zh/sections/promise-section" },
               { text: "促销横幅", link: "/zh/sections/promo-bannder" },
               { text: "促销倒计时", link: "/zh/sections/promotion-countdown" },
-              { text: "使用流程展示", link: "/zh/sections/routine-showcase" },
+              { text: "编辑式商品展示", link: "/zh/sections/ritual-steps" },
+              { text: "场景商品展示", link: "/zh/sections/routine-showcase" },
+              { text: "错落图片画廊", link: "/zh/sections/scatter-gallery" },
               // { text: "滚动分类", link: "/zh/sections/scroll-categories" },
               { text: "滚动图标文字", link: "/zh/sections/scrolling-icon-with-text" },
               { text: "搜索弹层", link: "/zh/sections/search-overlay" },
@@ -200,24 +213,13 @@ export default defineConfig({
               { text: "视频横幅", link: "/zh/sections/video-banner" }
           ]
         },
-        {
-          text: '新版补充展示板块',
-          collapsed: true,
-          items: [
-              { text: "商品系列卡片列表", link: "/zh/sections/collection-list" },
-              { text: "编辑式图片拼贴", link: "/zh/sections/editorial-collage" },
-              { text: "图片热点与特色标签", link: "/zh/sections/feature-tabs" },
-              { text: "配方与成分介绍", link: "/zh/sections/formula-details" },
-              { text: "心情选品展示", link: "/zh/sections/mood-finder" },
-              { text: "步骤与使用仪式", link: "/zh/sections/ritual-steps" },
-              { text: "错落图片画廊", link: "/zh/sections/scatter-gallery" }
-          ]
-        },
+        /* 新版本删除部分：隐藏页面主分区与全局区域、内部组件目录分组。
         {
           text: '页面主分区与全局区域',
           collapsed: true,
           items: [
-              { text: "公告栏", link: "/zh/sections/announcement-bar" },
+              // 新版本删除部分
+              // { text: "公告栏", link: "/zh/sections/announcement-bar" },
               { text: "页眉", link: "/zh/sections/header" },
               { text: "页脚", link: "/zh/sections/footer" },
               { text: "商品详情主分区", link: "/zh/sections/product" },
@@ -225,7 +227,8 @@ export default defineConfig({
               { text: "购物车主分区", link: "/zh/sections/cart" },
               { text: "搜索结果主分区", link: "/zh/sections/search" },
               { text: "博客列表主分区", link: "/zh/sections/blog" },
-              { text: "博客文章主分区", link: "/zh/sections/article" },
+              // 新版本删除部分
+              // { text: "博客文章主分区", link: "/zh/sections/article" },
               { text: "关于我们主分区", link: "/zh/sections/main-page-about" },
               { text: "联系我们主分区", link: "/zh/sections/main-page-contact" }
           ]
@@ -237,6 +240,7 @@ export default defineConfig({
               { text: "商品系列导航加载组件", link: "/zh/sections/collection-navigation-items" }
           ]
         }
+        */
       ]
     }
   }

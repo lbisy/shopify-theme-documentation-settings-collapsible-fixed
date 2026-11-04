@@ -33,7 +33,9 @@ About 模板可以用 **About Us** 作为首屏分区，下方还可以组合 Ph
 - **Image alt text**：填写图片替代文本，供无障碍工具读取，也会在图片无法加载时提供说明。
 - **Padding Top / Padding Bottom**：设置分区上下留白，单位为 `px`；
 
+<!-- 新版本删除部分
 关于 About Us 各字段、配置示例和图片建议，请参阅[关于我们（About Us）分区](/zh/sections/about-stats)。
+-->
 
 ### About 页面编排建议
 

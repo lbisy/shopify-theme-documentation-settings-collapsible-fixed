@@ -1,3 +1,15 @@
+---
+search: false
+---
+
+<!-- unlinked-document:start
+文档显示状态：未在主页或目录中显示，且未被其他页面有效引用。
+核对说明：已注释的目录入口和页面链接不计入有效引用；已排除构建的页面不作为引用来源。
+保留正文供后续维护，此标记仅作为源码注释。
+unlinked-document:end -->
+
+<!-- 新版本删除部分：保留文档内容，目录及引用入口已注释，并从本地搜索中隐藏。 -->
+
 # About Stats
 
 The **About Stats** section combines brand images, a year or short label, descriptive copy, a link, and key statistics. Use it for brand history, manufacturing standards, service results, sustainability commitments, or company scale.

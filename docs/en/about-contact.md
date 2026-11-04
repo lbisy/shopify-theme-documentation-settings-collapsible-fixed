@@ -30,7 +30,9 @@ The About template can begin with an **About Us** hero and continue with Philoso
 - **Image alt text**: an accessible description of the image.
 - **Padding Top / Bottom**: vertical spacing in `px`.
 
+<!-- 新版本删除部分
 See [About Stats](/en/sections/about-stats) for related field, image, and content guidance.
+-->
 
 ### Recommended page flow
 

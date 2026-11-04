@@ -1,4 +1,4 @@
-# 步骤与使用仪式（Ritual steps）
+# 编辑式商品展示（Editorial Product Showcase）
 
 按步骤介绍使用方法或搭配流程，可在每一步加入图片、商品和链接。
 

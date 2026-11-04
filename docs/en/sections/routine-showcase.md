@@ -2,6 +2,24 @@
 
 Routine showcase organizes products into steps, combining scene images, floating product images and shared introductory copy. Use it to present skincare routines, product pairings or a sequence of use. Section settings control the heading, background, button and autoplay. Each **Step** block has its own product, label and images.
 
+## Storefront layout and step navigation
+
+The screenshot contains **3 Steps**, labeled **Cleanse, Treat and Protect**. The first step is active, with `01 / 03` displayed at the top right.
+
+- The upper-left area shows the shared eyebrow, heading, description and Shop serums action link.
+- The lower-left area shows the current step's product name, price and summary.
+- The central arch combines the scene image and floating product image for the active step.
+- The right edge shows a vertical heading. Step thumbnails and labels at the bottom right let customers switch steps.
+
+`Example product 1`, `¥20` and the product line drawings are sample content shown when no product is selected. They do not indicate that a real product has been configured. Select products and images for each Step, then review the result.
+
+<!-- To add screenshots: place the files in docs/public/images/en/, uncomment each corresponding image line, and remove its screenshot placeholder callout. -->
+<!-- ![Routine showcase storefront layout, progress and thumbnail navigation](/images/en/routine-showcase-preview.png) -->
+
+::: info Screenshot placeholder: storefront preview
+Add a full-section screenshot showing product information, the arch image, step progress and thumbnail navigation here.
+:::
+
 ## Add and configure the section
 
 1. Go to **Shopify admin → Online Store → Themes → Customize**.
@@ -13,7 +31,6 @@ Routine showcase organizes products into steps, combining scene images, floating
 
 This section cannot be added to header, footer or custom overlay groups.
 
-<!-- To add screenshots: place the files in docs/public/images/en/, uncomment the corresponding image line below, and remove its screenshot placeholder callout. -->
 <!-- ![Routine showcase color scheme, heading and background settings](/images/en/routine-showcase-settings.png) -->
 
 ::: info Screenshot placeholder: section settings
@@ -22,7 +39,7 @@ Add a settings panel screenshot showing Color scheme, Heading size, Background i
 
 ## Color scheme
 
-Choose the global color scheme for the section. The screenshot shows a blue selection border around the middle thumbnail in the second row.
+Choose the global color scheme for the section. The screenshot shows a blue selection border around the second thumbnail in the first row.
 
 Click **Edit scheme** to change the selected scheme. Changes affect other areas using that scheme, so review text and button contrast against the background throughout those areas.
 
@@ -43,6 +60,8 @@ Click **Edit scheme** to change the selected scheme. Changes affect other areas 
 Use **Background image → Select** to choose or upload an image, or explore free images. This is the overall section background, configured separately from each Step's scene and floating product images. Check cropping and text readability at different screen sizes.
 
 Eyebrow and Heading support inline formatting such as bold, italic and links. Description supports rich-text paragraphs and lists. Keep copy concise to avoid an excessively tall introduction on mobile.
+
+Description is shared introductory copy for the section, rather than the current product's summary. The lower-left product information changes with the active Step. Its name, price and summary come from that Step's selected Product; the summary may be shortened.
 
 ## Button
 
@@ -68,6 +87,8 @@ Provide both clear action text and a valid destination. The screenshot uses Shop
 
 The interval ranges from **3–10 seconds**, in **1-second** steps. Both the enabled state and `5 s` value match the package defaults. Add multiple Steps to test autoplay, and allow more time if your copy is longer.
 
+The screenshot's three steps switch in their configured order. Check that the top-right progress, product information and selected thumbnail update together, and test switching manually with the thumbnails.
+
 ## Padding
 
 | Setting | Current screenshot value | Purpose |
@@ -89,16 +110,20 @@ Add a block settings screenshot showing Product, Step label, Arch scene image an
 
 | Setting | Current screenshot value | Purpose |
 | --- | --- | --- |
-| **Product** | Selected product displayed as `Revive Repair S…` | Chooses the product for this step. The screenshot truncates the name; open the selector to see it in full. |
+| **Product** | Not selected; Select control shown | Chooses the product supplying this step's name, price and summary. |
 | **Step label** | `Cleanse` | Sets the step label. |
-| **Arch scene image** | A selected lifestyle portrait | Sets the scene image displayed in the arch. |
-| **Floating product image** | A selected product bottle image | Sets the overlaid product image; falls back to the selected product's featured image when unset. |
+| **Arch scene image** | No selected image thumbnail visible | Sets the scene image displayed in the arch. |
+| **Floating product image** | No selected image thumbnail visible | Sets the overlaid product image; falls back to the selected product's featured image when unset. |
 
 ### Product and step label
 
 Use **Product** to select or replace the product for this step. Products are chosen independently per Step; a section-level collection selection is not required.
 
+In this screenshot, Product is not selected and neither Step image has been uploaded. The preview therefore shows a sample product and placeholder imagery. Select the intended product for every step before using the section for real products.
+
 Keep **Step label** short, such as Cleanse in the screenshot. Check that the label, product and scene represent the same routine step. Changing the label does not rename the product.
+
+Step label appears in the step navigation. To follow the example, label three Steps Cleanse, Treat and Protect in that order.
 
 ### Arch scene image
 
@@ -114,6 +139,8 @@ The floating image is displayed at a fixed height. The panel recommends:
 - A product that fills the canvas, with minimal surrounding whitespace.
 
 Wider images look smaller at the same display height. If Floating product image is not set, the selected Product's featured image is used. Upload a separate transparent cutout for the Step when you need a cleaner product presentation.
+
+If no product is selected either, the theme displays a placeholder rather than a real product image. The section Background image, Step Arch scene image and Floating product image are separate image settings; configure each as needed.
 
 ### Reorder and remove Steps
 
@@ -132,6 +159,8 @@ The **Custom CSS** panel at the bottom of the screenshot is a section styling co
 - Verify the Ceylune eyebrow, Serums & Treatments heading and supporting copy.
 - Confirm Shop serums opens the intended destination.
 - Check that each Step uses the correct product, label and scene image.
+- Replace sample products and placeholders, and verify that product names, prices and summaries change with the active step.
 - Review arch cropping and floating product clarity, avoiding excess image whitespace.
 - Confirm multiple steps autoplay in the intended order at `5 s` intervals.
+- Check synchronized progress and selected thumbnails, and test manual step switching.
 - Check desktop and mobile for overlaps and review the `32 px` top and bottom padding.

@@ -1,3 +1,9 @@
+<!-- unlinked-document:start
+文档显示状态：未在主页或目录中显示，且未被其他页面有效引用。
+核对说明：已注释的目录入口和页面链接不计入有效引用；已排除构建的页面不作为引用来源。
+保留正文供后续维护，此标记仅作为源码注释。
+unlinked-document:end -->
+
 # Mood finder
 
 <!-- latest-schema:start -->
