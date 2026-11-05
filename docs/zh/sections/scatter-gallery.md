@@ -1,70 +1,102 @@
 # 错落图片画廊（Scatter gallery）
 
-通过多张图片组成错落的视觉展示，适合营造品牌氛围或呈现场景照片。
+Scatter gallery 将多张图片以大小和位置错落的方式组合展示，适合呈现品牌氛围、商品细节或生活场景。分区设置控制配色、说明文字、两端标题字号、装饰图和留白；每个 **Image** 小块配置一张画廊图片。
 
-## 打开与配置
+## 添加与配置
 
-1. 进入 Shopify 后台的 **在线商店 → 主题 → 自定义**。
-2. 切换到支持该分区的模板，点击 **添加分区**，选择 **Scatter gallery**。
-3. 填写分区标题，分别设置桌面端和移动端标题字号，按需选择装饰图。
-4. 添加 Image 内容块并逐一选择图片，通过内容块顺序组织图片。
-5. 完成后点击 **保存**，分别检查桌面端和移动端效果。
+1. 进入 **Shopify 后台 → 在线商店 → 主题 → 自定义**。
+2. 打开需要编辑的页面模板，在页面内容区域选择 **添加分区 → Scatter gallery**。
+3. 设置配色，按需填写 Statement，并分别调整桌面端和移动端标题字号。
+4. 展开分区并点击 **添加 Image**，为各小块选择图片。
+5. 按需选择笔刷装饰图，调整上下间距。
+6. 预览桌面端与移动端效果，点击 **保存**。
 
-::: tip 可添加位置
-安装包未允许在页眉、页脚或自定义弹层分组中添加此分区，请在页面内容区域配置。
-:::
+此分区不能添加到页眉、页脚或自定义弹层分组中。
 
-## 设置项说明
+## 截图中的展示效果
 
-以下按后台分组列出全部设置项。英文名称用于与主题编辑器对照；每项均列出操作方式、默认值及可选值。内容块拥有独立设置时，列在对应内容块标题下。
+截图中已有 **8 个 Image 小块**，左侧显示 **添加 Image（8/8）**，表示已达到数量上限。前台图片以不同大小、不同高低位置分布，而不是整齐的等宽网格。
 
-<!-- latest-schema:start -->
-## 新版安装包设置项（核对清单）
+截图中背包、鞋子、眼镜、帽子、手表和台灯等线稿是图片未配置时的装饰占位内容，不表示已经选择了实际商品图片。每个小块选好图片后，对应图位才会使用上传的素材。
 
-::: warning 版本核对说明
-依据 `latest.zip` 内 `sections/scatter-gallery.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。本页根据安装包整理，尚未进行 Shopify 实机验证。
-“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
-:::
+<!-- 截图位置：完整分区及设置面板。图片放入 docs/public/images/zh/ 后可启用下方引用。 -->
+<!-- ![Scatter gallery 错落图片展示与分区设置](/images/zh/scatter-gallery.png) -->
 
-入口：主题编辑器 → 对应页面模板或分区组 → Scatter gallery
+## 常规（General）
 
-可通过“添加分区”添加（声明了 presets）。
+**Color scheme** 选择整个分区使用的全局配色方案。截图中第一行第二个配色缩略图被选中。
 
-`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+点击 **编辑方案** 可修改该方案。其他使用同一方案的区域也会受到影响，请一起检查背景与标题的对比度。
 
-### General
+## 标题与说明（Heading）
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Statement** | 空白 | 设置画廊中的说明或品牌宣言文字；留空时不显示该标题文字。 |
+| **Heading size** | **Medium** | 设置桌面端 Statement 字号。 |
+| **Mobile heading size** | **Medium** | 单独设置移动端 Statement 字号。 |
 
-### Heading
+两端字号均可选择 **Extra small、Small、Medium、Large、Extra large、2X large、3X large、4X large**。
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Statement<br>`heading` | text：输入文字 | Ceylune brings together innovation, transparency, and quality to redefine the skincare shopping experience. | — |
-| Heading size<br>`heading_size` | select：从选项中选择 | title-m | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
-| Mobile heading size<br>`heading_size_mobile` | select：从选项中选择 | title-xs | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
+截图中 Statement 为空，因此当前只展示图片；字号选项仍可提前配置，填写文字后再检查效果。Statement 是普通文字字段，适合简短的品牌主张或画廊说明。
 
-### Decoration
+安装包的桌面端字号默认是 Medium，与截图一致；移动端默认是 Extra small，与截图的 Medium 不同。安装包还提供示例 Statement，截图已将其清空。
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Brush stroke image<br>`decoration_image` | image_picker：选择或上传图片 | 未声明 | — |
+## 装饰（Decoration）
 
-### Padding
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Brush stroke image** | 未显示已选图片缩略图 | 为画廊添加可选的笔刷或装饰图片。 |
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
-| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+点击 **选择** 可选择或上传素材，也可浏览免费图片。未选择时不显示该装饰图。
 
-### 内容块：Image
+Brush stroke image 与 Image 小块中的图片分别配置，不占用 8 个画廊小块的数量。建议使用适合叠加的装饰素材，并检查它与图片、文字的视觉关系。
 
-`type`: `image`; `limit`: 8
+## 上下间距（Padding）
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Image<br>`image` | image_picker：选择或上传图片 | 未声明 | — |
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Padding top** | `32 px` | 调整分区顶部留白。 |
+| **Padding bottom** | `32 px` | 调整分区底部留白。 |
 
-<!-- latest-schema:end -->
+两项范围均为 **0–100 px**，步长为 **4 px**。截图与安装包默认值均为 `32 px`。它们控制分区留白，不用于单独拖动或定位某张图片。
+
+## Image 小块
+
+点击左侧已有的 **Image** 打开小块设置。每个小块只有一个图片选择字段。
+
+<!-- 截图位置：Image 小块设置。图片放入 docs/public/images/zh/ 后可启用下方引用。 -->
+<!-- ![Scatter gallery 的 Image 小块设置](/images/zh/scatter-gallery-image.png) -->
+
+| 设置项 | 截图状态 | 作用 |
+| --- | --- | --- |
+| **Image** | 显示“选择”和“浏览免费图片”，未显示已选图片缩略图 | 设置当前图位使用的图片。 |
+
+### 选择与替换图片
+
+1. 点击 **Image → 选择**，选择现有文件或上传新图片，也可浏览免费图片。
+2. 在前台预览中检查该图片的裁切、主体和清晰度。
+3. 依次打开其他 Image 小块，替换剩余占位图。
+
+画廊中的图位比例不同，建议使用风格协调的横图和竖图，并为主体保留裁切空间。请分别检查桌面端与移动端，而不是只根据原图尺寸判断展示效果。
+
+### 数量、排序与移除
+
+- 最多添加 **8 个 Image 小块**；达到 8/8 后不能继续添加。
+- 拖动左侧小块调整顺序，图片会按小块顺序对应到预设图位。
+- 小块面板没有单独的位置、尺寸或链接字段；错落位置由分区布局控制。
+- 点击 **移除区块** 只移除当前小块，不删除 Shopify 文件库中的原图片。
+
+此版本布局保留 8 个图位；未配置图片的图位会显示占位内容。因此，移除一个 Image 小块后，应重新检查后续图片顺序和剩余占位图。
+
+## 自定义 CSS
+
+截图底部的 **自定义 CSS** 是主题编辑器提供的分区样式入口。添加局部样式后，请检查错落布局、图片裁切和不同屏幕下的文字位置。
+
+## 保存并检查
+
+- 8 个图位已按需要替换图片，没有遗漏占位线稿。
+- Statement 留空时不显示标题；填写后，两端 Medium 字号下的文字清晰可读。
+- 装饰图片与画廊图片分别配置，未遮挡重要内容。
+- 调整小块顺序后，各图片对应的图位符合预期。
+- 桌面端与移动端的裁切、间距和上下 `32 px` 留白协调。

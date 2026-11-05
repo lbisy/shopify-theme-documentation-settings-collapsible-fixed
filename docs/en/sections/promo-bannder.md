@@ -1,3 +1,5 @@
+<!-- 新版本删除部分：保留源文档，目录入口已注释；此页面已排除构建，不生成页面或站内搜索内容。 -->
+
 # Promo Banner
 
 The **Promo Banner** combines a hero image, campaign heading, destination link, circular badge, and optional Card blocks for seasonal promotions, launches, brand events, or service promises.

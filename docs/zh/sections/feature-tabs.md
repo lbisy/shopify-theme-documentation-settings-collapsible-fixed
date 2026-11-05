@@ -1,67 +1,118 @@
 # 图片热点与特色标签（Feature tabs）
 
-通过主图、定位标记和对应的文字内容介绍商品特色，可为每个内容块关联商品。
+Feature tabs 将一张主图上的编号标记与多组特色说明对应展示，适合介绍商品来源、制作过程、质地或使用体验。每个 **Item** 小块对应一个标记、一组说明和一个标签，可选择关联商品。
 
-## 打开与配置
+## 示例效果
 
-1. 进入 Shopify 后台的 **在线商店 → 主题 → 自定义**。
-2. 切换到支持该分区的模板，点击 **添加分区**，选择 **Feature tabs**。
-3. 选择 Feature image；需要装饰图时开启 Show decoration，并可替换 Decorative image。
-4. 添加 Item 内容块，填写标签、标题和说明，选择关联商品，用 Marker horizontal position 与 Marker vertical position 调整标记位置。最多添加 6 个内容块。
-5. 完成后点击 **保存**，分别检查桌面端和移动端效果。
+![Feature tabs 主图标记、特色说明与标签导航示例](/images/zh/feature-tabs.png)
 
-::: tip 可添加位置
-安装包仅允许在首页、商品模板和普通页面模板中添加此分区。
-:::
+截图中的分区位于商品模板内，左侧为带编号标记的主图，右侧为当前特色说明与标签列表。共有 **4 个 Item**：
 
-## 设置项说明
+| 编号 | 标签 |
+| --- | --- |
+| 01 | Origin |
+| 02 | Process |
+| 03 | Texture |
+| 04 | Ritual |
 
-以下按后台分组列出全部设置项。英文名称用于与主题编辑器对照；每项均列出操作方式、默认值及可选值。内容块拥有独立设置时，列在对应内容块标题下。
+当前选中 **Origin**，计数显示 `01 / 04`，标题为 `From seed to serum.`。选中的标签行和对应编号使用突出样式。切换右侧标签，可查看其他 Item 的说明。
 
-<!-- latest-schema:start -->
-## 新版安装包设置项（核对清单）
+截图中的 Feature image 尚未选择，因此左侧显示装饰占位图。右侧的植物装饰则是 Show decoration 开启后的默认插图，与主图分别配置。
 
-::: warning 版本核对说明
-依据 `latest.zip` 内 `sections/feature-tabs.liquid` 的 schema 整理。后台名称保留安装包的英文原文；以下清单是本页设置范围的核对依据。本页根据安装包整理，尚未进行 Shopify 实机验证。
-“未声明”表示 schema 没有指定默认值，不等于关闭。模板或已保存店铺的值可能与默认值不同。
-:::
+## 添加与配置
 
-入口：主题编辑器 → 对应页面模板或分区组 → Feature tabs
+1. 进入 **Shopify 后台 → 在线商店 → 主题 → 自定义**。
+2. 切换到首页、商品或普通页面模板，选择 **添加分区 → Feature tabs**。截图使用的是商品模板。
+3. 设置配色、标题字号并选择 Feature image。
+4. 点击 **添加 Item**，填写 Label、Heading 和 Text，调整对应标记的位置。
+5. 按需为 Item 选择 Product link，重复添加其他内容，最多 **6 个 Item**。
+6. 设置装饰图和上下留白，预览桌面端与移动端后点击 **保存**。
 
-可通过“添加分区”添加（声明了 presets）。
+## 常规（General）
 
-`enabled_on`: &#123;"templates": ["product", "index", "page"]&#125;
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Color scheme** | 第一行第二个配色缩略图被选中 | 设置分区使用的全局配色方案。 |
+| **Heading size** | **Extra large** | 设置 Item 说明区域的主标题字号。 |
+| **Feature image** | 未显示已选图片缩略图 | 设置所有编号标记共用的主图。 |
+| **Show decoration** | **开启** | 控制是否显示特色说明区域的装饰插图。 |
+| **Decorative image** | 未显示已选图片缩略图 | 选择自定义装饰图，替换默认植物插图。 |
 
-`max_blocks`: 6
+### 配色与标题字号
 
-### General
+点击 **Edit scheme（编辑方案）** 可修改所选配色，其他使用同一方案的区域也会受到影响。请检查选中标签、编号、正文与背景之间的对比度。
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Color scheme<br>`color_scheme` | color_scheme：选择全局配色方案 | scheme-2 | — |
-| Heading size<br>`heading_size` | select：从选项中选择 | title-xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
-| Feature image<br>`image` | image_picker：选择或上传图片 | 未声明 | — |
-| Show decoration<br>`show_decoration` | checkbox：勾选开启，取消关闭 | true | — |
-| Decorative image<br>`decorative_image` | image_picker：选择或上传图片 | 未声明 | info: Replaces the default botanical illustration. Shown from tablet width up. |
+Heading size 可选 **Extra small、Small、Medium、Large、Extra large、2X large、3X large、4X large**。截图选择 Extra large，与安装包默认值一致。它控制说明区域的大标题，不是标签文字，也不是单独的移动端字号控件；主题会根据屏幕宽度调整显示。
 
-### Padding
+### 主图与装饰图
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Padding top<br>`padding_top` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
-| Padding bottom<br>`padding_bottom` | range：拖动滑块调整数值 | 32 | 0–100 px; 步长 4 |
+点击 **Feature image → Select（选择）** 可选择或上传图片，也可浏览免费图片。编号标记叠加在这张主图上；更换图片后，请重新定位每个 Item 的标记。
 
-### 内容块：Item
+**Show decoration** 在截图中开启，与默认值一致。未选择 Decorative image 时，使用默认植物插图；选择自定义图片后替换该插图。装饰从平板宽度起显示，较窄屏幕上不显示。关闭开关后，不显示装饰插图。
 
-`type`: `item`
+Feature image 是用于定位标记的主图，Decorative image 是说明区域中的辅助装饰，两者用途不同。
 
-| 设置项（后台名称） / ID | 类型与操作 | 默认值 | 可选值 / 范围 / 条件 |
-| --- | --- | --- | --- |
-| Product link<br>`product` | product：选择商品 | 未声明 | — |
-| Marker horizontal position<br>`marker_x` | range：拖动滑块调整数值 | 22 | 0–100 %; 步长 1 |
-| Marker vertical position<br>`marker_y` | range：拖动滑块调整数值 | 28 | 0–100 %; 步长 1 |
-| Label<br>`label` | text：输入文字 | Origin | — |
-| Heading<br>`heading` | inline_richtext：编辑行内格式化文字 | From seed to serum. | — |
-| Text<br>`text` | richtext：编辑格式化文字 | &lt;p&gt;Share a concise benefit, ingredient story, or ritual step that helps customers understand why this detail matters.&lt;/p&gt; | — |
+## 上下间距（Padding）
 
-<!-- latest-schema:end -->
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Padding top** | `32 px` | 调整分区顶部留白。 |
+| **Padding bottom** | `32 px` | 调整分区底部留白。 |
+
+两项范围均为 **0–100 px**，步长 **4 px**。截图与安装包默认值均为 `32 px`。
+
+## Item 小块
+
+点击左侧已有的 Item 编辑，或通过 **Add Item（添加 Item）** 新增。每个小块对应一个编号及一项标签内容。
+
+| 设置项 | 截图当前值 | 作用 |
+| --- | --- | --- |
+| **Product link** | 未选择，显示 Select 入口 | 为当前主图编号关联商品链接，可选。 |
+| **Marker horizontal position** | `22%` | 设置编号在主图中的横向位置。 |
+| **Marker vertical position** | `28%` | 设置编号在主图中的纵向位置。 |
+| **Label** | `Origin` | 设置标签文字，同时显示在当前说明的眉题位置。 |
+| **Heading** | `From seed to serum.` | 设置当前特色说明的主标题。 |
+| **Text** | 下方示例文案 | 设置主标题下方的详细说明，支持富文本。 |
+
+### 商品链接与编号位置
+
+Product link 仅用于关联当前编号的商品跳转，不会自动把主图替换为商品图片，也不会自动填写 Label、Heading 或 Text。截图未选择商品时，编号作为视觉标记显示；选择商品后，可通过对应编号访问商品页面。浏览不同特色说明请使用标签列表。
+
+两个位置控件均为 **0–100%**，步长 **1%**：
+
+- **Marker horizontal position**：数值越大，标记越靠右。
+- **Marker vertical position**：数值越大，标记越靠下。
+
+截图中的第一项为横向 `22%`、纵向 `28%`，与安装包默认值一致。每个 Item 的坐标独立设置；请避免标记互相重叠或压住重要主体，并在移动端重新检查位置。
+
+### 标签、标题与正文
+
+**Label** 是简短的普通文字字段，截图为 Origin。它显示在标签行中，在当前说明上方还会呈现为大写眉题 ORIGIN。
+
+**Heading** 支持行内富文本，可使用加粗、斜体和链接。截图中的正文 Text 为：
+
+> Share a concise benefit, ingredient story, or ritual step that helps customers understand why this detail matters.
+
+Text 支持富文本段落、列表、加粗、斜体和链接等格式。建议每项围绕一个特色组织文字，避免内容过长影响两栏布局。
+
+### 排序与移除
+
+- 拖动左侧 Item 调整标签顺序，编号随显示顺序排列。
+- 调整顺序后，检查每个编号的坐标与对应说明是否匹配。
+- 最多添加 **6 个 Item**，不必为了编号添加额外小块。
+- 点击 **Remove block（移除区块）**，仅删除当前 Item。
+
+## 自定义 CSS 与移除分区
+
+**Custom CSS（自定义 CSS）** 是主题编辑器提供的分区样式入口。添加局部样式后，请检查主图、编号、标签选中状态及移动端文字排版。
+
+**Remove section（移除分区）** 会从当前模板移除整个 Feature tabs 及其 Item 小块。仅删除一项说明时，请使用对应 Item 的移除区块操作。
+
+## 保存并检查
+
+- 用实际图片替换左侧占位图，并逐项调整标记位置。
+- Origin、Process、Texture、Ritual 四个标签与对应编号、说明匹配。
+- 切换标签时，当前内容、计数和编号突出状态正确更新。
+- 关联商品的编号跳转至正确商品；未选择商品的标记不作为商品链接。
+- 默认植物装饰或自定义装饰在适用屏幕宽度下正常显示。
+- Extra large 标题和上下 `32 px` 留白在桌面端与移动端均协调。

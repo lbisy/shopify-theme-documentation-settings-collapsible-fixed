@@ -6,45 +6,95 @@ unlinked-document:end -->
 
 # Editorial collage
 
-<!-- latest-schema:start -->
-## Latest package settings reference
+Editorial collage combines a heading, supporting copy and three images in a magazine-style layout. Use it for a brand story, product appearance, materials or details. Configure all three images directly in the section settings; no image blocks are required.
 
-::: warning Version reference
-Generated from the schema in `sections/editorial-collage.liquid` inside `latest.zip`. This list defines the declared editor settings for this page. Earlier prose and screenshots have not been verified in a running store.
-“Not declared” means the schema supplies no default; it does not mean disabled. Templates and saved store values can differ.
-:::
+## Example preview
 
-Open: Theme editor → relevant template or section group → Editorial collage
+![Editorial collage layout and three image settings example](/images/en/editorial-collage.png)
 
-Has presets for the Add section picker.
+The desktop screenshot uses this arrangement:
 
-`disabled_on`: &#123;"groups": ["header", "footer", "custom.overlay"]&#125;
+| Position | Content |
+| --- | --- |
+| Top left | Heading and Text. |
+| Top right | Texture image, suited to texture or atmosphere. |
+| Bottom left | Product image, suited to the main product visual. |
+| Bottom right | Detail image, suited to a close-up or supporting scene. |
 
-| Editor label / ID | Type and action | Default | Options / range / conditions |
-| --- | --- | --- | --- |
-| Color scheme<br>`color_scheme` | color_scheme | scheme-2 | — |
-| Heading<br>`heading` | text | An object of everyday care. | — |
+No actual images have been selected in the screenshot, so all three areas show decorative line-art placeholders. Selected images use the preset layout. These controls do not select Shopify products or automatically load their featured images.
 
-### Heading
+On mobile, the introduction and Texture image stack vertically, with Product image and Detail image side by side below. Review image crops and text wrapping on both screen sizes.
 
-| Editor label / ID | Type and action | Default | Options / range / conditions |
-| --- | --- | --- | --- |
-| Heading size<br>`heading_size` | select | title-xl | 4X large (`title-4xl`); 3X large (`title-3xl`); 2X large (`title-2xl`); Extra large (`title-xl`); Large (`title-l`); Medium (`title-m`); Small (`title-s`); Extra small (`title-xs`) |
-| Text<br>`text` | richtext | More than just skincare, Ceylune is a daily ritual: a moment of calm, a return to yourself. Crafted with nature's finest, it brings balance to your skin and peace to your mind. | — |
+## Add and configure the section
 
-### Images
+1. Go to **Shopify admin → Online Store → Themes → Customize**.
+2. Open the template you want to edit and choose **Add section → Editorial collage** in the page content area. The screenshot uses a product template.
+3. Select a color scheme, enter Heading and Text, and choose a heading size.
+4. Choose Texture image, Product image and Detail image independently.
+5. Adjust padding, preview desktop and mobile, then click **Save**.
 
-| Editor label / ID | Type and action | Default | Options / range / conditions |
-| --- | --- | --- | --- |
-| Texture image<br>`texture_image` | image_picker | Not declared | — |
-| Product image<br>`product_image` | image_picker | Not declared | — |
-| Detail image<br>`detail_image` | image_picker | Not declared | — |
+This section cannot be added to header, footer or custom overlay groups.
 
-### Padding
+## Color scheme
 
-| Editor label / ID | Type and action | Default | Options / range / conditions |
-| --- | --- | --- | --- |
-| Padding top<br>`padding_top` | range | 32 | 0–100 px; step 4 |
-| Padding bottom<br>`padding_bottom` | range | 32 | 0–100 px; step 4 |
+Choose the section's global color scheme. The screenshot selects the second scheme thumbnail in the first row.
 
-<!-- latest-schema:end -->
+Click **Edit scheme** to change it. Changes also affect other areas using that scheme. Check the visual relationship between the heading, body copy and imagery.
+
+## Heading and text
+
+| Setting | Current screenshot value | Purpose |
+| --- | --- | --- |
+| **Heading** | `An object of everyday care.` | Sets the main heading as plain text. |
+| **Heading size** | **Extra large** | Sets the main heading size. |
+| **Text** | Example copy below | Adds supporting copy beneath the heading, with rich-text formatting. |
+
+Heading size offers **Extra small, Small, Medium, Large, Extra large, 2X large, 3X large and 4X large**. The screenshot's Extra large matches the package default. The theme adapts the heading display to screen width.
+
+The screenshot's Text reads:
+
+> More than just skincare, Ceylune is a daily ritual: a moment of calm, a return to yourself. Crafted with nature's finest, it brings balance to your skin and peace to your mind.
+
+Both the heading and copy match the package's sample content. Replace them with your own brand introduction. Text supports paragraphs, bold, italic, links and lists. Keep copy concise enough to balance the adjacent imagery.
+
+## Images
+
+| Setting | Screenshot state | Purpose and desktop position |
+| --- | --- | --- |
+| **Texture image** | No selected image thumbnail visible | Top-right image for textures, ingredients, atmosphere or a lifestyle scene. |
+| **Product image** | No selected image thumbnail visible | Bottom-left image emphasizing the product's overall appearance. |
+| **Detail image** | No selected image thumbnail visible | Bottom-right image for details, packaging or a supporting scene. |
+
+Click **Select** within each field to choose or upload an image, or use **Explore free images**. The fields are independent; there are no separate image blocks to reorder.
+
+### Image pairing and cropping
+
+- Choose three images with coordinated colors and styles, covering atmosphere, the product and details.
+- Images are cropped to preset containers. Leave space around important products, faces and details.
+- Review both the large desktop areas and the two side-by-side mobile images for subject visibility.
+- An unset field continues to show a line-art placeholder. Clearing it does not automatically remove that image area.
+
+Product image is an image picker only. It does not associate a product, price or product-page destination. The section has no separate product picker or action-button settings.
+
+## Padding
+
+| Setting | Current screenshot value | Purpose |
+| --- | --- | --- |
+| **Padding top** | `32 px` | Adjusts space above the section content. |
+| **Padding bottom** | `32 px` | Adjusts space below the section content. |
+
+Both controls range from **0–100 px**, in **4 px** steps. The screenshot and package defaults use `32 px` for both. Padding changes section spacing rather than the positions assigned to the three image fields.
+
+## Custom CSS and removing the section
+
+**Custom CSS** is a section styling control provided by the theme editor. After adding local styles, check text alignment, image crops and mobile arrangement.
+
+**Remove section** removes the entire Editorial collage from the current template. It does not delete original images from Shopify's file library.
+
+## Save and check
+
+- Replace the heading and copy as intended and review wrapping at Extra large.
+- Replace all three placeholders, matching each image to its Texture, Product or Detail area.
+- Verify the desktop arrangement: copy top left, texture top right, product bottom left and detail bottom right.
+- Check mobile text, the stacked upper image and the two lower images for cropping or crowding.
+- Review image/color harmony and the `32 px` top and bottom padding alongside adjacent sections.

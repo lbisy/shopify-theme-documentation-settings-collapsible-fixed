@@ -5,7 +5,7 @@ export default defineConfig({
   description: 'Bilingual Shopify theme user documentation',
   cleanUrls: true,
   // 新版本删除部分：保留源文档，但不生成中英文页面及搜索内容。
-  srcExclude: ['**/sections/announcement-bar.md', '**/sections/article.md', '**/sections/google-map.md'],
+  srcExclude: ['**/sections/announcement-bar.md', '**/sections/article.md', '**/sections/google-map.md', '**/sections/promo-bannder.md'],
   head: [
     ['link', { rel: 'icon', href: '/brand/favicon.ico', sizes: 'any' }],
     ['link', { rel: 'apple-touch-icon', href: '/brand/apple-touch-icon.png' }]
@@ -113,7 +113,8 @@ export default defineConfig({
               { text: "Product Comparison Table", link: "/en/sections/product-comparison-table" },
               { text: "Product Recommendations", link: "/en/sections/product-recommendations" },
               { text: "Promise Section", link: "/en/sections/promise-section" },
-              { text: "Promotion Banner", link: "/en/sections/promo-bannder" },
+              // 新版本删除部分
+              // { text: "Promotion Banner", link: "/en/sections/promo-bannder" },
               { text: "Promotion Countdown", link: "/en/sections/promotion-countdown" },
               { text: "Routine Showcase", link: "/en/sections/routine-showcase" },
               // { text: "Scrolling Categories", link: "/en/sections/scroll-categories" },
@@ -200,7 +201,8 @@ export default defineConfig({
               { text: "商品对比表", link: "/zh/sections/product-comparison-table" },
               { text: "商品推荐", link: "/zh/sections/product-recommendations" },
               { text: "品牌承诺", link: "/zh/sections/promise-section" },
-              { text: "促销横幅", link: "/zh/sections/promo-bannder" },
+              // 新版本删除部分
+              // { text: "促销横幅", link: "/zh/sections/promo-bannder" },
               { text: "促销倒计时", link: "/zh/sections/promotion-countdown" },
               { text: "编辑式商品展示", link: "/zh/sections/ritual-steps" },
               { text: "场景商品展示", link: "/zh/sections/routine-showcase" },

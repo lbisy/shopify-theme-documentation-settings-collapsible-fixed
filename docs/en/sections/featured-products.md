@@ -2,6 +2,16 @@
 
 Featured products organizes collections into tabs so customers can switch between their products. Section settings control product counts, columns, navigation and the brand marquee. Each **Collection** block defines one tab's collection, heading and supporting copy.
 
+## Example preview
+
+![Featured products tabs, product cards and section settings example](/images/en/featured-products.png)
+
+The supplied screenshot shows three tabs: **Add On, New Arrivals and Best Sellers**, with **New Arrivals** selected. Four product cards are visible at once on desktop, with a **SHOP ALL** action below them.
+
+The `(0)` beside each tab indicates a collection product count of zero. The line drawings, `Example product 1–4` names and `¥20` prices are placeholders shown when no products are available for display. They do not represent configured products. The Collection block screenshot has no collection selected; choose a valid collection before checking the actual products.
+
+A Maximum items value of `8` limits each tab to eight products; it does not display eight simultaneously on desktop. Items per row on desktop is `4` in this example.
+
 ## Add and configure the section
 
 1. Go to **Shopify admin → Online Store → Themes → Customize**.
@@ -41,7 +51,7 @@ Options are **Extra small, Small, Medium, Large, Extra large, 2X large, 3X large
 | **Show view all button** | **Enabled** | Shows a link to the corresponding collection. |
 | **Desktop tab header behavior** | **Wrap to multiple lines** | Controls how desktop tab headings handle limited width. |
 
-**Maximum items** ranges from **2–12**, in steps of **1**. **Items per row on desktop** ranges from **2–4**, in steps of **1**. If a collection has fewer available products than the limit, only those products are displayed.
+**Maximum items** ranges from **2–12**, in steps of **1**. **Items per row on desktop** ranges from **2–4**, in steps of **1**. When a selected collection has products but fewer than the limit, those products are shown. If no collection is selected or no products are available, the theme displays placeholder products for layout preview.
 
 Two mobile columns show more products at once. Check long product names, prices and badges for crowding. Columns control layout density; Maximum items controls the total display limit for each collection.
 
@@ -51,6 +61,8 @@ Two mobile columns show more products at once. Check long product names, prices 
 - **Horizontal drag/scroll**: lets customers browse tabs horizontally by dragging or scrolling.
 
 The screenshot enables **Show view all button**, while the package default is disabled. All other screenshot values in this table match the defaults. Even with navigation and pagination disabled, check that View all appears and links to the correct active collection.
+
+The storefront action is labeled **SHOP ALL** in the screenshot. It opens the selected collection when one is configured, or falls back to the all-products page when none is selected. Choose a collection for each tab and test the destination before publishing.
 
 ## Brand marquee
 
@@ -84,17 +96,19 @@ Each **Collection** block represents one collection tab. Select an existing Coll
 
 | Setting | Current screenshot value | Purpose |
 | --- | --- | --- |
-| **Select collection** | **Face Masks** | Chooses the collection supplying this tab's products. |
+| **Select collection** | Not selected; Select control shown | Chooses the collection supplying this tab's products. |
 | **Collection heading** | `Add On` | Sets a custom tab heading, with inline rich-text formatting. |
 | **Collection content** | Empty | Adds supporting copy within the corresponding tab, with inline rich-text formatting. |
 
 ### Select the collection
 
-Use **Select collection** to choose or replace a collection. The screenshot selects Face Masks. Changing the heading to Add On does not replace that collection or rename it in Shopify admin.
+Use **Select collection** to choose or replace a collection. No collection is selected in this screenshot. Entering Add On as a heading does not automatically associate or create a collection.
+
+After selecting a collection, check that it contains products available for display and that those products are published to Online Store. Configure the source collection independently for each Collection block.
 
 ### Customize the tab heading
 
-**Collection heading** takes precedence as the tab title. In the screenshot, the tab displays `Add On` while its products still come from Face Masks. Leave this field blank to use the selected collection's name.
+**Collection heading** takes precedence as the tab title. The screenshot sets it to `Add On`, so this custom tab label can appear before a collection is selected. After selection, products come from that collection. Changing the heading does not change the source collection or rename it in Shopify admin. Leave this field blank to use the selected collection's name.
 
 Use the toolbar for bold, italic or link formatting. With longer headings, check wrapping or horizontal scrolling under Desktop tab header behavior.
 
@@ -108,9 +122,16 @@ Use the toolbar for bold, italic or link formatting. With longer headings, check
 - Click **Add Collection** to add another collection tab.
 - **Remove block** at the bottom of the block settings removes only that tab from the section. It does not delete the collection or products from Shopify admin.
 
+## Template settings, Custom CSS and removing the section
+
+The **Template settings** and **Custom CSS** panels at the bottom of the screenshot are editor configuration controls, rather than additional Collection block fields. Expand Custom CSS for local styling changes, then review desktop and mobile layouts.
+
+**Remove section** removes the entire Featured products section and its Collection blocks from the current template. To remove a single tab, use **Remove block** within that block instead.
+
 ## Save and check
 
-- Verify each tab's source collection; the screenshot example uses Add On as the heading and Face Masks as the collection.
+- Choose the correct collections for Add On, New Arrivals and Best Sellers, replacing placeholder products and images.
+- Check that the active tab, collection product count and displayed products agree.
 - Confirm the limit of 8 products per collection, with 4 desktop columns and 2 mobile columns.
 - Keep navigation and pagination disabled, with View all enabled and linking correctly.
 - Check that multiple tabs wrap without obscuring products.
